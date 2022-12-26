@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========= All FONTS ========= */
+/* Graphik */
+@font-face {
+  font-family: "Graphik-Regular";
+  src: url("../fonts/Graphik-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Graphik-Semibold";
+  src: url("../fonts/Graphik-Semibold.ttf") format("truetype");
+}
+
+/* Amiri */
+@font-face {
+  font-family: "Amiri";
+  src: url("../fonts/Amiri-Regular.ttf") format("truetype");
+}
+
+/* Poppins */
+@font-face {
+  font-family: "Poppins Regular";
+  src: url("../fonts/Graphik-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins Light";
+  src: url("../fonts/Poppins-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins Extrabold";
+  src: url("../fonts/Poppins-ExtraBold.ttf") format("truetype");
+}
+
+@layer base {
+  /* ========= SCROLL BAR ========= */
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    @apply bg-panel;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    @apply bg-violet;
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-[#805fc2];
+  }
+
+  /* ========= GLOBAL ========= */
+  a {
+    @apply font-linksR;
+  }
+  ::selection {
+    @apply bg-purple-300;
+  }
+}
