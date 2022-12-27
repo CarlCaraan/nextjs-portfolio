@@ -68,6 +68,6 @@
     @apply font-linksR;
   }
   ::selection {
-    @apply bg-purple-300;
+    @apply bg-slate-500;
   }
 }
