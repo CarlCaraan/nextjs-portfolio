@@ -26,7 +26,7 @@ export default function Home() {
                 className="text-2xl font-sansB text-center mt-12
                 lg:text-start sm:text-5xl lg:mt-12 xl:mt-0 "
               >
-                Let's Build <br /> Something Epic
+                Let&#39;s Build <br /> Something Epic
               </h1>
               <div
                 className="mt-6 text-grayLight text-center 
