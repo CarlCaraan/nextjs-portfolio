@@ -57,7 +57,7 @@ export default function Home() {
               <Image
                 className="w-3/4 mx-auto 
                 md:w-5/6 lg:mr-0"
-                src="/../public/images/userbg.png"
+                src="/images/userbg.png"
                 alt="carlcaraan"
                 width={500}
                 height={500}
