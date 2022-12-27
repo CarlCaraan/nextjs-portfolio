@@ -15,13 +15,16 @@ function Navbar() {
         {/* Brand */}
         <Link href="/">
           <div className="flex flex-col">
-            <span className="text-2xl text-grayDark">Carl Caraan</span>
+            <span className="text-2xl">Carl Caraan</span>
             <span className="text-grayLightest">Web Developer</span>
           </div>
         </Link>
 
         {/* Links Wrapper */}
-        <div className="hidden space-x-12 items-center lg:flex">
+        <div
+          className="hidden space-x-12 items-center text-grayLight
+        lg:flex"
+        >
           <Link
             className={pathname === "/about" ? "underline" : "hover:underline"}
             href="/about"

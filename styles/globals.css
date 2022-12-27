@@ -5,12 +5,16 @@
 /* ========= All FONTS ========= */
 /* Graphik */
 @font-face {
-  font-family: "Graphik-Regular";
+  font-family: "Graphik Regular";
   src: url("../fonts/Graphik-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Graphik-Semibold";
+  font-family: "Graphik Semibold";
   src: url("../fonts/Graphik-Semibold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Graphik Bold";
+  src: url("../fonts/Graphik-Bold.ttf") format("truetype");
 }
 
 /* Amiri */
@@ -53,6 +57,9 @@
   }
 
   /* ========= GLOBAL ========= */
+  body {
+    @apply text-grayDark;
+  }
   a {
     @apply font-linksR;
   }

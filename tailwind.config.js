@@ -19,7 +19,8 @@ module.exports = {
     // All Fonts
     fontFamily: {
       sans: ["Graphik Regular", "sans-serif"],
-      sansB: ["Graphik Regular", "sans-serif"],
+      sansSB: ["Graphik Semibold", "sans-serif"],
+      sansB: ["Graphik Bold", "sans-serif"],
       serif: ["Amiri", "sans-serif"],
       linksR: ["Poppins Regular", "sans-serif"],
       linksL: ["Poppins Light", "sans-serif"],
