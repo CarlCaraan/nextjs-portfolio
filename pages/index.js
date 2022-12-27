@@ -76,7 +76,21 @@ export default function Home() {
           xl:-mt-14"
           id="content"
         >
-          <h1 className="text-9xl mx-auto h-screen"></h1>
+          <div className="relative text-[6.8vw] font-linksB text-center pt-[4.3vw] text-white">
+            Full Stack Developer
+            <span
+              className="hidden absolute font-linksSB text-black text-[2.5vw] left-[25vw] top-[10.2vw] 
+              lg:block"
+            >
+              Recent Projects
+            </span>
+          </div>
+          <div
+            className="font-linksSB text-black text-[5vw] text-center
+            lg:hidden "
+          >
+            Recent Projects
+          </div>
         </section>
         {/* ========= End Content Section ========= */}
       </main>
