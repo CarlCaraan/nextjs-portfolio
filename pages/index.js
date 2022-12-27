@@ -24,7 +24,7 @@ export default function Home() {
             <div className="lg:w-1/2">
               <h1
                 className="text-2xl font-sansB text-center mt-12
-                lg:text-start sm:text-5xl lg:mt-12 xl:mt-0 "
+                lg:text-start sm:text-5xl lg:mt-12 xl:mt-0"
               >
                 Let&#39;s Build <br /> Something Epic
               </h1>
