@@ -2,6 +2,7 @@ import Link from "next/link";
 import Navbar from "../components/Navbar";
 import { Fragment } from "react";
 import Image from "next/image";
+import UserImage from "../public/images/userbg.png";
 
 export default function Home() {
   return (
@@ -57,7 +58,8 @@ export default function Home() {
               <Image
                 className="w-3/4 mx-auto 
                 md:w-5/6 lg:mr-0"
-                src="/images/userbg.png"
+                // src="/images/userbg.png"
+                src={UserImage}
                 alt="carlcaraan"
                 width={500}
                 height={500}
