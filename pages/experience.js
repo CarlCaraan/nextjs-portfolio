@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 function experience() {
   return (
     <Fragment>
-      <title>Experience | Web Developer</title>
+      <title>Experience | Carl Caraan</title>
       <Navbar />
     </Fragment>
   );

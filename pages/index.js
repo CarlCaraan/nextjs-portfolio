@@ -23,8 +23,8 @@ export default function Home() {
             {/* Left Section */}
             <div className="lg:w-1/2">
               <h1
-                className="text-2xl font-sansB mt-12 text-center 
-                lg:text-start sm:text-5xl lg:mt-16"
+                className="text-2xl font-sansB text-center mt-12
+                lg:text-start sm:text-5xl lg:mt-12 xl:mt-0 "
               >
                 Let's Build <br /> Something Epic
               </h1>
@@ -40,7 +40,7 @@ export default function Home() {
 
               <div
                 className="mt-6 
-                lg:mt-40"
+                sm:mt-12 xl:mt-16 2xl:mt-40"
               >
                 <Link
                   href="/about"
@@ -56,7 +56,7 @@ export default function Home() {
             <div className="lg:w-1/2">
               <Image
                 className="w-3/4 mx-auto 
-                md:w-full lg:mr-0"
+                md:w-5/6 lg:mr-0"
                 src="/../public/images/userbg.png"
                 alt="carlcaraan"
                 width={500}
@@ -67,6 +67,16 @@ export default function Home() {
           {/* End Flex Container */}
         </section>
         {/* ========= End Hero Section ========= */}
+
+        {/* ========= Start Content Section ========= */}
+        <section
+          className="mt-12 bg-panel 
+          xl:-mt-14"
+          id="content"
+        >
+          <h1 className="text-9xl mx-auto h-screen"></h1>
+        </section>
+        {/* ========= End Content Section ========= */}
       </main>
     </Fragment>
   );
