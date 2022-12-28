@@ -11,11 +11,7 @@ export default function Home() {
       <Navbar />
       <main>
         {/* ========= Start Hero Section ========= */}
-        <section
-          id="hero"
-          className="container mx-auto px-6 
-        md:px-24"
-        >
+        <section id="hero" className="section-container">
           {/* Start Flex Container */}
           <div
             className="flex flex-col-reverse items-center
@@ -85,12 +81,37 @@ export default function Home() {
               Recent Projects
             </span>
           </div>
+
+          {/* Hidden */}
           <div
             className="font-linksSB text-black text-[5vw] text-center
             lg:hidden "
           >
             Recent Projects
           </div>
+
+          {/* Start Button Container */}
+          <div className="section-container relative">
+            {/* Button */}
+            <button className="custom-btn group absolute top-0 right-20 w-32 text-start">
+              View all{" "}
+              <span className="font-bold group-hover:ml-1 transition-all ease-in">
+                &rarr;
+              </span>
+            </button>
+
+            {/* Start Project Grid Container */}
+            <div className="grid pt-14">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              nisi aut saepe maxime impedit omnis similique magni veniam quidem
+              explicabo at, ea voluptas harum vel dicta aliquam corporis id
+              atque molestiae cumque! Nostrum quos quae aliquid voluptate
+              eveniet harum ipsam, eaque laborum recusandae quam, nisi molestiae
+              voluptatibus natus dignissimos quas?
+            </div>
+            {/* End Project Grid Container */}
+          </div>
+          {/* End Button Container */}
         </section>
         {/* ========= End Content Section ========= */}
       </main>

@@ -71,3 +71,18 @@
     @apply bg-slate-500;
   }
 }
+
+@layer components {
+  .custom-btn {
+    @apply bg-white rounded-md pl-7 py-2 font-linksR text-grayLight;
+
+    background: #f1f1f1;
+    box-shadow: 4px 4px 8px #cdcdcd, -4px -4px 8px #ffffff;
+  }
+}
+
+@layer utilities {
+  .section-container {
+    @apply container mx-auto px-6 md:px-24;
+  }
+}
