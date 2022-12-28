@@ -60,7 +60,7 @@
     @apply bg-[#805fc2];
   }
 
-  /* ========= GLOBAL ========= */
+  /* ========= GLOBAL CLASS ========= */
   body {
     @apply text-grayDark;
   }
