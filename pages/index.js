@@ -72,7 +72,7 @@ export default function Home() {
           xl:-mt-14"
           id="content"
         >
-          <div className="relative text-[6.8vw] font-linksB text-center pt-[4.3vw] text-white">
+          <div className="relative text-[6.7vw] font-linksB text-center pt-[4.3vw] text-white">
             Full Stack Developer
             <span
               className="hidden absolute font-linksSB text-black text-[2.5vw] left-[25vw] top-[10.2vw] 
@@ -93,21 +93,29 @@ export default function Home() {
           {/* Start Button Container */}
           <div className="section-container relative">
             {/* Button */}
-            <button className="custom-btn group absolute top-0 right-20 w-32 text-start">
+            <button
+              className="custom-btn group text-center block w-full mt-12
+              lg:mt-8 lg:text-start lg:absolute lg:top-0 lg:right-[6rem] lg:w-32"
+            >
               View all{" "}
-              <span className="font-bold group-hover:ml-1 transition-all ease-in">
+              <span
+                className="font-bold group-hover:ml-1 transition-all ease-in hidden 
+                lg:inline-block"
+              >
                 &rarr;
               </span>
             </button>
 
             {/* Start Project Grid Container */}
-            <div className="grid pt-14">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-              nisi aut saepe maxime impedit omnis similique magni veniam quidem
-              explicabo at, ea voluptas harum vel dicta aliquam corporis id
-              atque molestiae cumque! Nostrum quos quae aliquid voluptate
-              eveniet harum ipsam, eaque laborum recusandae quam, nisi molestiae
-              voluptatibus natus dignissimos quas?
+            <div
+              className="grid grid-cols-8 gap-4 pt-6 
+              lg:pt-24"
+            >
+              <div className="col-span-full md:col-span-8 bg-red-500">asd</div>
+              <div className="col-span-full lg:col-span-5 bg-green-500">
+                asd
+              </div>
+              <div className="col-span-full lg:col-span-3 bg-blue-500">asd</div>
             </div>
             {/* End Project Grid Container */}
           </div>

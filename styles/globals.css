@@ -74,7 +74,8 @@
 
 @layer components {
   .custom-btn {
-    @apply bg-white rounded-md pl-7 py-2 font-linksR text-grayLight;
+    @apply bg-white rounded-md py-2 font-linksR text-grayLight
+    lg:pl-7;
 
     background: #f1f1f1;
     box-shadow: 4px 4px 8px #cdcdcd, -4px -4px 8px #ffffff;
