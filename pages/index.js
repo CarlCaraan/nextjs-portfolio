@@ -3,6 +3,9 @@ import Navbar from "../components/Navbar";
 import { Fragment } from "react";
 import Image from "next/image";
 import UserImage from "../public/images/userbg.png";
+import ProjectImage1 from "../public/images/landing_page/Project 1.png";
+import ProjectImage2 from "../public/images/landing_page/Project 2.png";
+import ProjectImage3 from "../public/images/landing_page/Project 3.png";
 
 export default function Home() {
   return (
@@ -72,7 +75,7 @@ export default function Home() {
           xl:-mt-14"
           id="content"
         >
-          <div className="relative text-[6.7vw] font-linksB text-center pt-[4.3vw] text-white">
+          <div className="relative text-[6.7vw] font-linksB text-center pt-12 lg:pt-[4.3vw] text-white">
             Full Stack Developer
             <span
               className="hidden absolute font-linksSB text-black text-[2.5vw] left-[25vw] top-[10.2vw] 
@@ -111,10 +114,25 @@ export default function Home() {
               className="grid grid-cols-8 gap-4 pt-6 
               lg:pt-24"
             >
-              <div className="col-span-full md:col-span-8 bg-red-500">asd</div>
+              {/* Item 1 */}
+              <div
+                className="col-span-full group relative overflow-hidden shadow-lg
+                md:col-span-8"
+              >
+                <Image
+                  className="border border-white rounded-sm w-full"
+                  src={ProjectImage1}
+                  alt="project 1"
+                />
+                <div className="overlap-title">sdo-laguna.com</div>
+              </div>
+
+              {/* Item 2 */}
               <div className="col-span-full lg:col-span-5 bg-green-500">
                 asd
               </div>
+
+              {/* Item 3 */}
               <div className="col-span-full lg:col-span-3 bg-blue-500">asd</div>
             </div>
             {/* End Project Grid Container */}
