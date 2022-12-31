@@ -111,14 +111,11 @@ export default function Home() {
 
             {/* Start Project Grid Container */}
             <div
-              className="grid grid-cols-8 gap-4 pt-6 
+              className="grid grid-cols-8 gap-6 pt-6 
               lg:pt-24"
             >
               {/* Item 1 */}
-              <div
-                className="col-span-full group relative overflow-hidden shadow-lg
-                md:col-span-8"
-              >
+              <div className="col-span-full group relative overflow-hidden shadow-lg">
                 <Image
                   className="border border-white rounded-sm w-full"
                   src={ProjectImage1}
@@ -128,12 +125,32 @@ export default function Home() {
               </div>
 
               {/* Item 2 */}
-              <div className="col-span-full lg:col-span-5 bg-green-500">
-                asd
+              <div
+                className="col-span-full group relative overflow-hidden shadow-lg row-span-2
+                md:col-span-5"
+              >
+                <Image
+                  className="border border-white rounded-sm w-full"
+                  src={ProjectImage2}
+                  alt="project 2"
+                />
+                <div className="overlap-title">
+                  lazada clone (reactjs + laravel)
+                </div>
               </div>
 
               {/* Item 3 */}
-              <div className="col-span-full lg:col-span-3 bg-blue-500">asd</div>
+              <div
+                className="col-span-full group relative overflow-hidden shadow-lg row-span-1
+                md:col-span-3"
+              >
+                <Image
+                  className="border border-white rounded-sm w-full"
+                  src={ProjectImage3}
+                  alt="project 3"
+                />
+                <div className="overlap-title">venture (flask)</div>
+              </div>
             </div>
             {/* End Project Grid Container */}
           </div>
