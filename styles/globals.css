@@ -90,4 +90,7 @@
   .section-container {
     @apply container mx-auto px-6 md:px-24;
   }
+  .socket {
+    @apply border-t-[1px] border-t-grayLighter w-full;
+  }
 }

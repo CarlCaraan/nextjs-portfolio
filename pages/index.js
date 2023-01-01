@@ -157,6 +157,32 @@ export default function Home() {
           {/* End Button Container */}
         </section>
         {/* ========= End Content Section ========= */}
+
+        {/* ========= Start Qoute Section ========= */}
+        <section
+          className="bg-white -mt-14 pt-32 
+          lg:-mt-32 lg:pt-64"
+          id="quote"
+        >
+          <div className="section-container">
+            {/* Horizonal Line */}
+            <div className="socket"></div>
+
+            <blockquote
+              className="text-2xl font-serif text-black text-center mt-12 
+              md:text-3xl md:leading-relaxed 
+              lg:leading-relaxed lg:text-5xl lg:mt-24 
+              xl:px-24"
+            >
+              “We can not solve our problems with the same level of thinking
+              that created them.”
+            </blockquote>
+            <h3 className="mt-20 text-center lg:text-3xl font-sansSB">
+              Albert Einstein
+            </h3>
+          </div>
+        </section>
+        {/* ========= End Qoute Section ========= */}
       </main>
     </Fragment>
   );
