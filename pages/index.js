@@ -205,7 +205,7 @@ export default function Home() {
                 <Link
                   href="/projects"
                   className="float-left text-grayLight text-2xl ml-2 mt-4
-                  xl:text-9xl lg:text-8xl md:text-7xl sm:text-2xl lg:ml-8 md:ml-4 md:mt-0"
+                  xl:text-9xl lg:text-8xl md:text-7xl sm:text-4xl lg:ml-8 md:ml-4 md:mt-0"
                 >
                   Show the
                 </Link>
