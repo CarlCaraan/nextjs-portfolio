@@ -93,7 +93,7 @@
   }
   /* Footer Link Style */
   .footer-links {
-    @apply font-linksR text-[22px] capitalize text-grayLight;
+    @apply font-linksR text-[22px] capitalize text-grayLight hover:text-black lg:hover:text-grayLight;
   }
   .footerlinks-hover {
     @apply duration-300 block w-0 border border-white group-hover:w-full group-hover:border group-hover:border-grayLight;

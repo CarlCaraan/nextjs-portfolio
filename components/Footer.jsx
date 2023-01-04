@@ -7,6 +7,7 @@ function Footer() {
   const { pathname } = router;
   return (
     <footer className="mt-8 pb-28" id="footer">
+      {/* Start Container */}
       <div className="section-container">
         {/* Horizontal Line */}
         <div className="border-t-4 border-t-grayLighter w-full"></div>
@@ -17,12 +18,12 @@ function Footer() {
             lg:flex-row"
         >
           <div className="basis-1/2">
-            <span className="uppercase font-linksL text-lg text-grayLight">
+            <div className="uppercase font-linksL text-lg text-grayLight text-center lg:text-left">
               Follow Me
-            </span>
+            </div>
           </div>
           <div className="basis-1/2">
-            {/* Footer Links */}
+            {/* Start Footer Flex Links */}
             <div
               className="flex flex-col space-x-0 mt-12 text-center space-y-12
                 xl:space-x-16 lg:space-x-8 lg:flex-row lg:space-y-0 lg:text-left lg:float-right"
@@ -72,10 +73,19 @@ function Footer() {
                 <span className="lg:footerlinks-hover"></span>
               </Link>
             </div>
+            {/* End Footer Flex Links */}
           </div>
         </div>
         {/* End Flex Container */}
+
+        <div
+          className="text-grayLight text-[22px] mt-12 text-center
+          lg:text-right"
+        >
+          &copy; C.Caraan 2022
+        </div>
       </div>
+      {/* End Container */}
     </footer>
   );
 }
