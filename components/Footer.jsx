@@ -17,15 +17,25 @@ function Footer() {
           className="flex flex-col mt-20 
             lg:flex-row"
         >
+          {/* Start Left Section */}
           <div className="basis-1/2">
             <div className="uppercase font-linksL text-lg text-grayLight text-center lg:text-left">
               Follow Me
             </div>
+            {/* Icon Wrapper Flex */}
+            <div className="flex mt-4 space-x-4">
+              <div className="rounded-full border border-grayLight p-6 hover:border-violet duration-300"></div>
+              <div className="rounded-full border border-grayLight p-6 hover:border-violet duration-300"></div>
+              <div className="rounded-full border border-grayLight p-6 hover:border-violet duration-300"></div>
+            </div>
           </div>
+          {/* End Left Section */}
+
+          {/* Start Right Section */}
           <div className="basis-1/2">
             {/* Start Footer Flex Links */}
             <div
-              className="flex flex-col space-x-0 mt-12 text-center space-y-12
+              className="flex flex-col space-x-0 mt-[3.5rem] text-center space-y-12
                 xl:space-x-16 lg:space-x-8 lg:flex-row lg:space-y-0 lg:text-left lg:float-right"
             >
               <Link
@@ -75,6 +85,7 @@ function Footer() {
             </div>
             {/* End Footer Flex Links */}
           </div>
+          {/* End Right Section */}
         </div>
         {/* End Flex Container */}
 
