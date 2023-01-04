@@ -26,34 +26,32 @@ function Navbar() {
         lg:flex"
         >
           <Link
-            className={pathname === "/about" ? "underline" : "hover:underline"}
+            className={pathname === "/about" ? "links-active" : "group"}
             href="/about"
           >
             About
+            <span className="navlinks-hover"></span>
           </Link>
           <Link
-            className={
-              pathname === "/projects" ? "underline" : "hover:underline"
-            }
+            className={pathname === "/projects" ? "links-active" : "group"}
             href="/projects"
           >
             Projects
+            <span className="navlinks-hover"></span>
           </Link>
           <Link
-            className={
-              pathname === "/experience" ? "underline" : "hover:underline"
-            }
+            className={pathname === "/experience" ? "links-active" : "group"}
             href="/experience"
           >
             Experience
+            <span className="navlinks-hover"></span>
           </Link>
           <Link
-            className={
-              pathname === "/contact" ? "underline" : "hover:underline"
-            }
+            className={pathname === "/contact" ? "links-active" : "group"}
             href="/contact"
           >
             Contact
+            <span className="navlinks-hover"></span>
           </Link>
           {/* Dark/Light Toggler */}
           <button id="theme-toggle" className="text-violet dark:text-panel">

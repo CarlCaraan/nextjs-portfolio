@@ -7,12 +7,15 @@ import ProjectImage1 from "../public/images/landing_page/Project 1.png";
 import ProjectImage2 from "../public/images/landing_page/Project 2.png";
 import ProjectImage3 from "../public/images/landing_page/Project 3.png";
 import User from "../public/images/landing_page/User.png";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
     <Fragment>
       <title>Carl Caraan | Web Developer</title>
+      {/* Start Navigation */}
       <Navbar />
+      {/* End Navigation */}
       <main>
         {/* ========= Start Hero Section ========= */}
         <section id="hero" className="section-container">
@@ -22,7 +25,7 @@ export default function Home() {
             lg:flex-row"
           >
             {/* Left Section */}
-            <div className="lg:w-1/2">
+            <div className="lg:basis-1/2">
               <h1
                 className="text-2xl font-sansB text-center mt-12
                 lg:text-start sm:text-5xl lg:mt-12 xl:mt-0"
@@ -54,7 +57,7 @@ export default function Home() {
             </div>
 
             {/* Right Section */}
-            <div className="lg:w-1/2">
+            <div className="lg:basis-1/2">
               <Image
                 className="w-3/4 mx-auto 
                 md:w-5/6 lg:mr-0"
@@ -222,6 +225,10 @@ export default function Home() {
           {/* End Container */}
         </section>
         {/* ========= End Pre-Footer Heading ========= */}
+
+        {/* ========= Start Footer ========= */}
+        <Footer />
+        {/* ========= End Footer ========= */}
       </main>
     </Fragment>
   );
