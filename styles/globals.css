@@ -104,6 +104,9 @@
   .section-container {
     @apply container mx-auto px-6 md:px-24;
   }
+  .section-container-fluid {
+    @apply w-11/12 mx-auto;
+  }
   .socket {
     @apply border-t-[1px] border-t-grayLighter w-full;
   }

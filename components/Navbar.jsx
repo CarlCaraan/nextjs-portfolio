@@ -8,8 +8,8 @@ function Navbar() {
   return (
     <nav
       id="navbar"
-      className="container mx-auto py-16 px-6
-      md:px-24"
+      className="container mx-auto py-4 px-6
+      md:px-24 md:py-16"
     >
       {/* Start Flex Container */}
       <div className="flex justify-between">
@@ -23,8 +23,8 @@ function Navbar() {
 
         {/* Links Wrapper */}
         <div
-          className="hidden space-x-12 items-center text-grayLight
-        lg:flex"
+          className="hidden space-x-6 items-center text-grayLight
+        md:flex lg:space-x-12"
         >
           <Link
             className={pathname === "/about" ? "links-active" : "group"}
