@@ -73,8 +73,8 @@ function Footer() {
           <div className="basis-1/2">
             {/* Start Footer Flex Links */}
             <div
-              className="flex flex-col space-x-0 mt-[3.5rem] text-center space-y-12
-                xl:space-x-16 lg:space-x-8 lg:flex-row lg:space-y-0 lg:text-left lg:float-right"
+              className="flex flex-col space-x-0 mt-[3.5rem] text-center space-y-4 text-base
+                xl:space-x-16 lg:space-x-8 lg:flex-row lg:space-y-0 lg:text-left lg:float-right sm:space-y-6"
             >
               <Link
                 className={
@@ -128,8 +128,8 @@ function Footer() {
         {/* End Flex Container */}
 
         <div
-          className="text-grayLight text-[22px] mt-12 text-center
-          lg:text-right"
+          className="text-grayLight mt-12 text-center text-base
+          lg:text-right lg:text-[22px]"
         >
           &copy; C.Caraan 2022
         </div>

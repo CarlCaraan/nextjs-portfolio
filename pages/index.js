@@ -107,8 +107,8 @@ export default function Home() {
             {/* Start Button */}
             <Link
               href="/projects"
-              className="custom-btn group text-center block w-full mt-12
-              lg:mt-8 lg:text-start lg:absolute lg:top-0 lg:right-[6rem] lg:w-32"
+              className="custom-btn group text-lg text-center block w-full mt-12
+              sm:text-xl lg:mt-8 lg:text-start lg:absolute lg:top-0 lg:right-[6rem] lg:w-32 lg:text-base"
             >
               View all{" "}
               <span
