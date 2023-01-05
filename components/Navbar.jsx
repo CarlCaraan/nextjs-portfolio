@@ -8,7 +8,7 @@ function Navbar() {
   return (
     <nav
       id="navbar"
-      className="container mx-auto py-4 px-6
+      className="container mx-auto py-8 px-6
       md:px-24 md:py-16"
     >
       {/* Start Flex Container */}
