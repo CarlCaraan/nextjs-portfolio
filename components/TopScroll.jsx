@@ -29,7 +29,6 @@ function TopScroll() {
       <defs>
         <style>{".cls-1{fill:#fff;}"}</style>
       </defs>
-      <title>{"arrow-up"}</title>
       <g id="arrow-up-Regular">
         <path
           id="arrow-up-Regular-2"
@@ -45,8 +44,8 @@ function TopScroll() {
     <Fragment>
       {showButton && (
         <div
-          className="right-20 bottom-12 border rounded-full hover:shadow p-3 fixed duration-300 bg-grayLightest hover:bg-panel"
-          id="top-scroll"
+          className="right-20 bottom-12 rounded-full shadow-sm p-3 duration-300 bg-grayLightest hover:shadow-md hover:bg-panel hidden 
+          lg:fixed lg:block"
           onClick={ArrowBtnClickHandler}
         >
           <ArrowIcon className="w-8" />
