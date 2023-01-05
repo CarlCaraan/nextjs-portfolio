@@ -8,14 +8,17 @@ import ProjectImage2 from "../public/images/landing_page/Project 2.png";
 import ProjectImage3 from "../public/images/landing_page/Project 3.png";
 import User from "../public/images/landing_page/User.png";
 import Footer from "../components/Footer";
+import TopScroll from "../components/TopScroll";
 
 export default function Home() {
   return (
     <Fragment>
       <title>Carl Caraan | Web Developer</title>
-      {/* Start Navigation */}
+      {/* ========= Start Navigation ========= */}
       <Navbar />
-      {/* End Navigation */}
+      {/* ========= End Navigation ========= */}
+
+      {/* ========= Start Main Content ========= */}
       <main>
         {/* ========= Start Hero Section ========= */}
         <section id="hero" className="section-container">
@@ -230,6 +233,11 @@ export default function Home() {
         <Footer />
         {/* ========= End Footer ========= */}
       </main>
+      {/* ========= End Main Content ========= */}
+
+      {/* ========= Start Top Scroll ========= */}
+      <TopScroll />
+      {/* ========= End Top Scroll ========= */}
     </Fragment>
   );
 }

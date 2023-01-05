@@ -6,7 +6,8 @@ function Navbar() {
   const router = useRouter();
   const { pathname } = router;
   return (
-    <div
+    <nav
+      id="navbar"
       className="container mx-auto py-16 px-6
       md:px-24"
     >
@@ -83,7 +84,7 @@ function Navbar() {
         </div>
       </div>
       {/* End Flex Container */}
-    </div>
+    </nav>
   );
 }
 

@@ -3,11 +3,11 @@ import Meta from "../components/Meta";
 
 export default function Document() {
   return (
-    <Html lang="en" className="">
+    <Html lang="en" className="scroll-smooth">
       <Head>
         <Meta />
       </Head>
-      <body className="antialiased scroll-smooth">
+      <body className="antialiased relative">
         <Main />
         <NextScript />
       </body>
