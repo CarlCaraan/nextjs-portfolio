@@ -43,7 +43,10 @@ function Footer() {
               Follow Me
             </div>
             {/* Icon Wrapper Flex */}
-            <div className="flex mt-4 space-x-4">
+            <div
+              className="flex mt-4 space-x-4 justify-center pb-8 
+              lg:justify-start lg:pb-0"
+            >
               <Link href="https://www.facebook.com/caraancarl/" target="_blank">
                 <div className="group rounded-full border border-grayLighter p-2 hover:border-violet duration-300">
                   <FacebookIcon className="w-8 fill-grayLighter group-hover:fill-violet duration-300" />
