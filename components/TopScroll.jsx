@@ -44,7 +44,7 @@ function TopScroll() {
     <Fragment>
       {showButton && (
         <div
-          className="right-20 bottom-12 rounded-full shadow-sm p-3 duration-300 bg-grayLightest hover:shadow-md hover:bg-panel hidden 
+          className="right-20 bottom-12 rounded-full shadow-sm p-3 duration-300 bg-grayLightest hover:shadow-md hover:bg-panel hidden cursor-pointer 
           lg:fixed lg:block"
           onClick={ArrowBtnClickHandler}
         >

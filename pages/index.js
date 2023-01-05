@@ -105,7 +105,8 @@ export default function Home() {
           {/* Start Container */}
           <div className="section-container relative">
             {/* Start Button */}
-            <button
+            <Link
+              href="/projects"
               className="custom-btn group text-center block w-full mt-12
               lg:mt-8 lg:text-start lg:absolute lg:top-0 lg:right-[6rem] lg:w-32"
             >
@@ -116,7 +117,7 @@ export default function Home() {
               >
                 &rarr;
               </span>
-            </button>
+            </Link>
             {/* End Button */}
 
             {/* Start Project Grid Container */}
