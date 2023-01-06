@@ -58,7 +58,7 @@ function Footer() {
                 </div>
               </Link>
               <Link
-                href="https://www.linkedin.com/in/carl-aaron-caraan-b862aa220/"
+                href="https://www.linkedin.com/in/caraancarlaaron/"
                 target="_blank"
               >
                 <div className="group rounded-full border border-grayLight p-3 hover:border-violet duration-300">
