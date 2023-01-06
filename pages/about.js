@@ -71,7 +71,26 @@ function about() {
           lg:mt-0"
           id="profile"
         >
-          <div className="section-container-fluid">Profile</div>
+          <div className="section-container-fluid">
+            {/* Start Grid Container */}
+            <div className="grid place-items-center">
+              <div className="uppercase text-5xl col-span-1 justify-self-start">
+                Profile
+              </div>
+              <div className="socket col-start-2 col-span-10"></div>
+              {/* Start Profile Content */}
+              <div className="col-start-2 col-span-9 justify-self-stretch py-24">
+                {/* Start Flex Container */}
+                <div className="flex flex-col lg:flex-row">
+                  <div className="basis-1/2 bg-cyan-200">1</div>
+                  <div className="basis-1/2 bg-slate-400">2</div>
+                </div>
+                {/* End Flex Container */}
+              </div>
+              {/* End Profile Content */}
+            </div>
+            {/* End Grid Container */}
+          </div>
         </section>
         {/* ========= End Profile Section ========= */}
 
