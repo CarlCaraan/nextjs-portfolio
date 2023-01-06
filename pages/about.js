@@ -167,7 +167,7 @@ function about() {
                           Interests
                         </div>
                         <div
-                          className="basis-3/5 text-base text-grayLighter max-w-sm
+                          className="basis-3/5 text-base text-grayLighter max-w-sm auto-hyphen md:off-hyphen
                           sm:text-xl"
                         >
                           I love art and drawing since I was in elementary

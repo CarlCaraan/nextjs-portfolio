@@ -110,4 +110,10 @@
   .socket {
     @apply border-t-[1px] border-t-grayLighter w-full;
   }
+  .auto-hyphen {
+    hyphens: auto;
+  }
+  .off-hyphen {
+    hyphens: none;
+  }
 }
