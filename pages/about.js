@@ -82,7 +82,64 @@ function about() {
               <div className="col-start-2 col-span-9 justify-self-stretch py-24">
                 {/* Start Flex Container */}
                 <div className="flex flex-col lg:flex-row">
-                  <div className="basis-1/2 bg-cyan-200">1</div>
+                  <div className="basis-1/2">
+                    <div className="pt-12">
+                      <h1 className="text-5xl">Caraan Carl</h1>
+                      <p className="text-xl">Carl Aaron D. Caraan</p>
+                    </div>
+
+                    {/* Start Inner Flex Container */}
+                    <div className="flex-col space-y-8 mt-12">
+                      {/* Item 1 */}
+                      <div className="flex">
+                        <div className="w-1/3 text-xl text-black">
+                          Date of Birth
+                        </div>
+                        <div className="text-xl text-grayLighter">
+                          November 28, 1999
+                        </div>
+                      </div>
+                      {/* Item 2 */}
+                      <div className="flex">
+                        <div className="w-1/3 text-xl text-black">
+                          Birthplace
+                        </div>
+                        <div className="text-xl text-grayLighter">
+                          Santa Cruz, Laguna
+                        </div>
+                      </div>
+                      {/* Item 3 */}
+                      <div className="flex">
+                        <div className="w-1/3 text-xl text-black">
+                          Education
+                        </div>
+                        <div className="text-xl text-grayLighter">
+                          BS Information Technology <br />
+                          Laguna State Polytechnic University
+                        </div>
+                      </div>
+                      {/* Item 4 */}
+                      <div className="flex">
+                        <div className="w-1/3 text-xl text-black">
+                          Interests
+                        </div>
+                        <div className="text-xl text-grayLighter max-w-xs">
+                          I love art and drawing since I was in elementary
+                          school. I think that practice has shaped the abilities
+                          that enable me to fully immerse myself in the things I
+                          enjoy.
+                        </div>
+                      </div>
+                      {/* Item 5 */}
+                      <div className="flex">
+                        <div className="w-1/3 text-xl text-black">Area</div>
+                        <div className="text-xl text-grayLighter">
+                          Interaction Design, Backend Logic
+                        </div>
+                      </div>
+                    </div>
+                    {/* End Inner Flex Container */}
+                  </div>
                   <div className="basis-1/2 bg-slate-400">2</div>
                 </div>
                 {/* End Flex Container */}
