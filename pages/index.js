@@ -83,7 +83,7 @@ export default function Home() {
           id="content"
         >
           {/* Start Content Heading */}
-          <div className="relative text-[6.7vw] font-linksB text-center pt-12 lg:pt-[4.3vw] text-white">
+          <div className="relative text-[6.7vw] font-linksB text-center pt-12 lg:pt-[4.3vw] text-white select-none">
             Full Stack Developer
             <span
               className="hidden absolute font-linksSB text-black text-[2.5vw] left-[25vw] top-[10.2vw] 

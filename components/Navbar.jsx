@@ -15,7 +15,7 @@ function Navbar() {
       <div className="flex justify-between">
         {/* Brand */}
         <Link href="/">
-          <div className="flex flex-col">
+          <div className="flex flex-col select-none">
             <span className="text-2xl">Carl Caraan</span>
             <span className="text-grayLightest">Web Developer</span>
           </div>

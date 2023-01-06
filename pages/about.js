@@ -24,7 +24,10 @@ function about() {
               md:flex-row"
             >
               <div className="basis-2/5 pt-16">
-                <div className="uppercase text-[6.6vw] leading-none">
+                <div
+                  className="uppercase text-[6.6vw] leading-none 
+                  lg:select-none"
+                >
                   About{" "}
                   <span
                     className="block 
@@ -35,13 +38,16 @@ function about() {
                 </div>
                 <div
                   className="uppercase text-[6.6vw] leading-none ml-[16.7vw] hidden 
-                  md:block"
+                  md:block lg:select-none"
                 >
                   Me
                 </div>
               </div>
               <div className="basis-3/5 py-[12vw]">
-                <h1 className="text-[3.6vw] leading-tight">
+                <h1
+                  className="text-[3.6vw] leading-tight 
+                  lg:select-none"
+                >
                   To be a developer who solves real world problem
                 </h1>
                 <p
