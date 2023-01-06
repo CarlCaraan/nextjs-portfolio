@@ -74,56 +74,102 @@ function about() {
           <div className="section-container-fluid">
             {/* Start Grid Container */}
             <div className="grid place-items-center">
-              <div className="uppercase text-5xl col-span-1 justify-self-start">
+              {/* Title Heading */}
+              <div
+                className="uppercase text-2xl col-span-1 justify-self-start pr-4
+              lg:text-5xl md:text-3xl"
+              >
                 Profile
               </div>
+              {/* Horizontal Rule */}
               <div className="socket col-start-2 col-span-10"></div>
+
               {/* Start Profile Content */}
-              <div className="col-start-2 col-span-9 justify-self-stretch py-24">
+              <div
+                className="col-start-1 col-span-9 justify-self-stretch py-4
+                md:col-start-2 md:py-24"
+              >
                 {/* Start Flex Container */}
-                <div className="flex flex-col lg:flex-row">
+                <div
+                  className="flex flex-col-reverse
+                  xl:flex-row"
+                >
                   <div className="basis-1/2">
                     <div className="pt-12">
-                      <h1 className="text-5xl">Caraan Carl</h1>
-                      <p className="text-xl">Carl Aaron D. Caraan</p>
+                      <h1
+                        className="text-2xl 
+                        md:text-3xl lg:text-4xl xl:text-5xl"
+                      >
+                        Caraan Carl
+                      </h1>
+                      <p
+                        className="text-base 
+                        sm:text-xl"
+                      >
+                        Carl Aaron D. Caraan
+                      </p>
                     </div>
 
                     {/* Start Inner Flex Container */}
                     <div className="flex-col space-y-8 mt-12">
                       {/* Item 1 */}
                       <div className="flex">
-                        <div className="w-1/3 text-xl text-black">
+                        <div
+                          className="basis-2/5 text-base text-black 
+                          sm:text-xl"
+                        >
                           Date of Birth
                         </div>
-                        <div className="text-xl text-grayLighter">
+                        <div
+                          className="basis-3/5 text-base text-grayLighter max-w-sm
+                          sm:text-xl"
+                        >
                           November 28, 1999
                         </div>
                       </div>
                       {/* Item 2 */}
                       <div className="flex">
-                        <div className="w-1/3 text-xl text-black">
+                        <div
+                          className="basis-2/5 text-base text-black 
+                          sm:text-xl"
+                        >
                           Birthplace
                         </div>
-                        <div className="text-xl text-grayLighter">
+                        <div
+                          className="basis-3/5 text-base text-grayLighter max-w-sm
+                          sm:text-xl"
+                        >
                           Santa Cruz, Laguna
                         </div>
                       </div>
                       {/* Item 3 */}
                       <div className="flex">
-                        <div className="w-1/3 text-xl text-black">
+                        <div
+                          className="basis-2/5 text-base text-black 
+                          sm:text-xl"
+                        >
                           Education
                         </div>
-                        <div className="text-xl text-grayLighter">
+                        <div
+                          className="basis-3/5 text-base text-grayLighter max-w-sm
+                          sm:text-xl"
+                        >
                           BS Information Technology <br />
                           Laguna State Polytechnic University
                         </div>
                       </div>
                       {/* Item 4 */}
                       <div className="flex">
-                        <div className="w-1/3 text-xl text-black">
+                        <div
+                          className="basis-2/5 text-base text-black 
+                          sm:text-xl"
+                        >
                           Interests
                         </div>
-                        <div className="text-xl text-grayLighter max-w-xs">
+                        <div
+                          className="basis-3/5 text-base text-grayLighter max-w-sm
+                          sm:text-xl"
+                        >
                           I love art and drawing since I was in elementary
                           school. I think that practice has shaped the abilities
                           that enable me to fully immerse myself in the things I
@@ -132,8 +178,16 @@ function about() {
                       </div>
                       {/* Item 5 */}
                       <div className="flex">
-                        <div className="w-1/3 text-xl text-black">Area</div>
-                        <div className="text-xl text-grayLighter">
+                        <div
+                          className="basis-2/5 text-base text-black 
+                          sm:text-xl"
+                        >
+                          Area
+                        </div>
+                        <div
+                          className="basis-3/5 text-base text-grayLighter max-w-sm
+                          sm:text-xl"
+                        >
                           Interaction Design, Backend Logic
                         </div>
                       </div>
