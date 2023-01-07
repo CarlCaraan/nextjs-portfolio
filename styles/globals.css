@@ -101,6 +101,10 @@
   .footerlinks-hover {
     @apply duration-300 block w-0 border border-white group-hover:w-full group-hover:border group-hover:border-grayLight;
   }
+  /* About > Skills */
+  .skills-heading {
+    @apply text-2xl text-grayLighter font-sansSB;
+  }
 }
 
 @layer utilities {
@@ -118,5 +122,9 @@
   }
   .off-hyphen {
     hyphens: none;
+  }
+  .custom-border-dashed {
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='black' stroke-width='2' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='round'/%3e%3c/svg%3e");
+    @apply px-12 py-8;
   }
 }
