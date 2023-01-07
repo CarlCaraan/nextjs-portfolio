@@ -121,7 +121,7 @@ function about() {
                           Date of Birth
                         </div>
                         <div
-                          className="basis-3/5 text-base text-grayLighter max-w-sm
+                          className="basis-3/5 text-base text-grayLight max-w-sm
                           sm:text-xl"
                         >
                           November 28, 1999
@@ -136,7 +136,7 @@ function about() {
                           Birthplace
                         </div>
                         <div
-                          className="basis-3/5 text-base text-grayLighter max-w-sm
+                          className="basis-3/5 text-base text-grayLight max-w-sm
                           sm:text-xl"
                         >
                           Santa Cruz, Laguna
@@ -151,7 +151,7 @@ function about() {
                           Education
                         </div>
                         <div
-                          className="basis-3/5 text-base text-grayLighter max-w-sm
+                          className="basis-3/5 text-base text-grayLight max-w-sm
                           sm:text-xl"
                         >
                           BS Information Technology <br />
@@ -167,7 +167,7 @@ function about() {
                           Interests
                         </div>
                         <div
-                          className="basis-3/5 text-base text-grayLighter max-w-sm auto-hyphen md:off-hyphen
+                          className="basis-3/5 text-base text-grayLight max-w-sm auto-hyphen md:off-hyphen
                           sm:text-xl"
                         >
                           I love art and drawing since I was in elementary
@@ -185,7 +185,7 @@ function about() {
                           Area
                         </div>
                         <div
-                          className="basis-3/5 text-base text-grayLighter max-w-sm
+                          className="basis-3/5 text-base text-grayLight max-w-sm
                           sm:text-xl"
                         >
                           Interaction Design, Backend Logic
