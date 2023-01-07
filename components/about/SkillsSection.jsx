@@ -1,5 +1,9 @@
 import React from "react";
 import AboutHeading from "./AboutHeading";
+import Image from "next/image";
+
+import figma from "../../public/images/about/figma.svg";
+import adobeXD from "../../public/images/about/adobe xd.svg";
 
 function SkillsSection({ props }) {
   return (
@@ -58,6 +62,21 @@ function SkillsSection({ props }) {
                   md:col-span-2"
                 >
                   <h4 className="skills-heading">UX/UI</h4>
+                  <div className="flex justify-between gap-4">
+                    <div className="neumorphism-box">
+                      <Image src={figma} alt={figma}></Image>
+                    </div>
+                    <div className="neumorphism-box">
+                      <span className="font-sansSB text-2xl mr-1 cursor-default select-none">
+                        Adobe
+                      </span>
+                      <Image
+                        className="w-1/3"
+                        src={adobeXD}
+                        alt={adobeXD}
+                      ></Image>
+                    </div>
+                  </div>
                 </div>
                 <div
                   className="custom-border-dashed col-span-7 
