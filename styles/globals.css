@@ -107,7 +107,6 @@
   }
   .neumorphism-box {
     @apply hover:bg-white rounded-md transition-all ease-in duration-200 w-1/2 py-2 grayscale hover:grayscale-0 flex items-center justify-center;
-
     box-shadow: 4px 4px 8px #cdcdcd, -4px -4px 8px #ffffff;
   }
 }
