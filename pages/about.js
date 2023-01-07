@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import TopScroll from "../components/TopScroll";
 import ProfileSection from "../components/about/ProfileSection";
+import SkillsSection from "../components/about/SkillsSection";
 
 function about() {
   return (
@@ -66,8 +67,12 @@ function about() {
         {/* ========= End Herosection ========= */}
 
         {/* ========= Start Profile Section ========= */}
-        <ProfileSection />
+        <ProfileSection props={{ text: "Profile" }} />
         {/* ========= End Profile Section ========= */}
+
+        {/* ========= Start Skills Section ========= */}
+        <SkillsSection props={{ text: "Skills" }} />
+        {/* ========= End Skills Section ========= */}
 
         {/* ========= Start Footer ========= */}
         <Footer />

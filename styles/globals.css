@@ -89,7 +89,7 @@
     @apply mx-auto block w-full border border-black;
   }
   .navlinks-hover {
-    @apply mx-auto ease-out duration-150 block w-0 border border-white group-hover:w-full group-hover:border group-hover:border-grayLight;
+    @apply mx-auto ease-out duration-300 block w-0 border border-white group-hover:w-full group-hover:border group-hover:border-grayLight;
   }
   /* Footer */
   .footer-links {

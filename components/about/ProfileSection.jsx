@@ -3,7 +3,7 @@ import Image from "next/image";
 import UserImage from "../../public/images/userbg.png";
 import AboutHeading from "./AboutHeading";
 
-function ProfileSection() {
+function ProfileSection({ props }) {
   return (
     <section
       className="mt-12 
@@ -14,7 +14,7 @@ function ProfileSection() {
         {/* Start Grid Container */}
         <div className="grid place-items-center">
           {/* Start About Heading */}
-          <AboutHeading />
+          <AboutHeading props={props.text} />
           {/* End About Heading */}
 
           {/* Start Profile Content */}
@@ -54,7 +54,7 @@ function ProfileSection() {
                       Date of Birth
                     </div>
                     <div
-                      className="basis-3/5 text-base text-grayLight max-w-sm
+                      className="basis-3/5 text-base text-grayLight
                           sm:text-xl"
                     >
                       November 28, 1999
@@ -69,7 +69,7 @@ function ProfileSection() {
                       Birthplace
                     </div>
                     <div
-                      className="basis-3/5 text-base text-grayLight max-w-sm
+                      className="basis-3/5 text-base text-grayLight
                           sm:text-xl"
                     >
                       Santa Cruz, Laguna
@@ -84,7 +84,7 @@ function ProfileSection() {
                       Education
                     </div>
                     <div
-                      className="basis-3/5 text-base text-grayLight max-w-sm
+                      className="basis-3/5 text-base text-grayLight
                           sm:text-xl"
                     >
                       BS Information Technology <br />
@@ -100,8 +100,8 @@ function ProfileSection() {
                       Interests
                     </div>
                     <div
-                      className="basis-3/5 text-base text-grayLight max-w-sm auto-hyphen md:off-hyphen
-                          sm:text-xl"
+                      className="basis-3/5 text-base text-grayLight auto-hyphen 
+                      xl:off-hyphen sm:text-xl"
                     >
                       I love art and drawing since I was in elementary school. I
                       think that practice has shaped the abilities that enable
@@ -117,7 +117,7 @@ function ProfileSection() {
                       Area
                     </div>
                     <div
-                      className="basis-3/5 text-base text-grayLight max-w-sm
+                      className="basis-3/5 text-base text-grayLight
                           sm:text-xl"
                     >
                       Interaction Design, Backend Logic

@@ -1,14 +1,15 @@
 import React, { Fragment } from "react";
 
-function AboutHeading() {
+function AboutHeading(props) {
+  let headingText = props.props;
   return (
     <Fragment>
       {/* Title Heading */}
       <div
-        className="uppercase text-2xl col-span-1 justify-self-start pr-4
-              lg:text-5xl md:text-3xl"
+        className="uppercase text-2xl col-span-1 justify-self-start pr-4 
+        lg:w-60 lg:text-5xl md:text-3xl"
       >
-        Profile
+        {headingText}
       </div>
       {/* Horizontal Rule */}
       <div className="socket col-start-2 col-span-10"></div>
