@@ -67,8 +67,6 @@ export default function Home() {
                 // src="/images/userbg.png"
                 src={UserImage}
                 alt="carlcaraan"
-                width={500}
-                height={500}
               />
             </div>
           </div>

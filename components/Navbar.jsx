@@ -26,33 +26,39 @@ function Navbar() {
           className="hidden space-x-6 items-center text-grayLight
         md:flex lg:space-x-12"
         >
-          <Link
-            className={pathname === "/about" ? "links-active" : "group"}
-            href="/about"
-          >
+          <Link className="group" href="/about">
             About
-            <span className="navlinks-hover"></span>
+            <span
+              className={
+                pathname === "/about" ? "navlinks-active" : "navlinks-hover"
+              }
+            ></span>
           </Link>
-          <Link
-            className={pathname === "/projects" ? "links-active" : "group"}
-            href="/projects"
-          >
+          <Link className="group" href="/projects">
             Projects
-            <span className="navlinks-hover"></span>
+            <span
+              className={
+                pathname === "/projects" ? "navlinks-active" : "navlinks-hover"
+              }
+            ></span>
           </Link>
-          <Link
-            className={pathname === "/experience" ? "links-active" : "group"}
-            href="/experience"
-          >
+          <Link className="group" href="/experience">
             Experience
-            <span className="navlinks-hover"></span>
+            <span
+              className={
+                pathname === "/experience"
+                  ? "navlinks-active"
+                  : "navlinks-hover"
+              }
+            ></span>
           </Link>
-          <Link
-            className={pathname === "/contact" ? "links-active" : "group"}
-            href="/contact"
-          >
+          <Link className="group" href="/contact">
             Contact
-            <span className="navlinks-hover"></span>
+            <span
+              className={
+                pathname === "/contact" ? "navlinks-active" : "navlinks-hover"
+              }
+            ></span>
           </Link>
           {/* Dark/Light Toggler */}
           <button id="theme-toggle" className="text-violet dark:text-panel">
