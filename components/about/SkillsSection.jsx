@@ -19,6 +19,8 @@ import firebase from "../../public/images/about/firebase.svg";
 import mysql from "../../public/images/about/mysql.svg";
 import vscode from "../../public/images/about/vs code.svg";
 import git from "../../public/images/about/git.svg";
+import Link from "next/link";
+import resume from "../../public/downloads/caraan_resume.pdf";
 
 function SkillsSection({ props }) {
   return (
@@ -208,6 +210,22 @@ function SkillsSection({ props }) {
             </div>
           </div>
           {/* End Grid Container */}
+
+          {/* Start Post Skills Content */}
+          <div className="my-52 text-center">
+            <h1 className="text-5xl font-sansSB mb-12">
+              Work that matters to
+              <br /> clients who value design
+            </h1>
+
+            <a
+              className="text-xl font-sansSB underline hover:no-underline"
+              href={resume}
+            >
+              Download CV
+            </a>
+          </div>
+          {/* End Post Skills Content */}
         </div>
       </div>
       {/* End Skills Content */}
