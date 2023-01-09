@@ -218,12 +218,13 @@ function SkillsSection({ props }) {
               <br /> clients who value design
             </h1>
 
-            <a
+            <Link
               className="text-xl font-sansSB underline hover:no-underline"
               href={resume}
+              target="_blank"
             >
               Download CV
-            </a>
+            </Link>
           </div>
           {/* End Post Skills Content */}
         </div>
