@@ -20,12 +20,11 @@ import mysql from "../../public/images/about/mysql.svg";
 import vscode from "../../public/images/about/vs code.svg";
 import git from "../../public/images/about/git.svg";
 import Link from "next/link";
-import resume from "../../public/downloads/caraan_resume.pdf";
 
 function SkillsSection({ props }) {
   return (
     <section
-      className="mt-12 
+      className="mt-12 mb-28
           lg:mt-0"
       id="Skills"
     >
@@ -212,19 +211,39 @@ function SkillsSection({ props }) {
           {/* End Grid Container */}
 
           {/* Start Post Skills Content */}
-          <div className="my-52 text-center">
-            <h1 className="text-5xl font-sansSB mb-12">
+          <div
+            className="mt-24 mb-8 text-center text-black 
+            sm:my-52"
+          >
+            <h1
+              className="text-2xl font-sansSB mb-12 
+              sm:text-5xl"
+            >
               Work that matters to
               <br /> clients who value design
             </h1>
 
-            <Link
-              className="text-xl font-sansSB underline hover:no-underline"
-              href={resume}
-              target="_blank"
+            <div
+              className="flex flex-col space-y-12
+              sm:space-y-24"
             >
-              Download CV
-            </Link>
+              <Link
+                className="text-base font-sansSB underline hover:no-underline 
+                sm:text-xl"
+                href="/downloads/caraan_resume.pdf"
+                target="_blank"
+              >
+                Download CV
+              </Link>
+
+              <a
+                className="text-base hover:text-violet duration-200 
+                sm:text-2xl"
+                href="mailto:caraancarlaaron@gmail.com"
+              >
+                caraancarlaaron@gmail.com
+              </a>
+            </div>
           </div>
           {/* End Post Skills Content */}
         </div>
