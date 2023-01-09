@@ -24,7 +24,7 @@ import Link from "next/link";
 function SkillsSection({ props }) {
   return (
     <section
-      className="mt-12 mb-28
+      className="mt-12 sm:mb-28
           lg:mt-0"
       id="Skills"
     >
@@ -212,8 +212,8 @@ function SkillsSection({ props }) {
 
           {/* Start Post Skills Content */}
           <div
-            className="mt-24 mb-8 text-center text-black 
-            sm:my-52"
+            className="mt-24 mb-0 text-center text-black 
+              sm:mt-64 sm:mb-8"
           >
             <h1
               className="text-2xl font-sansSB mb-12 
