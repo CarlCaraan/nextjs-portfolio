@@ -213,7 +213,7 @@ function SkillsSection({ props }) {
           {/* Start Post Skills Content */}
           <div
             className="mt-24 mb-0 text-center text-black 
-              sm:mt-64 sm:mb-8"
+            sm:mt-64 sm:mb-8"
           >
             <h1
               className="text-2xl font-sansSB mb-12 
