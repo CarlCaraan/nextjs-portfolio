@@ -16,7 +16,7 @@ function about() {
       {/* ========= Start Main Content ========= */}
       <main>
         {/* ========= Start Herosection ========= */}
-        <section className="lg:h-screen" id="hero">
+        <section className="lg:mt-12 lg:h-screen" id="hero">
           {/* Start Section Container */}
           <div className="section-container-fluid">
             {/* Start Flex Container */}
