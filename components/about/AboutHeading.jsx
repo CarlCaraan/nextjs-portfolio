@@ -6,7 +6,7 @@ function AboutHeading(props) {
     <Fragment>
       {/* Title Heading */}
       <div
-        className="uppercase text-2xl col-span-1 justify-self-start pr-4 
+        className="uppercase text-2xl col-span-1 justify-self-start pr-4 font-serif 
         lg:w-60 lg:text-5xl md:text-3xl"
       >
         {headingText}

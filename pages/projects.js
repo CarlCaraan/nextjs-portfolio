@@ -33,12 +33,7 @@ function projects() {
           <div className="section-container">
             {/* Start Heading */}
             <div className="mt-12 lg:mt-24">
-              <h1
-                className="text-2xl leading-loose font-sansSB text-black select-none 
-                lg:leading-tight sm:text-[6.6vw] sm:-ml-1 lg:-ml-2"
-              >
-                Latest Projects
-              </h1>
+              <h1 className="big-heading-text">Latest Projects</h1>
               <p
                 className="text-base leading-tight text-grayLight 
                 xl:w-1/2 lg:text-[1.25vw] sm:text-lg"
