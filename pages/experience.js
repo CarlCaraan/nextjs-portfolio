@@ -26,17 +26,89 @@ function experience() {
             <div className="mt-44">
               <div className="socket"></div>
               <div className="mt-24">
-                <h1 className="text-5xl font-serif text-black text-center">
+                <h1
+                  className="text-xl font-serif text-black text-center 
+                  sm:text-2xl lg:text-5xl"
+                >
                   Education & Experience
                 </h1>
                 {/* Start Flex Container */}
                 <div
-                  className="flex flex-col mt-12
+                  className="flex flex-col mt-12 gap-4 space-y-12 md:space-y-0
                   md:flex-row"
                 >
-                  <div className="basis-1/3">1</div>
-                  <div className="basis-1/3">2</div>
-                  <div className="basis-1/3">3</div>
+                  <div className="education-flex-item">
+                    {/* Year Heading */}
+                    <div className="text-base text-grayLightest">
+                      2019 - Present
+                    </div>
+
+                    {/* Item */}
+                    <div>
+                      <h4 className="education-title">Web Developer</h4>
+                      <p className="education-subtitle">Freelancer</p>
+                    </div>
+
+                    {/* Item */}
+                    <div>
+                      <h4 className="education-title">
+                        BS in Information Technology
+                      </h4>
+                      <p className="education-subtitle">
+                        Laguna State Polytechnic University
+                      </p>
+                    </div>
+
+                    {/* Item */}
+                    <div>
+                      <h4 className="education-title">
+                        Major in Web Development
+                      </h4>
+                      <p className="education-subtitle">
+                        Laguna State Polytechnic University
+                      </p>
+                    </div>
+
+                    {/* Item */}
+                    <div>
+                      <h4 className="education-title">
+                        College Dean&#39;s Lister
+                      </h4>
+                      <p className="education-subtitle">
+                        Laguna State Polytechnic University
+                      </p>
+                    </div>
+                  </div>
+                  <div className="education-flex-item">
+                    {/* Year Heading */}
+                    <div className="text-base text-grayLightest">
+                      2017 - 2019
+                    </div>
+
+                    {/* Item */}
+                    <div>
+                      <h4 className="education-title">Senior Highschool</h4>
+                      <p className="education-subtitle">Santa Maria Academy</p>
+                    </div>
+
+                    {/* Item */}
+                    <div>
+                      <h4 className="education-title">NCAE Topnotcher</h4>
+                      <p className="education-subtitle">Santa Maria Academy</p>
+                    </div>
+                  </div>
+                  <div className="education-flex-item">
+                    {/* Year Heading */}
+                    <div className="text-base text-grayLightest">
+                      2013 - 2017
+                    </div>
+
+                    {/* Item */}
+                    <div>
+                      <h4 className="education-title">Junior Highschool</h4>
+                      <p className="education-subtitle">Santa Maria Academy</p>
+                    </div>
+                  </div>
                 </div>
                 {/* End Flex Container */}
               </div>

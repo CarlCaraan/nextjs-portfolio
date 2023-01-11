@@ -139,6 +139,18 @@
     @apply text-base text-grayLight
     xl:text-xl;
   }
+  /* Experience > Education  */
+  .education-flex-item {
+    @apply basis-1/3 flex flex-col space-y-8 
+    lg:space-y-16;
+  }
+  .education-title {
+    @apply text-base text-black 
+    lg:text-2xl md:text-lg sm:text-xl;
+  }
+  .education-subtitle {
+    @apply text-base text-grayLighter;
+  }
 }
 
 @layer utilities {
