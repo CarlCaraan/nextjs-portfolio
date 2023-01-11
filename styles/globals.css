@@ -170,7 +170,7 @@
     hyphens: none;
   }
   .big-heading-text {
-    @apply text-2xl leading-loose font-sansSB text-black select-none 
+    @apply text-3xl leading-loose font-sansSB text-black select-none 
     lg:leading-tight sm:text-[6.6vw] sm:-ml-1 lg:-ml-2;
   }
 }

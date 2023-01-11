@@ -27,7 +27,7 @@ function experience() {
               <div className="socket"></div>
               <div className="mt-12 md:mt-16 lg:mt-28">
                 <h1
-                  className="text-xl font-serif text-black text-center 
+                  className="text-2xl font-serif text-black text-center 
                   sm:text-2xl lg:text-5xl"
                 >
                   Education & Experience
