@@ -140,6 +140,10 @@
     xl:text-xl;
   }
   /* Experience > Education  */
+  .experience-heading {
+    @apply text-2xl font-serif text-black text-center 
+    sm:text-2xl lg:text-5xl;
+  }
   .education-flex-item {
     @apply basis-1/3 flex flex-col space-y-8 
     lg:space-y-16;

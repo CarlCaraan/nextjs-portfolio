@@ -26,12 +26,7 @@ function experience() {
             <div className="mt-24 md:mt-44">
               <div className="socket"></div>
               <div className="mt-12 md:mt-16 lg:mt-28">
-                <h1
-                  className="text-2xl font-serif text-black text-center 
-                  sm:text-2xl lg:text-5xl"
-                >
-                  Education & Experience
-                </h1>
+                <h1 className="experience-heading">Education & Experience</h1>
                 {/* Start Flex Container */}
                 <div
                   className="flex flex-col mt-12 gap-4 space-y-12 md:space-y-0
