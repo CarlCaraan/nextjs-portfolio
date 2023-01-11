@@ -76,7 +76,14 @@ function Footer() {
               className="flex flex-col space-x-0 mt-[3.5rem] text-center space-y-4 text-base
                 xl:space-x-16 lg:space-x-8 lg:flex-row lg:space-y-0 lg:text-left lg:float-right sm:space-y-6"
             >
-              <Link className="footer-links group" href="/about">
+              <Link
+                className={
+                  pathname === "/about"
+                    ? "footer-links group underline lg:no-underline"
+                    : "footer-links group"
+                }
+                href="/about"
+              >
                 about
                 <span
                   className={
@@ -86,7 +93,14 @@ function Footer() {
                   }
                 ></span>
               </Link>
-              <Link className="footer-links group" href="/experience">
+              <Link
+                className={
+                  pathname === "/experience"
+                    ? "footer-links group underline lg:no-underline"
+                    : "footer-links group"
+                }
+                href="/experience"
+              >
                 experience
                 <span
                   className={
@@ -96,7 +110,14 @@ function Footer() {
                   }
                 ></span>
               </Link>
-              <Link className="footer-links group" href="/contact">
+              <Link
+                className={
+                  pathname === "/contact"
+                    ? "footer-links group underline lg:no-underline"
+                    : "footer-links group"
+                }
+                href="/contact"
+              >
                 contact
                 <span
                   className={
@@ -106,8 +127,15 @@ function Footer() {
                   }
                 ></span>
               </Link>
-              <Link className="footer-links group" href="/projects">
-                projects<strong className="ml-2">&#8599;</strong>
+              <Link
+                className={
+                  pathname === "/projects"
+                    ? "footer-links group underline lg:no-underline"
+                    : "footer-links group"
+                }
+                href="/projects"
+              >
+                projects<strong className="lg:ml-2">&#8599;</strong>
                 <span
                   className={
                     pathname === "/projects"
