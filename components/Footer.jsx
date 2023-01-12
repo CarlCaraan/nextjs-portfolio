@@ -155,7 +155,7 @@ function Footer() {
           className="text-grayLight mt-12 text-center text-base
           lg:text-right lg:text-[22px]"
         >
-          &copy; C.Caraan 2022
+          &copy; C.Caraan {new Date().getFullYear()}
         </div>
       </div>
       {/* End Container */}
