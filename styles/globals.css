@@ -155,6 +155,12 @@
   .education-subtitle {
     @apply text-base text-grayLighter;
   }
+  .experience-cert-box {
+    @apply border border-grayLightest hover:border-violet duration-200 shadow flex items-center;
+  }
+  .experience-image {
+    @apply group-hover:grayscale-0 grayscale duration-200;
+  }
 }
 
 @layer utilities {
