@@ -36,7 +36,8 @@ function projects() {
               <h1 className="big-heading-text">Latest Projects</h1>
               <p
                 className="text-sm leading-snug text-grayLight 
-                xl:pr-5 xl:w-1/2 xl:text-[1.25vw] xl:leading-normal lg:text-base lg:leading-normal sm:text-lg"
+                xl:pr-5 xl:w-1/2 xl:text-[1.25vw] xl:leading-normal lg:text-base lg:leading-normal sm:text-lg
+                dark:text-grayLightest"
               >
                 Ever since <u>I challenge myself</u> to create a different
                 project, I always enjoyed web development. Here are some of the
@@ -235,7 +236,8 @@ function projects() {
             {/* Start Post Project Section */}
             <div
               className="mt-24 mb-0 text-center text-black 
-              sm:mt-64 sm:mb-8"
+              sm:mt-64 sm:mb-8
+              dark:text-white"
             >
               <h1
                 className="text-2xl font-sansSB mb-12 
@@ -249,21 +251,25 @@ function projects() {
                 className="flex flex-col space-y-12
                 sm:space-y-24"
               >
-                <Link
-                  className="text-base font-sansSB underline hover:no-underline 
+                <div>
+                  <Link
+                    className="text-base font-sansSB underline hover:no-underline 
                   sm:text-xl"
-                  href="/contact"
-                >
-                  Get in touch
-                </Link>
+                    href="/contact"
+                  >
+                    Get in touch
+                  </Link>
+                </div>
 
-                <a
-                  className="text-base hover:text-violet duration-200 
+                <div>
+                  <a
+                    className="text-base hover:text-violet duration-200 
                   sm:text-2xl"
-                  href="mailto:caraancarlaaron@gmail.com"
-                >
-                  caraancarlaaron@gmail.com
-                </a>
+                    href="mailto:caraancarlaaron@gmail.com"
+                  >
+                    caraancarlaaron@gmail.com
+                  </a>
+                </div>
               </div>
             </div>
             {/* End Post Project Section */}

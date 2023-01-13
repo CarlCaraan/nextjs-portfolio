@@ -19,12 +19,16 @@ function contact() {
             {/* Start Heading */}
             <div className="mt-12 lg:mt-24">
               <h1 className="big-heading-text">Get in touch</h1>
-              <h4 className="text-lg font-sansSB text-black sm:text-2xl mt-12">
+              <h4
+                className="text-lg font-sansSB text-black sm:text-2xl mt-12
+              dark:text-white"
+              >
                 Ready to work together? Let&#39;s talk.
               </h4>
               <h5
                 className="mt-4 text-sm
-                xl:w-3/5 xl:text-xl lg:text-lg sm:text-base"
+                xl:w-3/5 xl:text-xl lg:text-lg sm:text-base
+                dark:text-grayLightest"
               >
                 I&#39;m always open to discussing new opportunities and
                 collaborating with creative minds. Contact me to learn more

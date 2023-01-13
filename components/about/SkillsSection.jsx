@@ -218,12 +218,12 @@ function SkillsSection({ props }) {
           {/* Start Post Skills Content */}
           <div
             className="mt-24 mb-0 text-center text-black 
-            sm:mt-64 sm:mb-8"
+            sm:mt-64 sm:mb-8
+            dark:text-white"
           >
             <h1
               className="text-2xl font-sansSB mb-12 
-              sm:text-5xl
-              dark:text-white"
+              sm:text-5xl"
             >
               Work that matters to
               <br /> clients who value design
@@ -231,25 +231,28 @@ function SkillsSection({ props }) {
 
             <div
               className="flex flex-col space-y-12
-              sm:space-y-24
-              dark:text-white"
+              sm:space-y-24"
             >
-              <Link
-                className="text-base font-sansSB underline hover:no-underline 
+              <div>
+                <Link
+                  className="text-base font-sansSB underline hover:no-underline 
                 sm:text-xl"
-                href="/downloads/caraan_resume.pdf"
-                target="_blank"
-              >
-                Download CV
-              </Link>
+                  href="/downloads/caraan_resume.pdf"
+                  target="_blank"
+                >
+                  Download CV
+                </Link>
+              </div>
 
-              <a
-                className="text-base hover:text-violet duration-200 
+              <div>
+                <a
+                  className="text-base hover:text-violet duration-200
                 sm:text-2xl"
-                href="mailto:caraancarlaaron@gmail.com"
-              >
-                caraancarlaaron@gmail.com
-              </a>
+                  href="mailto:caraancarlaaron@gmail.com"
+                >
+                  caraancarlaaron@gmail.com
+                </a>
+              </div>
             </div>
           </div>
           {/* End Post Skills Content */}
