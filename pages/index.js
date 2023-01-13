@@ -50,11 +50,10 @@ export default function Home() {
                 className="mt-6 
                 sm:mt-12 xl:mt-16 2xl:mt-40"
               >
-                <div className="text-center">
+                <div className="text-center lg:text-start">
                   <Link
                     href="/about"
                     className="text-black font-sansSB underline hover:no-underline inline-block
-                  lg:text-start 
                   dark:text-white"
                   >
                     <div>Discover more about me</div>
