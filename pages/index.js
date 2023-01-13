@@ -52,7 +52,7 @@ export default function Home() {
               >
                 <Link
                   href="/about"
-                  className="text-black block text-center font-sansSB underline hover:no-underline
+                  className="text-black text-center font-sansSB underline hover:no-underline inline-block
                   lg:text-start
                   dark:text-white"
                 >

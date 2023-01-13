@@ -48,14 +48,16 @@ function ProfileSection({ props }) {
                   {/* Item 1 */}
                   <div className="flex">
                     <div
-                      className="basis-2/5 text-base text-black 
-                          sm:text-xl"
+                      className="basis-2/5 text-base text-black  
+                      sm:text-xl
+                      dark:text-white"
                     >
                       Date of Birth
                     </div>
                     <div
                       className="basis-3/5 text-base text-grayLight
-                          sm:text-xl"
+                      sm:text-xl
+                      dark:text-grayLightest"
                     >
                       November 28, 1999
                     </div>
@@ -64,13 +66,15 @@ function ProfileSection({ props }) {
                   <div className="flex">
                     <div
                       className="basis-2/5 text-base text-black 
-                          sm:text-xl"
+                      sm:text-xl
+                      dark:text-white"
                     >
                       Birthplace
                     </div>
                     <div
                       className="basis-3/5 text-base text-grayLight
-                          sm:text-xl"
+                      sm:text-xl
+                      dark:text-grayLightest"
                     >
                       Santa Cruz, Laguna
                     </div>
@@ -79,13 +83,15 @@ function ProfileSection({ props }) {
                   <div className="flex">
                     <div
                       className="basis-2/5 text-base text-black 
-                          sm:text-xl"
+                      sm:text-xl
+                    dark:text-white"
                     >
                       Education
                     </div>
                     <div
                       className="basis-3/5 text-base text-grayLight
-                          sm:text-xl"
+                      sm:text-xl
+                      dark:text-grayLightest"
                     >
                       BS Information Technology <br />
                       Laguna State Polytechnic University
@@ -95,13 +101,15 @@ function ProfileSection({ props }) {
                   <div className="flex">
                     <div
                       className="basis-2/5 text-base text-black 
-                          sm:text-xl"
+                      sm:text-xl
+                    dark:text-white"
                     >
                       Interests
                     </div>
                     <div
                       className="basis-3/5 text-base text-grayLight auto-hyphen 
-                      xl:off-hyphen sm:text-xl"
+                      xl:off-hyphen sm:text-xl
+                      dark:text-grayLightest"
                     >
                       I love art and drawing since I was in elementary school. I
                       think that practice has shaped the abilities that enable
@@ -112,13 +120,15 @@ function ProfileSection({ props }) {
                   <div className="flex">
                     <div
                       className="basis-2/5 text-base text-black 
-                          sm:text-xl"
+                      sm:text-xl
+                    dark:text-white"
                     >
                       Area
                     </div>
                     <div
                       className="basis-3/5 text-base text-grayLight
-                          sm:text-xl"
+                      sm:text-xl
+                      dark:text-grayLightest"
                     >
                       Interaction Design, Backend Logic
                     </div>

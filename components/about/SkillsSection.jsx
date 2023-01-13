@@ -25,7 +25,7 @@ function SkillsSection({ props }) {
   return (
     <section
       className="mt-12 sm:mb-28
-          lg:mt-0"
+      lg:mt-0"
       id="Skills"
     >
       <div className="section-container-fluid">
@@ -38,12 +38,13 @@ function SkillsSection({ props }) {
           {/* Start Skills Heading */}
           <div
             className="col-start-1 col-span-9 justify-self-stretch py-4
-                md:col-start-2 md:py-12"
+            md:col-start-2 md:py-12"
           >
             {/* Start Heading Text */}
             <div
               className="text-base text-black indent-8 auto-hyphen 
-             xl:off-hyphen sm:text-xl lg:text-2xl"
+             xl:off-hyphen sm:text-xl lg:text-2xl
+             dark:text-white"
             >
               I am highly skilled in programming, with expertise in languages
               such as Javascript and Php, as well as experience with databases
@@ -59,7 +60,10 @@ function SkillsSection({ props }) {
       </div>
 
       {/* Start Skills Content */}
-      <div className="bg-panel py-16">
+      <div
+        className="bg-panel py-16
+      dark:bg-grayLight"
+      >
         <div className="section-container-fluid">
           {/* Start Grid Container */}
           <div className="grid">
@@ -86,7 +90,8 @@ function SkillsSection({ props }) {
                     <div className="neumorphism-box">
                       <span
                         className="font-sansSB text-xl mr-1 cursor-default select-none
-                        xl:text-[.9vw] lg:text-2xl "
+                        xl:text-[.9vw] lg:text-2xl
+                        dark:text-black"
                       >
                         Adobe
                       </span>
@@ -217,7 +222,8 @@ function SkillsSection({ props }) {
           >
             <h1
               className="text-2xl font-sansSB mb-12 
-              sm:text-5xl"
+              sm:text-5xl
+              dark:text-white"
             >
               Work that matters to
               <br /> clients who value design
@@ -225,7 +231,8 @@ function SkillsSection({ props }) {
 
             <div
               className="flex flex-col space-y-12
-              sm:space-y-24"
+              sm:space-y-24
+              dark:text-white"
             >
               <Link
                 className="text-base font-sansSB underline hover:no-underline 

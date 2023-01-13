@@ -53,7 +53,8 @@ function about() {
                 </h1>
                 <p
                   className="text-xl text-grayLighter mt-5
-                  md:text-[1.6vw] md:leading-tight md:text-grayLight"
+                  md:text-[1.6vw] md:leading-tight md:text-grayLight
+                  dark:text-grayLightest"
                 >
                   I am looking for a challenging opportunity that will enable me
                   to use my skills and abilities to achieve a challenging goal.

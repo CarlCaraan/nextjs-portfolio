@@ -109,16 +109,18 @@
   }
   /* About > Skills */
   .custom-border-dashed {
-    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='black' stroke-width='2' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='round'/%3e%3c/svg%3e");
-    @apply px-6 py-8 
-    xl:px-12 xl:py-8 md:py-4;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='gray' stroke-width='2' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='round'/%3e%3c/svg%3e");
+    @apply px-6 py-8
+      xl:px-12 xl:py-8 md:py-4;
   }
   .skills-heading {
     @apply text-base text-grayLighter font-sansSB pb-4
-    xl:text-[1.2vw] md:text-[1.8vw];
+    xl:text-[1.2vw] md:text-[1.8vw]
+    dark:text-grayLightest;
   }
   .neumorphism-box {
-    @apply hover:bg-white rounded-md transition-all ease-in duration-200 w-full xl:w-1/2 py-2 grayscale hover:grayscale-0 flex items-center justify-center;
+    @apply hover:bg-white rounded-md transition-all ease-in duration-200 w-full xl:w-1/2 py-2 grayscale hover:grayscale-0 flex items-center justify-center
+    dark:bg-grayLightest dark:hover:bg-white dark:shadow-lg;
     box-shadow: 4px 4px 8px #cdcdcd, -4px -4px 8px #ffffff;
   }
   .skills-inner-flexbox {
