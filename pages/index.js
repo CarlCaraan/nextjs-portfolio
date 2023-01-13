@@ -52,8 +52,8 @@ export default function Home() {
               >
                 <Link
                   href="/about"
-                  className="text-black text-center font-sansSB underline hover:no-underline inline-block
-                  lg:text-start
+                  className="text-black text-center font-sansSB underline hover:no-underline 
+                  lg:text-start lg:inline-block
                   dark:text-white"
                 >
                   Discover more about me
