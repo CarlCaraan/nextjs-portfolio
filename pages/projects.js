@@ -35,8 +35,8 @@ function projects() {
             <div className="mt-12 lg:mt-24">
               <h1 className="big-heading-text">Latest Projects</h1>
               <p
-                className="text-base leading-tight text-grayLight 
-                xl:w-1/2 lg:text-[1.25vw] sm:text-lg"
+                className="text-sm leading-snug text-grayLight 
+                xl:pr-5 xl:w-1/2 xl:text-[1.25vw] xl:leading-normal lg:text-base lg:leading-normal sm:text-lg"
               >
                 Ever since <u>I challenge myself</u> to create a different
                 project, I always enjoyed web development. Here are some of the

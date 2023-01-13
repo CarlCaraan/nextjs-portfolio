@@ -42,7 +42,7 @@ function SkillsSection({ props }) {
           >
             {/* Start Heading Text */}
             <div
-              className="text-base text-black indent-7 auto-hyphen 
+              className="text-base text-black indent-8 auto-hyphen 
              xl:off-hyphen sm:text-xl lg:text-2xl"
             >
               I am highly skilled in programming, with expertise in languages
