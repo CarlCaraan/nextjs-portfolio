@@ -159,6 +159,9 @@ function Navbar(props) {
         >
           CONTACT
         </Link>
+        <div className="pt-12">
+          <ThemeToggler />
+        </div>
       </div>
       {/* ========= End Mobile Navigation ========= */}
     </Fragment>

@@ -9,7 +9,7 @@ const ThemeToggler = () => {
   if (!mounted) return null;
   return (
     <button
-      className="text-grayDark dark:text-violet"
+      className="text-grayLighter dark:text-violet"
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
       aria-label="Toggle Dark Mode"
     >
