@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import ThemeToggler from "./ThemeToggler";
 
-function Navbar(props) {
+function Navbar() {
   const router = useRouter();
   const { pathname } = router;
 
@@ -77,7 +77,9 @@ function Navbar(props) {
             </Link>
 
             {/* Dark Mode */}
-            <ThemeToggler />
+            <div className="w-5">
+              <ThemeToggler />
+            </div>
           </div>
 
           {/* Start Hamburger Button  */}
@@ -159,7 +161,8 @@ function Navbar(props) {
         >
           CONTACT
         </Link>
-        <div className="pt-12">
+        {/* Dark Mode */}
+        <div className="pt-12 w-5">
           <ThemeToggler />
         </div>
       </div>

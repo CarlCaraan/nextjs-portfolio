@@ -1,6 +1,5 @@
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
-import { MoonIcon, SunIcon } from "@heroicons/react/outline";
 
 const ThemeToggler = () => {
   const { theme, setTheme } = useTheme();
