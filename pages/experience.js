@@ -100,6 +100,14 @@ function experience() {
                       <h4 className="education-title">NCAE Topnotcher</h4>
                       <p className="education-subtitle">Santa Maria Academy</p>
                     </div>
+
+                    {/* Item */}
+                    <div>
+                      <h4 className="education-title">
+                        Biometrics Arduino <small>(Thesis)</small>
+                      </h4>
+                      <p className="education-subtitle">Santa Maria Academy</p>
+                    </div>
                   </div>
                   <div className="education-flex-item">
                     {/* Year Heading */}
