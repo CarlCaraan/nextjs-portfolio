@@ -2,7 +2,7 @@ import React, { Fragment, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-function Navbar() {
+function Navbar(props) {
   const router = useRouter();
   const { pathname } = router;
 
@@ -13,6 +13,12 @@ function Navbar() {
   };
   const navClickHandler = () => {
     setActive(!isActive);
+  };
+
+  // Dark Mode Function
+  const [isDark, setDark] = useState("false");
+  const themeClickHandler = () => {
+    setDark(!isDark);
   };
 
   return (
@@ -78,8 +84,7 @@ function Navbar() {
             <button id="theme-toggle" className="text-violet dark:text-panel">
               {/* Dark SVG Icon */}
               <svg
-                id="theme-toggle-dark-icon"
-                className="w-5 h-5 "
+                className={isDark ? "w-5 h-5" : "hidden w-5 h-5"}
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -88,8 +93,7 @@ function Navbar() {
               </svg>
               {/* Light SVG Icon  */}
               <svg
-                id="theme-toggle-light-icon"
-                className="w-5 h-5 hidden"
+                className={isDark ? "hidden w-5 h-5" : "w-5 h-5"}
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
