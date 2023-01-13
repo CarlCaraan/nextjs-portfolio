@@ -62,7 +62,8 @@
 
   /* ========= GLOBAL ========= */
   body {
-    @apply text-grayDark;
+    @apply text-grayDark bg-white
+    dark:text-white dark:bg-black;
   }
   a {
     @apply font-linksR;
@@ -86,20 +87,25 @@
   /* ========= ALL LINKS ========= */
   /* Navigation */
   .navlinks-active {
-    @apply mx-auto block w-full border border-black;
+    @apply mx-auto block w-full border border-black
+    dark:border-white;
   }
   .navlinks-hover {
-    @apply mx-auto ease-out duration-300 block w-0 border border-white group-hover:w-full group-hover:border group-hover:border-grayLight;
+    @apply mx-auto ease-out duration-300 block w-0 border border-white group-hover:w-full group-hover:border group-hover:border-grayLight
+    dark:border-black dark:group-hover:border-white;
   }
   /* Footer */
   .footer-links {
-    @apply font-linksR text-[22px] capitalize text-grayLight hover:text-black lg:hover:text-grayLight;
+    @apply font-linksR text-[22px] capitalize text-grayLight hover:text-black lg:hover:text-grayLight
+    dark:text-white dark:hover:text-white dark:lg:hover:text-grayLightest;
   }
   .footerlinks-active {
-    @apply block w-full border border-black;
+    @apply block w-full border border-black
+    dark:border-white;
   }
   .footerlinks-hover {
-    @apply duration-300 block w-0 border border-white group-hover:w-full group-hover:border group-hover:border-grayLight;
+    @apply duration-300 block w-0 border border-white group-hover:w-full group-hover:border group-hover:border-grayLight
+    dark:border-black dark:group-hover:border-grayLightest;
   }
   /* About > Skills */
   .custom-border-dashed {
@@ -171,7 +177,8 @@
     @apply w-11/12 mx-auto;
   }
   .socket {
-    @apply border-t-[1px] border-t-grayLighter w-full;
+    @apply border-t-[1px] border-t-grayLighter w-full
+    dark:border-t-grayLightest;
   }
   .auto-hyphen {
     hyphens: auto;

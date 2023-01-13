@@ -30,7 +30,10 @@ function Footer() {
       {/* Start Container */}
       <div className="section-container">
         {/* Horizontal Line */}
-        <div className="border-t-4 border-t-grayLighter w-full"></div>
+        <div
+          className="border-t-4 border-t-grayLighter w-full
+        dark:border-t-grayLightest"
+        ></div>
 
         {/* Start Flex Container */}
         <div
@@ -39,7 +42,10 @@ function Footer() {
         >
           {/* Start Left Section */}
           <div className="basis-1/2">
-            <div className="uppercase font-linksL text-lg text-grayLight text-center lg:text-left">
+            <div
+              className="uppercase font-linksL text-lg text-grayLight text-center lg:text-left
+            dark:text-white"
+            >
               Follow Me
             </div>
             {/* Icon Wrapper Flex */}
@@ -48,21 +54,39 @@ function Footer() {
               lg:justify-start lg:pb-0"
             >
               <Link href="https://www.facebook.com/caraancarl/" target="_blank">
-                <div className="group rounded-full border border-grayLighter p-2 hover:border-violet duration-300">
-                  <FacebookIcon className="w-8 fill-grayLighter group-hover:fill-violet duration-300" />
+                <div
+                  className="group rounded-full border border-grayLighter p-2 hover:border-violet duration-300
+                dark:border-grayLightest dark:hover:border-violet"
+                >
+                  <FacebookIcon
+                    className="w-8 fill-grayLighter group-hover:fill-violet duration-300
+                  dark:fill-grayLightest"
+                  />
                 </div>
               </Link>
               <Link href="https://github.com/CarlCaraan" target="_blank">
-                <div className="group rounded-full border border-grayLight p-3 hover:border-violet duration-300">
-                  <GithubIcon className="w-6 fill-grayLighter group-hover:fill-violet duration-300" />
+                <div
+                  className="group rounded-full border border-grayLight p-3 hover:border-violet duration-300
+                dark:border-grayLightest dark:hover:border-violet"
+                >
+                  <GithubIcon
+                    className="w-6 fill-grayLighter group-hover:fill-violet duration-300
+                   dark:fill-grayLightest"
+                  />
                 </div>
               </Link>
               <Link
                 href="https://www.linkedin.com/in/caraancarlaaron/"
                 target="_blank"
               >
-                <div className="group rounded-full border border-grayLight p-3 hover:border-violet duration-300">
-                  <LinkedinIcon className="w-6 fill-grayLighter group-hover:fill-violet duration-300" />
+                <div
+                  className="group rounded-full border border-grayLight p-3 hover:border-violet duration-300
+                dark:border-grayLightest dark:hover:border-violet"
+                >
+                  <LinkedinIcon
+                    className="w-6 fill-grayLighter group-hover:fill-violet duration-300
+                   dark:fill-grayLightest"
+                  />
                 </div>
               </Link>
             </div>
@@ -153,7 +177,8 @@ function Footer() {
 
         <div
           className="text-grayLight mt-12 text-center text-base
-          lg:text-right lg:text-[22px]"
+          lg:text-right lg:text-[22px]
+          dark:text-white"
         >
           &copy; C.Caraan {new Date().getFullYear()}
         </div>

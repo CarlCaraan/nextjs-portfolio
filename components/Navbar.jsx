@@ -35,7 +35,8 @@ function Navbar() {
           {/* Links Wrapper */}
           <div
             className="hidden space-x-6 items-center text-grayLight
-        md:flex lg:space-x-12"
+            md:flex lg:space-x-12
+            dark:text-white"
           >
             <Link className="group" href="/about">
               About

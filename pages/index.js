@@ -37,7 +37,8 @@ export default function Home() {
               </h1>
               <div
                 className="mt-6 text-grayLight text-center 
-                lg:text-start"
+                lg:text-start
+                dark:text-grayLightest"
               >
                 <span className="sm:text-2xl font-sansSB">Web Developer</span>{" "}
                 <span className="sm:text-2xl">
@@ -77,15 +78,20 @@ export default function Home() {
         {/* ========= Start Content Section ========= */}
         <section
           className="mt-12 bg-panel 
-          xl:-mt-14"
+          xl:-mt-14
+          dark:bg-grayLight"
           id="content"
         >
           {/* Start Content Heading */}
-          <div className="relative text-[6.7vw] font-linksB text-center pt-12 lg:pt-[4.3vw] text-white select-none">
+          <div
+            className="relative text-[6.7vw] font-linksB text-center pt-12 lg:pt-[4.3vw] text-white select-none
+          dark:text-grayLightest"
+          >
             Full Stack Developer
             <span
               className="hidden absolute font-linksSB text-black text-[2.5vw] left-[25vw] top-[10.2vw] 
-              lg:block"
+              lg:block
+              dark:text-white"
             >
               Recent Projects
             </span>
@@ -106,7 +112,8 @@ export default function Home() {
             <Link
               href="/projects"
               className="custom-btn group text-lg text-center block w-full mt-12
-              sm:text-xl lg:mt-8 lg:text-start lg:absolute lg:top-0 lg:right-[6rem] lg:w-32 lg:text-base"
+              sm:text-xl lg:mt-8 lg:text-start lg:absolute lg:top-0 lg:right-[6rem] lg:w-32 lg:text-base
+              dark:shadow-none"
             >
               View all{" "}
               <span
@@ -170,7 +177,8 @@ export default function Home() {
         {/* ========= Start Qoute Section ========= */}
         <section
           className="bg-white -mt-14 pt-32 
-          lg:-mt-32 lg:pt-64"
+          lg:-mt-32 lg:pt-64
+          dark:bg-black"
           id="quote"
         >
           {/* Start Container */}
@@ -182,7 +190,8 @@ export default function Home() {
               className="text-2xl font-serif text-black text-center mt-12 
               md:text-3xl md:leading-relaxed 
               lg:leading-relaxed lg:text-5xl lg:mt-24 
-              xl:px-24"
+              xl:px-24
+              dark:text-white"
             >
               “We can not solve our problems with the same level of thinking
               that created them.”
@@ -210,7 +219,8 @@ export default function Home() {
                 <Link
                   href="/projects"
                   className="float-left text-grayLight text-2xl ml-2 mt-4
-                  xl:text-9xl lg:text-8xl md:text-7xl sm:text-4xl lg:ml-8 md:ml-4 md:mt-0"
+                  xl:text-9xl lg:text-8xl md:text-7xl sm:text-4xl lg:ml-8 md:ml-4 md:mt-0
+                  dark:text-white"
                 >
                   Show the
                 </Link>
@@ -218,7 +228,8 @@ export default function Home() {
               <Link
                 href="/projects"
                 className=" text-grayLight ml-2 mt-4 text-2xl
-                xl:text-9xl lg:text-8xl md:text-7xl sm:text-4xl md:ml-0 md:mt-0"
+                xl:text-9xl lg:text-8xl md:text-7xl sm:text-4xl md:ml-0 md:mt-0
+                dark:text-white"
               >
                 code <strong>&rarr;</strong>
               </Link>
