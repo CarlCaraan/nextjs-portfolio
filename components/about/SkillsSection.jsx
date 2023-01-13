@@ -221,22 +221,25 @@ function SkillsSection({ props }) {
             sm:mt-64 sm:mb-8
             dark:text-white"
           >
-            <h1
-              className="text-2xl font-sansSB mb-12 
+            <Link
+              className="text-2xl font-sansSB
               sm:text-5xl"
+              href="https://www.figma.com/proto/ObYG9JGcC7f0fXupjUipqG/Portfolio_v2?page-id=1%3A3&node-id=17%3A13&viewport=-798%2C-746%2C0.62&scaling=scale-down-width&starting-point-node-id=17%3A13"
+              title="Figma prototype"
+              target="_blank"
             >
               Work that matters to
               <br /> clients who value design
-            </h1>
+            </Link>
 
             <div
-              className="flex flex-col space-y-12
-              sm:space-y-24"
+              className="flex flex-col space-y-12 mt-4
+              sm:space-y-24 sm:mt-12"
             >
               <div>
                 <Link
                   className="text-base font-sansSB underline hover:no-underline 
-                sm:text-xl"
+                  sm:text-xl"
                   href="/downloads/caraan_resume.pdf"
                   target="_blank"
                 >
