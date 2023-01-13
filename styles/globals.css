@@ -184,3 +184,48 @@
     lg:leading-tight sm:text-[6.6vw] sm:-ml-1 lg:-ml-2;
   }
 }
+
+/* ========= Hamburger Button ========= */
+
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  top: 0;
+  left: 0;
+  @apply bg-grayLightest;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+.hamburger-middle {
+  transform: translateY(7px);
+}
+.hamburger-top {
+  transform: translateY(14px);
+}
+.open {
+  transform: rotate(90deg);
+}
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+.open .hamburger-middle {
+  display: none;
+}
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+/* ========= Hidden Navigation (Mobile) ========= */
+.mobile-navigation {
+  @apply flex-col absolute top-0 bottom-0 left-0 self-end w-full min-h-screen py-1 pt-12 pl-12 space-y-3 text-lg text-white bg-black z-10;
+}
