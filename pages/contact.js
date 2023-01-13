@@ -19,10 +19,13 @@ function contact() {
             {/* Start Heading */}
             <div className="mt-12 lg:mt-24">
               <h1 className="big-heading-text">Get in touch</h1>
-              <h4 className="font-sansSB text-black text-2xl mt-12">
+              <h4 className="text-lg font-sansSB text-black sm:text-2xl mt-12">
                 Ready to work together? Let&#39;s talk.
               </h4>
-              <h5 className="text-xl w-3/5 mt-4">
+              <h5
+                className="mt-4 text-sm
+                xl:w-3/5 xl:text-xl lg:text-lg sm:text-base"
+              >
                 I&#39;m always open to discussing new opportunities and
                 collaborating with creative minds. Contact me to learn more
                 about my services and availability.
@@ -31,7 +34,11 @@ function contact() {
             {/* End Heading */}
 
             {/* Start Contact Section */}
-
+            <div className="mt-12 flex flex-col space-y-2">
+              <span>www.github.com/CarlCaraan</span>
+              <span>www.linkedin.com/in/caraancarlaaron</span>
+              <span>caraancarlaaron@gmail.com</span>
+            </div>
             {/* End Contact Section */}
           </div>
         </section>

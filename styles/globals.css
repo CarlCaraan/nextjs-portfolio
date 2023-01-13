@@ -68,7 +68,7 @@
     @apply font-linksR;
   }
   ::selection {
-    @apply bg-violet;
+    @apply bg-violet text-white;
   }
 }
 
