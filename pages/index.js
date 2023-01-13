@@ -209,7 +209,10 @@ export default function Home() {
         {/* ========= Start Pre-Footer Heading ========= */}
         <section id="pre-footer">
           {/* Start Container */}
-          <div className="section-container mt-40 lg:mt-80">
+          <div
+            className="section-container mt-24 
+            md:mt-40 lg:mt-80"
+          >
             <div className="flex flex-row md:flex-col">
               <div>
                 <Image
