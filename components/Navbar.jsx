@@ -117,50 +117,58 @@ function Navbar() {
             <span className="text-grayLightest text-base">Web Developer</span>
           </div>
         </Link>
-        <Link
-          className={
-            pathname === "/about"
-              ? "text-violet"
-              : "hover:text-violet duration-200"
-          }
-          href="/about"
-          onClick={navClickHandler}
-        >
-          ABOUT
-        </Link>
-        <Link
-          className={
-            pathname === "/projects"
-              ? "text-violet"
-              : "hover:text-violet duration-200"
-          }
-          href="/projects"
-          onClick={navClickHandler}
-        >
-          PROJECTS
-        </Link>
-        <Link
-          className={
-            pathname === "/experience"
-              ? "text-violet"
-              : "hover:text-violet duration-200"
-          }
-          href="/experience"
-          onClick={navClickHandler}
-        >
-          EXPERIENCE
-        </Link>
-        <Link
-          className={
-            pathname === "/contact"
-              ? "text-violet"
-              : "hover:text-violet duration-200"
-          }
-          href="/contact"
-          onClick={navClickHandler}
-        >
-          CONTACT
-        </Link>
+        <div>
+          <Link
+            className={
+              pathname === "/about"
+                ? "text-violet"
+                : "hover:text-violet duration-200"
+            }
+            href="/about"
+            onClick={navClickHandler}
+          >
+            ABOUT
+          </Link>
+        </div>
+        <div>
+          <Link
+            className={
+              pathname === "/projects"
+                ? "text-violet"
+                : "hover:text-violet duration-200"
+            }
+            href="/projects"
+            onClick={navClickHandler}
+          >
+            PROJECTS
+          </Link>
+        </div>
+        <div>
+          <Link
+            className={
+              pathname === "/experience"
+                ? "text-violet"
+                : "hover:text-violet duration-200"
+            }
+            href="/experience"
+            onClick={navClickHandler}
+          >
+            EXPERIENCE
+          </Link>
+        </div>
+        <div>
+          <Link
+            className={
+              pathname === "/contact"
+                ? "text-violet"
+                : "hover:text-violet duration-200"
+            }
+            href="/contact"
+            onClick={navClickHandler}
+          >
+            CONTACT
+          </Link>
+        </div>
         {/* Dark Mode */}
         <div className="pt-12 w-5">
           <ThemeToggler />

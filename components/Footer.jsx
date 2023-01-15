@@ -100,74 +100,82 @@ function Footer() {
               className="flex flex-col space-x-0 mt-[3.5rem] text-center space-y-4 text-base
                 xl:space-x-16 lg:space-x-8 lg:flex-row lg:space-y-0 lg:text-left lg:float-right sm:space-y-6"
             >
-              <Link
-                className={
-                  pathname === "/about"
-                    ? "footer-links group underline lg:no-underline"
-                    : "footer-links group"
-                }
-                href="/about"
-              >
-                about
-                <span
+              <div>
+                <Link
                   className={
                     pathname === "/about"
-                      ? "lg:footerlinks-active"
-                      : "lg:footerlinks-hover"
+                      ? "footer-links group underline lg:no-underline"
+                      : "footer-links group"
                   }
-                ></span>
-              </Link>
-              <Link
-                className={
-                  pathname === "/experience"
-                    ? "footer-links group underline lg:no-underline"
-                    : "footer-links group"
-                }
-                href="/experience"
-              >
-                experience
-                <span
+                  href="/about"
+                >
+                  about
+                  <span
+                    className={
+                      pathname === "/about"
+                        ? "lg:footerlinks-active"
+                        : "lg:footerlinks-hover"
+                    }
+                  ></span>
+                </Link>
+              </div>
+              <div>
+                <Link
                   className={
                     pathname === "/experience"
-                      ? "lg:footerlinks-active"
-                      : "lg:footerlinks-hover"
+                      ? "footer-links group underline lg:no-underline"
+                      : "footer-links group"
                   }
-                ></span>
-              </Link>
-              <Link
-                className={
-                  pathname === "/contact"
-                    ? "footer-links group underline lg:no-underline"
-                    : "footer-links group"
-                }
-                href="/contact"
-              >
-                contact
-                <span
+                  href="/experience"
+                >
+                  experience
+                  <span
+                    className={
+                      pathname === "/experience"
+                        ? "lg:footerlinks-active"
+                        : "lg:footerlinks-hover"
+                    }
+                  ></span>
+                </Link>
+              </div>
+              <div>
+                <Link
                   className={
                     pathname === "/contact"
-                      ? "lg:footerlinks-active"
-                      : "lg:footerlinks-hover"
+                      ? "footer-links group underline lg:no-underline"
+                      : "footer-links group"
                   }
-                ></span>
-              </Link>
-              <Link
-                className={
-                  pathname === "/projects"
-                    ? "footer-links group underline lg:no-underline"
-                    : "footer-links group"
-                }
-                href="/projects"
-              >
-                projects<strong className="lg:ml-2">&#8599;</strong>
-                <span
+                  href="/contact"
+                >
+                  contact
+                  <span
+                    className={
+                      pathname === "/contact"
+                        ? "lg:footerlinks-active"
+                        : "lg:footerlinks-hover"
+                    }
+                  ></span>
+                </Link>
+              </div>
+              <div>
+                <Link
                   className={
                     pathname === "/projects"
-                      ? "lg:footerlinks-active"
-                      : "lg:footerlinks-hover"
+                      ? "footer-links group underline lg:no-underline"
+                      : "footer-links group"
                   }
-                ></span>
-              </Link>
+                  href="/projects"
+                >
+                  projects<strong className="lg:ml-2">&#8599;</strong>
+                  <span
+                    className={
+                      pathname === "/projects"
+                        ? "lg:footerlinks-active"
+                        : "lg:footerlinks-hover"
+                    }
+                  ></span>
+                </Link>
+              </div>
             </div>
             {/* End Footer Flex Links */}
           </div>
