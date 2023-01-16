@@ -240,7 +240,7 @@ function SkillsSection({ props }) {
                 <Link
                   className="text-base font-sansSB underline hover:no-underline 
                   sm:text-xl"
-                  href="/downloads/caraan_resume.pdf"
+                  href="/downloads/caraan_resume_v2.pdf"
                   target="_blank"
                 >
                   Download CV
