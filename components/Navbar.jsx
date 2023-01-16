@@ -76,7 +76,7 @@ function Navbar() {
               ></span>
             </Link>
 
-            {/* Dark Mode */}
+            {/* Dark Mode Button */}
             <div className="w-5">
               <ThemeToggler />
             </div>
@@ -169,7 +169,8 @@ function Navbar() {
             CONTACT
           </Link>
         </div>
-        {/* Dark Mode */}
+
+        {/* Dark Mode Button */}
         <div className="pt-12 w-5">
           <ThemeToggler />
         </div>
