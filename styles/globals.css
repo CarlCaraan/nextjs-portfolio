@@ -155,6 +155,7 @@
   }
 
   /* Experience > Education */
+
   .experience-heading {
     @apply text-2xl font-serif text-black text-center 
     sm:text-2xl lg:text-5xl
