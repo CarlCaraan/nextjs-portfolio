@@ -182,12 +182,18 @@ function projects() {
                       xl:space-y-12"
                     >
                       <div className="project_image-box">
-                        <Link href={project.link} target="_blank">
+                        <Link
+                          href={project.link}
+                          target={project.link ? "_blank" : ""}
+                        >
                           <Image src={project.image} alt={project.image} />
                         </Link>
                       </div>
                       <div className="group cursor-default">
-                        <Link href={project.link} target="_blank">
+                        <Link
+                          href={project.link}
+                          target={project.link ? "_blank" : ""}
+                        >
                           <h3 className="project_title">{project.title}</h3>
                         </Link>
                         <h5 className="project_subtitle">{project.subtitle}</h5>
