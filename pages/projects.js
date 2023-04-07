@@ -3,8 +3,12 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import TopScroll from "../components/TopScroll";
 import Image from "next/image";
+import Link from "next/link";
+
+// Images
+import project0 from "../public/images/projects/project0.jpg";
 import project1 from "../public/images/projects/project1.jpg";
-import project2 from "../public/images/projects/project2.jpg";
+import project2 from "../public/images/projects/project2.png";
 import project3 from "../public/images/projects/project3.png";
 import project4 from "../public/images/projects/project4.png";
 import project5 from "../public/images/projects/project5.png";
@@ -16,9 +20,124 @@ import project10 from "../public/images/projects/project10.png";
 import project11 from "../public/images/projects/project11.png";
 import project12 from "../public/images/projects/project12.png";
 import project13 from "../public/images/projects/project13.png";
-import Link from "next/link";
+import project14 from "../public/images/projects/project14.png";
+import project15 from "../public/images/projects/project15.png";
 
 function projects() {
+  const projects = [
+    {
+      id: 0,
+      image: project0,
+      title: "SB Information System",
+      subtitle: "Php, Bootstrap, MySQL",
+      link: "",
+    },
+    {
+      id: 1,
+      image: project1,
+      title: "Booking Management System",
+      subtitle: "Flask, Bootstrap, SQLite",
+      link: "",
+    },
+    {
+      id: 2,
+      image: project2,
+      title: "Keyboard Shop",
+      subtitle: "Html, BulmaCSS, Javascript",
+      link: "https://ikkawgears.netlify.app/",
+    },
+    {
+      id: 3,
+      image: project3,
+      title: "Social Media App",
+      subtitle: "Php, Javascript, CSS",
+      link: "",
+    },
+    {
+      id: 4,
+      image: project4,
+      title: "Business Permit Registration",
+      subtitle: "Php, Javscript, Bootstrap",
+      link: "",
+    },
+    {
+      id: 5,
+      image: project5,
+      title: "Online News Portal",
+      subtitle: "Laravel, Bootstrap, SQL",
+      link: "",
+    },
+    {
+      id: 6,
+      image: project6,
+      title: "Content Management System",
+      subtitle: "Laravel, Bootstrap, SQL",
+      link: "",
+    },
+    {
+      id: 7,
+      image: project7,
+      title: "Online Employment System",
+      subtitle: "Flask, Bootstrap, SQLite",
+      link: "",
+    },
+    {
+      id: 8,
+      image: project8,
+      title: "School Management System",
+      subtitle: "Laravel, Bootstrap, SQL",
+      link: "",
+    },
+    {
+      id: 9,
+      image: project9,
+      title: "Lazapee ECommerce Website",
+      subtitle: "ReactJs, Laravel, CSS Module",
+      link: "",
+    },
+    {
+      id: 10,
+      image: project10,
+      title: "Loaning Management System",
+      subtitle: "Php, Bootstrap, SQL",
+      link: "",
+    },
+    {
+      id: 11,
+      image: project11,
+      title: "School Information System",
+      subtitle: "Php, Bootstrap, SQL",
+      link: "",
+    },
+    {
+      id: 12,
+      image: project12,
+      title: "Gym Reservation System",
+      subtitle: "Laravel, Bootstrap, SQL",
+      link: "",
+    },
+    {
+      id: 13,
+      image: project13,
+      title: "Sdo Laguna",
+      subtitle: "Laravel, Bootstrap, SQL",
+      link: "",
+    },
+    {
+      id: 14,
+      image: project14,
+      title: "Pokeflip Card Game",
+      subtitle: "React, TailwindCSS",
+      link: "https://pokeflip-game.netlify.app/",
+    },
+    {
+      id: 15,
+      image: project15,
+      title: "Project Blog App",
+      subtitle: "React, CSS, Firebase",
+      link: "https://reactjs-blog-chatapp.web.app/",
+    },
+  ];
   return (
     <Fragment>
       <title>Projects | Carl Caraan</title>
@@ -47,191 +166,36 @@ function projects() {
             </div>
             {/* End Heading */}
 
-            {/* Start Project Flex Container */}
+            {/* Start Project Grid Container */}
             <div
-              className="flex flex-col mt-12 space-y-16
-              lg:mt-24 xl:mt-40"
+              className="grid grid-cols-1 gap-8 mt-12
+              lg:mt-24 xl:mt-40 lg:grid-cols-2"
             >
-              {/* Row */}
-              <div className="project_row-container">
-                {/* Item A */}
-                <div className="project_item-container">
-                  <div className="project_image-box">
-                    <Image src={project13} alt={project13}></Image>
-                  </div>
-                  <div className="group cursor-default">
-                    <h3 className="project_title">Sdo Laguna</h3>
-                    <h5 className="project_subtitle">
-                      Laravel, Bootstrap, SQL
-                    </h5>
-                  </div>
-                </div>
-                {/* Item B */}
-                <div className="project_item-container">
-                  <div className="project_image-box">
-                    <Image src={project12} alt={project12}></Image>
-                  </div>
-                  <div className="group cursor-default">
-                    <h3 className="project_title">Gym Reservation System</h3>
-                    <h5 className="project_subtitle">
-                      Laravel, Bootstrap, SQL
-                    </h5>
-                  </div>
-                </div>
-              </div>
-
-              {/* Row */}
-              <div className="project_row-container">
-                {/* Item A */}
-                <div className="project_item-container">
-                  <div className="project_image-box">
-                    <Image src={project11} alt={project11}></Image>
-                  </div>
-                  <div className="group cursor-default">
-                    <h3 className="project_title">School Information System</h3>
-                    <h5 className="project_subtitle">Php, Bootstrap, SQL</h5>
-                  </div>
-                </div>
-                {/* Item B */}
-                <div className="project_item-container">
-                  <div className="project_image-box">
-                    <Image src={project10} alt={project10}></Image>
-                  </div>
-                  <div className="group cursor-default">
-                    <h3 className="project_title">Loaning Management System</h3>
-                    <h5 className="project_subtitle">Php, Bootstrap, SQL</h5>
-                  </div>
-                </div>
-              </div>
-
-              {/* Row */}
-              <div className="project_row-container">
-                {/* Item A */}
-                <div className="project_item-container">
-                  <div className="project_image-box">
-                    <Image src={project9} alt={project9}></Image>
-                  </div>
-                  <div className="group cursor-default">
-                    <h3 className="project_title">Lazapee ECommerce Website</h3>
-                    <h5 className="project_subtitle">
-                      ReactJs, Laravel, CSS Module
-                    </h5>
-                  </div>
-                </div>
-                {/* Item B */}
-                <div className="project_item-container">
-                  <div className="project_image-box">
-                    <Image src={project8} alt={project8}></Image>
-                  </div>
-                  <div className="group cursor-default">
-                    <h3 className="project_title">School Management System</h3>
-                    <h5 className="project_subtitle">
-                      Laravel, Bootstrap, SQL
-                    </h5>
-                  </div>
-                </div>
-              </div>
-
-              {/* Row */}
-              <div className="project_row-container">
-                {/* Item A */}
-                <div className="project_item-container">
-                  <div className="project_image-box">
-                    <Image src={project7} alt={project7}></Image>
-                  </div>
-                  <div className="group cursor-default">
-                    <h3 className="project_title">Online Employment System</h3>
-                    <h5 className="project_subtitle">
-                      Flask, Bootstrap, SQLite
-                    </h5>
-                  </div>
-                </div>
-                {/* Item B */}
-                <div className="project_item-container">
-                  <div className="project_image-box">
-                    <Image src={project6} alt={project6}></Image>
-                  </div>
-                  <div className="group cursor-default">
-                    <h3 className="project_title">Content Management System</h3>
-                    <h5 className="project_subtitle">
-                      Laravel, Bootstrap, SQL
-                    </h5>
-                  </div>
-                </div>
-              </div>
-
-              {/* Row */}
-              <div className="project_row-container">
-                {/* Item A */}
-                <div className="project_item-container">
-                  <div className="project_image-box">
-                    <Image src={project5} alt={project5}></Image>
-                  </div>
-                  <div className="group cursor-default">
-                    <h3 className="project_title">Online News Portal</h3>
-                    <h5 className="project_subtitle">
-                      Laravel, Bootstrap, SQL
-                    </h5>
-                  </div>
-                </div>
-                {/* Item B */}
-                <div className="project_item-container">
-                  <div className="project_image-box">
-                    <Image src={project4} alt={project4}></Image>
-                  </div>
-                  <div className="group cursor-default">
-                    <h3 className="project_title">
-                      Business Permit Registration
-                    </h3>
-                    <h5 className="project_subtitle">
-                      Php, Javscript, Bootstrap
-                    </h5>
-                  </div>
-                </div>
-              </div>
-
-              {/* Row */}
-              <div className="project_row-container">
-                {/* Item A */}
-                <div className="project_item-container">
-                  <div className="project_image-box">
-                    <Image src={project3} alt={project3}></Image>
-                  </div>
-                  <div className="group cursor-default">
-                    <h3 className="project_title">Social Media App</h3>
-                    <h5 className="project_subtitle">Php, Javascript, CSS</h5>
-                  </div>
-                </div>
-                {/* Item B */}
-                <div className="project_item-container">
-                  <div className="project_image-box">
-                    <Image src={project2} alt={project2}></Image>
-                  </div>
-                  <div className="group cursor-default">
-                    <h3 className="project_title">Booking Management System</h3>
-                    <h5 className="project_subtitle">
-                      Flask, Bootstrap, SQLite
-                    </h5>
-                  </div>
-                </div>
-              </div>
-
-              {/* Row */}
-              <div className="project_row-container">
-                {/* Item A */}
-                <div className="project_item-container">
-                  <div className="project_image-box">
-                    <Image src={project1} alt={project1}></Image>
-                  </div>
-                  <div className="group cursor-default">
-                    <h3 className="project_title">SB Information System</h3>
-                    <h5 className="project_subtitle">Php, Bootstrap, MySQL</h5>
-                  </div>
-                </div>
-                {/* Item B */}
-              </div>
+              {/* Item */}
+              {projects &&
+                projects
+                  .sort((a, b) => b.id - a.id)
+                  .map((project) => (
+                    <div
+                      key={project.id}
+                      className="flex flex-col space-y-6 mb-6
+                      xl:space-y-12"
+                    >
+                      <div className="project_image-box">
+                        <Link href={project.link} target="_blank">
+                          <Image src={project.image} alt={project.image} />
+                        </Link>
+                      </div>
+                      <div className="group cursor-default">
+                        <Link href={project.link} target="_blank">
+                          <h3 className="project_title">{project.title}</h3>
+                        </Link>
+                        <h5 className="project_subtitle">{project.subtitle}</h5>
+                      </div>
+                    </div>
+                  ))}
             </div>
-            {/* End Project Flex Container */}
+            {/* End Project Grid Container */}
 
             {/* Start Post Project Section */}
             <div
