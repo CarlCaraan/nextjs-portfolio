@@ -6,11 +6,30 @@ function Meta() {
       <meta name="title" content="Carl Caraan Web Developer"></meta>
       <meta
         name="description"
-        content="Carl Caraan - Web Developer based on Laguna, Philippines"
+        content="Looking for a skilled web developer? Meet Carl Caraan, based in Laguna, Philippines. With a strong portfolio of impressive projects, Carl is a reliable choice for your web development needs."
       ></meta>
       <meta
         name="keywords"
-        content="CarlCaraan, Carl Caraan, Web Developer, Laguna, Santa Cruz, Philippines"
+        content="CarlCaraan,
+        Carl Caraan,
+        Web Developer,
+        Laguna, Santa Cruz, Philippines,
+        Project Blog App,
+        Pokeflip Card Game,
+        Sdo Laguna,
+        Gym Reservation System,
+        School Information System,
+        Loaning Management System,
+        Lazapee ECommerce Website,
+        School Management System,
+        Online Employment System,
+        Content Management System,
+        Online News Portal,
+        Business Permit Registration,
+        Social Media App,
+        Keyboard Shop,
+        Booking Management System,
+        SB Information System"
       ></meta>
       <meta name="robots" content="index, follow"></meta>
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
