@@ -1,8 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-};
-module.exports = nextConfig;
 
 // Minified JS
 const withPlugins = require("next-compose-plugins");
@@ -25,3 +21,8 @@ module.exports = withPlugins([
     },
   },
 ]);
+
+const nextConfig = {
+  reactStrictMode: true,
+};
+module.exports = nextConfig;
