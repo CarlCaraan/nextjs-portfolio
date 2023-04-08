@@ -62,9 +62,6 @@
   }
 
   /* ========= GLOBAL ========= */
-  html {
-    @apply overflow-x-hidden;
-  }
   body {
     @apply text-grayDark bg-white
     dark:text-white dark:bg-black;
