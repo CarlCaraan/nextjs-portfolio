@@ -23,6 +23,10 @@ import project13 from "../public/images/projects/project13.png";
 import project14 from "../public/images/projects/project14.png";
 import project15 from "../public/images/projects/project15.png";
 
+// Framer Motion
+import { motion } from "framer-motion";
+import slideInUp from "../components/animation/slideInUp";
+
 function projects() {
   const projects = [
     {
@@ -146,111 +150,120 @@ function projects() {
       {/* ========= End Navigation ========= */}
 
       {/* ========= Start Main Content ========= */}
-      <main>
-        {/* ========= Start Project Section ========= */}
-        <section className="sm:mb-28" id="project">
-          <div className="section-container">
-            {/* Start Heading */}
-            <div className="mt-12 lg:mt-24">
-              <h1 className="big-heading-text">Latest Projects</h1>
-              <p
-                className="text-sm leading-snug text-grayLight 
+      <motion.div
+        variants={slideInUp}
+        initial="initial"
+        animate="animate"
+        exit="exit"
+      >
+        <main>
+          {/* ========= Start Project Section ========= */}
+          <section className="sm:mb-28" id="project">
+            <div className="section-container">
+              {/* Start Heading */}
+              <div className="mt-12 lg:mt-24">
+                <h1 className="big-heading-text">Latest Projects</h1>
+                <p
+                  className="text-sm leading-snug text-grayLight 
                 xl:pr-5 xl:w-1/2 xl:text-[1.25vw] xl:leading-normal lg:text-base lg:leading-normal sm:text-lg
                 dark:text-grayLightest"
-              >
-                Ever since <u>I challenge myself</u> to create a different
-                project, I always enjoyed web development. Here are some of the
-                projects I worked on both <u>in</u> and{" "}
-                <u>outside of my studies</u>.
-              </p>
-            </div>
-            {/* End Heading */}
+                >
+                  Ever since <u>I challenge myself</u> to create a different
+                  project, I always enjoyed web development. Here are some of
+                  the projects I worked on both <u>in</u> and{" "}
+                  <u>outside of my studies</u>.
+                </p>
+              </div>
+              {/* End Heading */}
 
-            {/* Start Project Grid Container */}
-            <div
-              className="grid grid-cols-1 gap-8 mt-12
+              {/* Start Project Grid Container */}
+              <div
+                className="grid grid-cols-1 gap-8 mt-12
               lg:mt-24 xl:mt-40 lg:grid-cols-2"
-            >
-              {/* Item */}
-              {projects &&
-                projects
-                  .sort((a, b) => b.id - a.id)
-                  .map((project) => (
-                    <div
-                      key={project.id}
-                      className="flex flex-col space-y-6 mb-6
+              >
+                {/* Item */}
+                {projects &&
+                  projects
+                    .sort((a, b) => b.id - a.id)
+                    .map((project) => (
+                      <div
+                        key={project.id}
+                        className="flex flex-col space-y-6 mb-6
                       xl:space-y-12"
-                    >
-                      <div className="project_image-box">
-                        <Link
-                          href={project.link}
-                          target={project.link ? "_blank" : ""}
-                        >
-                          <Image src={project.image} alt={project.image} />
-                        </Link>
+                      >
+                        <div className="project_image-box">
+                          <Link
+                            href={project.link}
+                            target={project.link ? "_blank" : ""}
+                          >
+                            <Image src={project.image} alt={project.image} />
+                          </Link>
+                        </div>
+                        <div className="group cursor-default">
+                          <Link
+                            href={project.link}
+                            target={project.link ? "_blank" : ""}
+                          >
+                            <h3 className="project_title">{project.title}</h3>
+                          </Link>
+                          <h5 className="project_subtitle">
+                            {project.subtitle}
+                          </h5>
+                        </div>
                       </div>
-                      <div className="group cursor-default">
-                        <Link
-                          href={project.link}
-                          target={project.link ? "_blank" : ""}
-                        >
-                          <h3 className="project_title">{project.title}</h3>
-                        </Link>
-                        <h5 className="project_subtitle">{project.subtitle}</h5>
-                      </div>
-                    </div>
-                  ))}
-            </div>
-            {/* End Project Grid Container */}
+                    ))}
+              </div>
+              {/* End Project Grid Container */}
 
-            {/* Start Post Project Section */}
-            <div
-              className="mt-24 mb-0 text-center text-black 
+              {/* Start Post Project Section */}
+              <div
+                className="mt-24 mb-0 text-center text-black 
               sm:mt-64 sm:mb-8
               dark:text-white"
-            >
-              <h1
-                className="text-2xl font-sansSB mb-12 
+              >
+                <h1
+                  className="text-2xl font-sansSB mb-12 
               sm:text-5xl"
-              >
-                Feeling strong?
-                <br /> Let&#39;s get to work!
-              </h1>
+                >
+                  Feeling strong?
+                  <br /> Let&#39;s get to work!
+                </h1>
 
-              <div
-                className="flex flex-col space-y-12
+                <div
+                  className="flex flex-col space-y-12
                 sm:space-y-24"
-              >
-                <div>
-                  <Link
-                    className="text-base font-sansSB underline hover:no-underline 
+                >
+                  <div>
+                    <Link
+                      className="text-base font-sansSB underline hover:no-underline 
                   sm:text-xl"
-                    href="/contact"
-                  >
-                    Get in touch
-                  </Link>
-                </div>
+                      href="/contact"
+                    >
+                      Get in touch
+                    </Link>
+                  </div>
 
-                <div>
-                  <a
-                    className="text-base hover:text-violet duration-200 
+                  <div>
+                    <a
+                      className="text-base hover:text-violet duration-200 
                   sm:text-2xl"
-                    href="mailto:caraancarlaaron@gmail.com"
-                  >
-                    caraancarlaaron@gmail.com
-                  </a>
+                      href="mailto:caraancarlaaron@gmail.com"
+                    >
+                      caraancarlaaron@gmail.com
+                    </a>
+                  </div>
                 </div>
               </div>
+              {/* End Post Project Section */}
             </div>
-            {/* End Post Project Section */}
-          </div>
-        </section>
-        {/* ========= End Project Section ========= */}
+          </section>
+          {/* ========= End Project Section ========= */}
 
-        {/* ========= Start Footer ========= */}
-        <Footer />
-        {/* ========= End Footer ========= */}
-      </main>
+          {/* ========= Start Footer ========= */}
+          <Footer />
+          {/* ========= End Footer ========= */}
+        </main>
+      </motion.div>
       {/* ========= End Main Content ========= */}
 
       {/* ========= Start Top Scroll ========= */}

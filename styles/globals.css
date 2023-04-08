@@ -63,7 +63,7 @@
 
   /* ========= GLOBAL ========= */
   body {
-    @apply text-grayDark bg-white
+    @apply text-grayDark bg-white overflow-x-hidden
     dark:text-white dark:bg-black;
   }
   a {
