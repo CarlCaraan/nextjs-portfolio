@@ -5,7 +5,7 @@ import TopScroll from "../components/TopScroll";
 
 // Framer Motion
 import { motion } from "framer-motion";
-import slideInLeft from "../components/animation/slideInLeft";
+import slideInUp from "../components/animation/slideInUp";
 
 function contact() {
   return (
@@ -17,7 +17,7 @@ function contact() {
 
       {/* ========= Start Main Content ========= */}
       <motion.div
-        variants={slideInLeft}
+        variants={slideInUp}
         initial="initial"
         animate="animate"
         exit="exit"
