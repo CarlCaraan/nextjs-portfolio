@@ -187,6 +187,7 @@ function projects() {
                     .sort((a, b) => b.id - a.id)
                     .map((project) => (
                       <div
+                        data-aos="zoom-in"
                         key={project.id}
                         className="flex flex-col space-y-6 mb-6
                       xl:space-y-12"

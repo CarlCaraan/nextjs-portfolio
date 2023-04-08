@@ -156,7 +156,10 @@ function experience() {
                   {/* Start Grid Container */}
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-12 xl:mt-24 gap-6">
                     {/* Item */}
-                    <div className="group experience-cert-box">
+                    <div
+                      className="group experience-cert-box"
+                      data-aos="zoom-in"
+                    >
                       <Image
                         className="experience-image"
                         src={cert1}
@@ -164,7 +167,11 @@ function experience() {
                       ></Image>
                     </div>
                     {/* Item */}
-                    <div className="group experience-cert-box">
+                    <div
+                      className="group experience-cert-box"
+                      data-aos="zoom-in"
+                      data-aos-delay="50"
+                    >
                       <Image
                         className="experience-image"
                         src={cert2}
@@ -172,7 +179,11 @@ function experience() {
                       ></Image>
                     </div>
                     {/* Item */}
-                    <div className="group experience-cert-box">
+                    <div
+                      className="group experience-cert-box"
+                      data-aos="zoom-in"
+                      data-aos-delay="100"
+                    >
                       <Image
                         className="experience-image"
                         src={cert3}
@@ -180,7 +191,11 @@ function experience() {
                       ></Image>
                     </div>
                     {/* Item */}
-                    <div className="group experience-cert-box">
+                    <div
+                      className="group experience-cert-box"
+                      data-aos="zoom-in"
+                      data-aos-delay="150"
+                    >
                       <Image
                         className="experience-image"
                         src={cert4}
@@ -188,7 +203,10 @@ function experience() {
                       ></Image>
                     </div>
                     {/* Item */}
-                    <div className="group experience-cert-box">
+                    <div
+                      className="group experience-cert-box"
+                      data-aos="zoom-in"
+                    >
                       <Image
                         className="experience-image"
                         src={cert5}
@@ -196,7 +214,11 @@ function experience() {
                       ></Image>
                     </div>
                     {/* Item */}
-                    <div className="group experience-cert-box">
+                    <div
+                      className="group experience-cert-box"
+                      data-aos="zoom-in"
+                      data-aos-delay="50"
+                    >
                       <Image
                         className="experience-image"
                         src={cert6}
@@ -204,7 +226,11 @@ function experience() {
                       ></Image>
                     </div>
                     {/* Item */}
-                    <div className="group experience-cert-box">
+                    <div
+                      className="group experience-cert-box"
+                      data-aos="zoom-in"
+                      data-aos-delay="100"
+                    >
                       <Image
                         className="experience-image"
                         src={cert7}
@@ -212,7 +238,11 @@ function experience() {
                       ></Image>
                     </div>
                     {/* Item */}
-                    <div className="group experience-cert-box">
+                    <div
+                      className="group experience-cert-box"
+                      data-aos="zoom-in"
+                      data-aos-delay="150"
+                    >
                       <Image
                         className="experience-image"
                         src={cert8}
@@ -220,7 +250,10 @@ function experience() {
                       ></Image>
                     </div>
                     {/* Item */}
-                    <div className="group experience-cert-box">
+                    <div
+                      className="group experience-cert-box"
+                      data-aos="zoom-in"
+                    >
                       <Image
                         className="experience-image"
                         src={cert9}

@@ -142,8 +142,9 @@ function ProfileSection({ props }) {
               </div>
               <div className="basis-1/2">
                 <Image
+                  data-aos="zoom-in"
                   className="w-full mx-auto 
-                      md:mx-0 md:w-3/4 xl:w-full"
+                  md:mx-0 md:w-3/4 xl:w-full"
                   src={UserImage}
                   alt="carlcaraan"
                 ></Image>

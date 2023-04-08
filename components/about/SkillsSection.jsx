@@ -82,6 +82,7 @@ function SkillsSection({ props }) {
               <div className="grid grid-cols-7 md:grid-rows-3 gap-6">
                 {/* Item 1 */}
                 <div
+                  data-aos="fade-up"
                   className="custom-border-dashed col-span-7 
                   md:col-span-2"
                 >
@@ -109,6 +110,8 @@ function SkillsSection({ props }) {
                 </div>
                 {/* Item 2 */}
                 <div
+                  data-aos="fade-up"
+                  data-aos-delay="200"
                   className="custom-border-dashed col-span-7 
                   md:row-span-2 md:col-span-3"
                 >
@@ -138,6 +141,8 @@ function SkillsSection({ props }) {
                 </div>
                 {/* Item 3 */}
                 <div
+                  data-aos="fade-up"
+                  data-aos-delay="400"
                   className="custom-border-dashed col-span-7 
                   md:col-span-2"
                 >
@@ -153,6 +158,8 @@ function SkillsSection({ props }) {
                 </div>
                 {/* Item 4 */}
                 <div
+                  data-aos="fade-up"
+                  data-aos-delay="100"
                   className="custom-border-dashed col-span-7 
                   md:row-span-2 md:row-start-2 md:col-span-2"
                 >
@@ -183,6 +190,8 @@ function SkillsSection({ props }) {
                 </div>
                 {/* Item 5 */}
                 <div
+                  data-aos="fade-up"
+                  data-aos-delay="50"
                   className="custom-border-dashed col-span-7 
                   md:row-start-3 md:col-span-3"
                 >
@@ -199,6 +208,8 @@ function SkillsSection({ props }) {
                 </div>
                 {/* Item 6 */}
                 <div
+                  data-aos="fade-up"
+                  data-aos-delay="300"
                   className="custom-border-dashed col-span-7 
                   md:row-span-1 md:col-span-2"
                 >

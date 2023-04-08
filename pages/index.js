@@ -141,7 +141,10 @@ export default function Home() {
               lg:pt-24"
               >
                 {/* Item 1 */}
-                <div className="col-span-full group relative overflow-hidden shadow-lg">
+                <div
+                  className="col-span-full group relative overflow-hidden shadow-lg"
+                  data-aos="fade-up"
+                >
                   <Image
                     className="border border-white rounded-sm w-full"
                     src={ProjectImage1}
@@ -153,7 +156,8 @@ export default function Home() {
                 {/* Item 2 */}
                 <div
                   className="col-span-full group relative overflow-hidden shadow-lg row-span-2
-                md:col-span-5"
+                  md:col-span-5"
+                  data-aos="fade-up"
                 >
                   <Image
                     className="border border-white rounded-sm w-full"
@@ -168,7 +172,9 @@ export default function Home() {
                 {/* Item 3 */}
                 <div
                   className="col-span-full group relative overflow-hidden shadow-lg row-span-1
-                md:col-span-3"
+                  md:col-span-3"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
                 >
                   <Image
                     className="border border-white rounded-sm w-full"
@@ -198,10 +204,11 @@ export default function Home() {
 
               <blockquote
                 className="text-2xl font-serif text-black text-center mt-12 
-              md:text-3xl md:leading-relaxed 
-              lg:leading-relaxed lg:text-5xl lg:mt-24 
-              xl:px-24
-              dark:text-white"
+                md:text-3xl md:leading-relaxed 
+                lg:leading-relaxed lg:text-5xl lg:mt-24 
+                xl:px-24
+                dark:text-white"
+                data-aos="zoom-in"
               >
                 “We can not solve our problems with the same level of thinking
                 that created them.”
