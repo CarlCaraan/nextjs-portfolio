@@ -1,13 +1,17 @@
 import React from "react";
 import Image from "next/image";
-import UserImage from "../../public/images/userbg.png";
+
+// Components
 import AboutHeading from "./AboutHeading";
+
+// Images
+import UserImage from "../../public/images/userbg.png";
 
 function ProfileSection({ props }) {
   return (
     <section
       className="mt-12 
-          lg:mt-0"
+      lg:mt-0"
       id="profile"
     >
       <div className="section-container-fluid">
@@ -20,7 +24,7 @@ function ProfileSection({ props }) {
           {/* Start Profile Content */}
           <div
             className="col-start-1 col-span-9 justify-self-stretch py-4
-                md:col-start-2 md:py-24"
+            md:col-start-2 md:py-24"
           >
             {/* Start Flex Container */}
             <div

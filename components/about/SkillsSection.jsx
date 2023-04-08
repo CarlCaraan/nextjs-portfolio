@@ -1,7 +1,11 @@
 import React from "react";
-import AboutHeading from "./AboutHeading";
 import Image from "next/image";
+import Link from "next/link";
 
+// Components
+import AboutHeading from "./AboutHeading";
+
+// Images
 import figma from "../../public/images/about/figma.svg";
 import adobeXD from "../../public/images/about/adobe xd.svg";
 import html from "../../public/images/about/html.svg";
@@ -19,14 +23,13 @@ import firebase from "../../public/images/about/firebase.svg";
 import mysql from "../../public/images/about/mysql.svg";
 import vscode from "../../public/images/about/vs code.svg";
 import git from "../../public/images/about/git.svg";
-import Link from "next/link";
 
 function SkillsSection({ props }) {
   return (
     <section
       className="mt-12 sm:mb-28
       lg:mt-0"
-      id="Skills"
+      id="skills"
     >
       <div className="section-container-fluid">
         {/* Start Grid Container */}
@@ -42,7 +45,7 @@ function SkillsSection({ props }) {
           >
             {/* Start Heading Text */}
             <div
-              className="text-base text-black indent-8 auto-hyphen 
+              className="text-sm text-black indent-8 text-justify auto-hyphen 
              xl:off-hyphen sm:text-xl lg:text-2xl
              dark:text-white"
             >

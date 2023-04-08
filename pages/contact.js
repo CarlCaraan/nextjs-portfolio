@@ -36,9 +36,9 @@ function contact() {
                   Ready to work together? Let&#39;s talk.
                 </h4>
                 <h5
-                  className="mt-4 text-sm
-                xl:w-3/5 xl:text-xl lg:text-lg sm:text-base
-                dark:text-grayLightest"
+                  className="mt-4 text-sm text-justify auto-hyphen
+                  xl:w-3/5 xl:text-xl lg:text-lg sm:text-base
+                  dark:text-grayLightest"
                 >
                   I&#39;m always open to discussing new opportunities and
                   collaborating with creative minds. Contact me to learn more

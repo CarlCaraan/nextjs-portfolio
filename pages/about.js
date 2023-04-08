@@ -56,13 +56,13 @@ function about() {
                 </div>
                 <div className="basis-3/5 py-[12vw]">
                   <h1
-                    className="text-[3.6vw] leading-tight 
-                  lg:select-none"
+                    className="text-sm leading-tight 
+                    sm:text-[3.6vw] lg:select-none"
                   >
                     To be a developer who solves real world problem
                   </h1>
                   <p
-                    className="text-xl text-grayLighter mt-5
+                    className="text-sm text-grayLighter mt-5 text-justify
                   md:text-[1.6vw] md:leading-tight md:text-grayLight
                   dark:text-grayLightest"
                   >
