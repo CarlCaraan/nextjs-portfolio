@@ -164,7 +164,7 @@ function projects() {
               <div className="mt-12 lg:mt-24">
                 <h1 className="big-heading-text">Latest Projects</h1>
                 <p
-                  className="text-sm leading-snug text-grayLight text-justify auto-hyphen 
+                  className="text-sm leading-snug text-grayLight text-justify 
                   xl:pr-5 xl:w-1/2 xl:text-[1.25vw] xl:leading-normal lg:text-base lg:leading-normal sm:text-lg
                 dark:text-grayLightest"
                 >

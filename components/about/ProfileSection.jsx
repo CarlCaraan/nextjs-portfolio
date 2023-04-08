@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-// Components
+Components;
 import AboutHeading from "./AboutHeading";
 
 // Images
@@ -111,7 +111,7 @@ function ProfileSection({ props }) {
                       Interests
                     </div>
                     <div
-                      className="basis-3/5 text-base text-grayLight auto-hyphen 
+                      className="basis-3/5 text-base text-grayLight 
                       xl:off-hyphen sm:text-xl
                       dark:text-grayLightest"
                     >

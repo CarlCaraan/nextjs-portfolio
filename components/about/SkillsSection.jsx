@@ -45,7 +45,7 @@ function SkillsSection({ props }) {
           >
             {/* Start Heading Text */}
             <div
-              className="text-sm text-black indent-8 text-justify auto-hyphen 
+              className="text-sm text-black indent-8 text-justify 
              xl:off-hyphen sm:text-xl lg:text-2xl
              dark:text-white"
             >

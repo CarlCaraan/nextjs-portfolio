@@ -36,7 +36,7 @@ function contact() {
                   Ready to work together? Let&#39;s talk.
                 </h4>
                 <h5
-                  className="mt-4 text-sm text-justify auto-hyphen
+                  className="mt-4 text-sm text-justify
                   xl:w-3/5 xl:text-xl lg:text-lg sm:text-base
                   dark:text-grayLightest"
                 >
