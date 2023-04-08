@@ -159,7 +159,6 @@ function SkillsSection({ props }) {
                 {/* Item 4 */}
                 <div
                   data-aos="fade-up"
-                  data-aos-delay="100"
                   className="custom-border-dashed col-span-7 
                   md:row-span-2 md:row-start-2 md:col-span-2"
                 >
@@ -191,7 +190,7 @@ function SkillsSection({ props }) {
                 {/* Item 5 */}
                 <div
                   data-aos="fade-up"
-                  data-aos-delay="50"
+                  data-aos-delay="200"
                   className="custom-border-dashed col-span-7 
                   md:row-start-3 md:col-span-3"
                 >
@@ -209,7 +208,7 @@ function SkillsSection({ props }) {
                 {/* Item 6 */}
                 <div
                   data-aos="fade-up"
-                  data-aos-delay="300"
+                  data-aos-delay="400"
                   className="custom-border-dashed col-span-7 
                   md:row-span-1 md:col-span-2"
                 >
