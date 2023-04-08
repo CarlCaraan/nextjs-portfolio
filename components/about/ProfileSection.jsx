@@ -111,7 +111,7 @@ function ProfileSection({ props }) {
                       Interests
                     </div>
                     <div
-                      className="basis-3/5 text-base text-grayLight text-justify
+                      className="basis-3/5 text-base text-grayLight text-justify auto-hyphen
                       xl:off-hyphen sm:text-xl
                       dark:text-grayLightest"
                     >
