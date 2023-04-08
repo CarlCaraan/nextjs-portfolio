@@ -56,7 +56,7 @@ function about() {
                 </div>
                 <div className="basis-3/5 py-[12vw]">
                   <h1
-                    className="text-sm leading-tight 
+                    className="text-base leading-tight text-justify
                     sm:text-[3.6vw] lg:select-none"
                   >
                     To be a developer who solves real world problem
