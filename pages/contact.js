@@ -31,12 +31,12 @@ function contact() {
                 <h1 className="big-heading-text">Get in touch</h1>
                 <h4
                   className="text-lg font-sansSB text-black sm:text-2xl mt-12
-              dark:text-white"
+                  dark:text-white"
                 >
                   Ready to work together? Let&#39;s talk.
                 </h4>
                 <h5
-                  className="mt-4 text-sm text-justify
+                  className="mt-4 text-sm text-justify auto-hyphen
                   xl:w-3/5 xl:text-xl lg:text-lg sm:text-base
                   dark:text-grayLightest"
                 >
