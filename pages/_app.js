@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }) {
   useEffect(() => {
     AOS.init({
       // add options here
-      disable: "mobile",
+      // disable: "mobile",
       once: true,
     });
   }, []);
