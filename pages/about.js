@@ -32,24 +32,24 @@ function about() {
               {/* Start Flex Container */}
               <div
                 className="flex flex-col 
-              md:flex-row"
+                md:flex-row"
               >
                 <div className="basis-2/5 pt-16">
                   <div
                     className="uppercase text-[6.6vw] leading-none 
-                  lg:select-none"
+                    lg:select-none"
                   >
                     About{" "}
                     <span
                       className="block 
-                    md:hidden"
+                      md:hidden"
                     >
                       Me
                     </span>
                   </div>
                   <div
                     className="uppercase text-[6.6vw] leading-none ml-[16.7vw] hidden 
-                  md:block lg:select-none"
+                    md:block lg:select-none"
                   >
                     Me
                   </div>
@@ -63,8 +63,8 @@ function about() {
                   </h1>
                   <p
                     className="text-sm text-grayLighter mt-5 text-justify
-                  md:text-[1.6vw] md:leading-tight md:text-grayLight
-                  dark:text-grayLightest"
+                    md:text-[1.6vw] md:leading-tight md:text-grayLight
+                    dark:text-grayLightest"
                   >
                     I am looking for a challenging opportunity that will enable
                     me to use my skills and abilities to achieve a challenging
