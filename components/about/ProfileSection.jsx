@@ -35,13 +35,13 @@ function ProfileSection({ props }) {
                 <div className="pt-12">
                   <h1
                     className="text-2xl 
-                        md:text-3xl lg:text-4xl xl:text-5xl"
+                    md:text-3xl lg:text-4xl xl:text-5xl"
                   >
                     Caraan Carl
                   </h1>
                   <p
                     className="text-base 
-                        sm:text-xl"
+                    sm:text-xl"
                   >
                     Carl Aaron D. Caraan
                   </p>
@@ -88,7 +88,7 @@ function ProfileSection({ props }) {
                     <div
                       className="basis-2/5 text-base text-black 
                       sm:text-xl
-                    dark:text-white"
+                      dark:text-white"
                     >
                       Education
                     </div>
@@ -106,7 +106,7 @@ function ProfileSection({ props }) {
                     <div
                       className="basis-2/5 text-base text-black 
                       sm:text-xl
-                    dark:text-white"
+                      dark:text-white"
                     >
                       Interests
                     </div>
@@ -125,7 +125,7 @@ function ProfileSection({ props }) {
                     <div
                       className="basis-2/5 text-base text-black 
                       sm:text-xl
-                    dark:text-white"
+                      dark:text-white"
                     >
                       Area
                     </div>
