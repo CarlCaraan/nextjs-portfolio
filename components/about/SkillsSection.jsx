@@ -46,8 +46,8 @@ function SkillsSection({ props }) {
             {/* Start Heading Text */}
             <div
               className="text-sm text-black indent-8 text-justify 
-             xl:off-hyphen sm:text-xl lg:text-2xl
-             dark:text-white"
+              xl:off-hyphen sm:text-xl lg:text-2xl
+              dark:text-white"
             >
               I am highly skilled in programming, with expertise in languages
               such as Javascript and Php, as well as experience with databases
@@ -65,7 +65,7 @@ function SkillsSection({ props }) {
       {/* Start Skills Content */}
       <div
         className="bg-panel py-16
-      dark:bg-grayLight"
+        dark:bg-grayLight"
       >
         <div className="section-container-fluid">
           {/* Start Grid Container */}
