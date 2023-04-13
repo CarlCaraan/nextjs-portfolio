@@ -49,7 +49,7 @@ function experience() {
                   {/* Start Flex Container */}
                   <div
                     className="flex flex-col mt-12 gap-4 space-y-12 md:space-y-0
-                  md:flex-row"
+                    md:flex-row"
                   >
                     <div className="education-flex-item">
                       {/* Year Heading */}
