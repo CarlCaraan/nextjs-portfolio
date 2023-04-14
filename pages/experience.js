@@ -164,7 +164,7 @@ function experience() {
                         className="experience-image"
                         src={cert1}
                         alt={cert1}
-                      ></Image>
+                      />
                     </div>
                     {/* Item */}
                     <div
@@ -176,7 +176,7 @@ function experience() {
                         className="experience-image"
                         src={cert2}
                         alt={cert2}
-                      ></Image>
+                      />
                     </div>
                     {/* Item */}
                     <div
@@ -188,7 +188,7 @@ function experience() {
                         className="experience-image"
                         src={cert3}
                         alt={cert3}
-                      ></Image>
+                      />
                     </div>
                     {/* Item */}
                     <div
@@ -200,7 +200,7 @@ function experience() {
                         className="experience-image"
                         src={cert4}
                         alt={cert4}
-                      ></Image>
+                      />
                     </div>
                     {/* Item */}
                     <div
@@ -211,7 +211,7 @@ function experience() {
                         className="experience-image"
                         src={cert5}
                         alt={cert5}
-                      ></Image>
+                      />
                     </div>
                     {/* Item */}
                     <div
@@ -223,7 +223,7 @@ function experience() {
                         className="experience-image"
                         src={cert6}
                         alt={cert6}
-                      ></Image>
+                      />
                     </div>
                     {/* Item */}
                     <div
@@ -235,7 +235,7 @@ function experience() {
                         className="experience-image"
                         src={cert7}
                         alt={cert7}
-                      ></Image>
+                      />
                     </div>
                     {/* Item */}
                     <div
@@ -247,7 +247,7 @@ function experience() {
                         className="experience-image"
                         src={cert8}
                         alt={cert8}
-                      ></Image>
+                      />
                     </div>
                     {/* Item */}
                     <div
@@ -258,7 +258,7 @@ function experience() {
                         className="experience-image"
                         src={cert9}
                         alt={cert9}
-                      ></Image>
+                      />
                     </div>
                   </div>
                   {/* End Grid Container */}

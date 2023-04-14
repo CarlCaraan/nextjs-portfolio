@@ -165,8 +165,8 @@ function projects() {
                 <h1 className="big-heading-text">Latest Projects</h1>
                 <p
                   className="text-sm leading-snug text-grayLight text-justify 
-                  xl:pr-5 xl:w-1/2 xl:text-[1.25vw] xl:leading-normal lg:text-base lg:leading-normal sm:text-lg
-                dark:text-grayLightest"
+                    xl:pr-5 xl:w-1/2 xl:text-[1.25vw] xl:leading-normal lg:text-base lg:leading-normal sm:text-lg
+                  dark:text-grayLightest"
                 >
                   Ever since <u>I challenge myself</u> to create a different
                   project, I always enjoyed web development. Here are some of
@@ -179,7 +179,7 @@ function projects() {
               {/* Start Project Grid Container */}
               <div
                 className="grid grid-cols-1 gap-8 mt-12
-              lg:mt-24 xl:mt-40 lg:grid-cols-2"
+                lg:mt-24 xl:mt-40 lg:grid-cols-2"
               >
                 {/* Item */}
                 {projects &&
@@ -190,7 +190,7 @@ function projects() {
                         data-aos="zoom-in"
                         key={project.id}
                         className="flex flex-col space-y-6 mb-6
-                      xl:space-y-12"
+                        xl:space-y-12"
                       >
                         <div className="project_image-box">
                           <Link
@@ -219,12 +219,12 @@ function projects() {
               {/* Start Post Project Section */}
               <div
                 className="mt-24 mb-0 text-center text-black 
-              sm:mt-64 sm:mb-8
-              dark:text-white"
+                sm:mt-64 sm:mb-8
+                dark:text-white"
               >
                 <h1
                   className="text-2xl font-sansSB mb-12 
-              sm:text-5xl"
+                  sm:text-5xl"
                 >
                   Feeling strong?
                   <br /> Let&#39;s get to work!
@@ -232,12 +232,12 @@ function projects() {
 
                 <div
                   className="flex flex-col space-y-12
-                sm:space-y-24"
+                  sm:space-y-24"
                 >
                   <div>
                     <Link
                       className="text-base font-sansSB underline hover:no-underline 
-                  sm:text-xl"
+                      sm:text-xl"
                       href="/contact"
                     >
                       Get in touch
@@ -247,7 +247,7 @@ function projects() {
                   <div>
                     <a
                       className="text-base hover:text-violet duration-200 
-                  sm:text-2xl"
+                      sm:text-2xl"
                       href="mailto:caraancarlaaron@gmail.com"
                     >
                       caraancarlaaron@gmail.com
