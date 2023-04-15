@@ -17,6 +17,7 @@ export default function App({ Component, pageProps }) {
       once: true,
     });
   }, []);
+
   return (
     <AnimatePresence mode="wait">
       <ThemeProvider enableSystem={false} attribute="class">
