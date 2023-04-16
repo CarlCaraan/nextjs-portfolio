@@ -12,6 +12,8 @@ function Meta() {
         name="keywords"
         content="CarlCaraan,
         Carl Caraan,
+        Carl Aaron D. Caraan,
+        Carl Aaron D. Caraan - Web Developer,
         Web Developer,
         Laguna, Santa Cruz, Philippines,
         Project Blog App,
