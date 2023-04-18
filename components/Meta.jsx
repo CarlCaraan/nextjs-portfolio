@@ -12,7 +12,12 @@ function Meta() {
         name="keywords"
         content="CarlCaraan,
         Carl Caraan,
+        Carl Aaron D. Caraan,
+        Carl Aaron D. Caraan - Web Developer,
         Web Developer,
+        Fullstack Developer,
+        Frontend Developer,
+        Backend Developer,
         Laguna, Santa Cruz, Philippines,
         Project Blog App,
         Pokeflip Card Game,

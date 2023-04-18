@@ -147,7 +147,7 @@ function ProfileSection({ props }) {
                   md:mx-0 md:w-3/4 xl:w-full"
                   src={UserImage}
                   alt="carlcaraan"
-                ></Image>
+                />
               </div>
             </div>
             {/* End Flex Container */}
