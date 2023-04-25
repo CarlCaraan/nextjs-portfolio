@@ -91,7 +91,6 @@ function about() {
           {/* ========= End Footer ========= */}
         </main>
       </motion.div>
-
       {/* ========= End Main Content ========= */}
 
       {/* ========= Start Top Scroll ========= */}

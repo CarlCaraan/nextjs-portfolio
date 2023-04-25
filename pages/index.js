@@ -37,20 +37,20 @@ export default function Home() {
             {/* Start Flex Container */}
             <div
               className="flex flex-col-reverse items-center
-            lg:flex-row"
+              lg:flex-row"
             >
               {/* Left Section */}
               <div className="lg:basis-1/2">
                 <h1
                   className="text-2xl font-sansB text-center mt-12
-                lg:text-start sm:text-5xl lg:mt-12 xl:mt-0"
+                  lg:text-start sm:text-5xl lg:mt-12 xl:mt-0"
                 >
                   Let&#39;s Build <br /> Something Epic
                 </h1>
                 <div
                   className="mt-6 text-grayLight text-center 
-                lg:text-start
-                dark:text-grayLightest"
+                  lg:text-start
+                  dark:text-grayLightest"
                 >
                   <span className="sm:text-2xl font-sansSB">Web Developer</span>{" "}
                   <span className="sm:text-2xl">
@@ -60,13 +60,13 @@ export default function Home() {
 
                 <div
                   className="mt-6 
-                sm:mt-12 xl:mt-16 2xl:mt-40"
+                  sm:mt-12 xl:mt-16 2xl:mt-40"
                 >
                   <div className="text-center lg:text-start">
                     <Link
                       href="/about"
                       className="text-black font-sansSB underline hover:no-underline inline-block
-                  dark:text-white"
+                      dark:text-white"
                     >
                       <div>Discover more about me</div>
                     </Link>
@@ -78,7 +78,7 @@ export default function Home() {
               <div className="lg:basis-1/2">
                 <Image
                   className="w-3/4 mx-auto 
-                md:w-5/6 lg:mr-0"
+                  md:w-5/6 lg:mr-0"
                   // src="/images/userbg.png"
                   src={UserImage}
                   alt="carlcaraan"
@@ -92,20 +92,20 @@ export default function Home() {
           {/* ========= Start Content Section ========= */}
           <section
             className="mt-12 bg-panel 
-          xl:-mt-14
-          dark:bg-grayLight"
+            xl:-mt-14
+            dark:bg-grayLight"
             id="content"
           >
             {/* Start Content Heading */}
             <div
               className="relative text-[6.7vw] font-linksB text-center pt-12 lg:pt-[4.3vw] text-white select-none
-          dark:text-grayLightest"
+              dark:text-grayLightest"
             >
               Full Stack Developer
               <span
                 className="hidden absolute font-linksSB text-black text-[2.5vw] left-[25vw] top-[10.2vw] 
-              lg:block
-              dark:text-white"
+                lg:block
+                dark:text-white"
               >
                 Recent Projects
               </span>
@@ -114,7 +114,7 @@ export default function Home() {
             {/* Hidden */}
             <div
               className="font-linksSB text-black text-[5vw] text-center
-            lg:hidden "
+              lg:hidden "
             >
               Recent Projects
             </div>
@@ -126,13 +126,13 @@ export default function Home() {
               <Link
                 href="/projects"
                 className="custom-btn group text-lg text-center block w-full mt-12
-              sm:text-xl lg:mt-8 lg:text-start lg:absolute lg:top-0 lg:right-[6rem] lg:w-32 lg:text-base
-              dark:shadow-none"
+                sm:text-xl lg:mt-8 lg:text-start lg:absolute lg:top-0 lg:right-[6rem] lg:w-32 lg:text-base
+                dark:shadow-none"
               >
                 View all{" "}
                 <span
                   className="font-bold group-hover:ml-1 transition-all ease-in hidden 
-                lg:inline-block"
+                  lg:inline-block"
                 >
                   &rarr;
                 </span>
@@ -142,7 +142,7 @@ export default function Home() {
               {/* Start Project Grid Container */}
               <div
                 className="grid grid-cols-8 gap-6 pt-6 
-              lg:pt-24"
+                lg:pt-24"
               >
                 {/* Item 1 */}
                 <div
@@ -197,8 +197,8 @@ export default function Home() {
           {/* ========= Start Qoute Section ========= */}
           <section
             className="bg-white -mt-14 pt-32 
-          lg:-mt-32 lg:pt-64
-          dark:bg-black"
+            lg:-mt-32 lg:pt-64
+            dark:bg-black"
             id="quote"
           >
             {/* Start Container */}
@@ -230,7 +230,7 @@ export default function Home() {
             {/* Start Container */}
             <div
               className="section-container mt-24 
-            md:mt-40 lg:mt-80"
+              md:mt-40 lg:mt-80"
             >
               <div className="flex flex-row md:flex-col">
                 <div>
@@ -252,8 +252,8 @@ export default function Home() {
                 <Link
                   href="/projects"
                   className=" text-grayLight ml-2 mt-4 text-2xl
-                xl:text-9xl lg:text-8xl md:text-7xl sm:text-4xl md:ml-0 md:mt-0
-                dark:text-white"
+                  xl:text-9xl lg:text-8xl md:text-7xl sm:text-4xl md:ml-0 md:mt-0
+                  dark:text-white"
                 >
                   code <strong>&rarr;</strong>
                 </Link>
