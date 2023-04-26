@@ -236,15 +236,15 @@ export default function Home() {
                 <div>
                   <Image
                     className="float-left w-[4rem] 
-                  lg:w-auto sm:w-[5rem]"
+					lg:w-auto sm:w-[5rem]"
                     src={User}
                     alt="Carl Caraan"
                   ></Image>
                   <Link
                     href="/projects"
                     className="float-left text-grayLight text-2xl ml-2 mt-4
-                  xl:text-9xl lg:text-8xl md:text-7xl sm:text-4xl lg:ml-8 md:ml-4 md:mt-0
-                  dark:text-white"
+					xl:text-9xl lg:text-8xl md:text-7xl sm:text-4xl lg:ml-8 md:ml-4 md:mt-0
+					dark:text-white"
                   >
                     Show the
                   </Link>
