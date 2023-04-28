@@ -263,7 +263,7 @@ function SkillsSection({ props }) {
               <div>
                 <a
                   className="text-base hover:text-violet duration-200
-                sm:text-2xl"
+                  sm:text-2xl"
                   href="mailto:caraancarlaaron@gmail.com"
                 >
                   caraancarlaaron@gmail.com
