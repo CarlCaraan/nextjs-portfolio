@@ -18,6 +18,7 @@ function Meta() {
         Fullstack Developer,
         Frontend Developer,
         Backend Developer,
+        React Developer,
         Laguna, Santa Cruz, Philippines,
         Project Blog App,
         Pokeflip Card Game,
