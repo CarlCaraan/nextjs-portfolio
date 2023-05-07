@@ -15,6 +15,7 @@ function Meta() {
         Carl Aaron D. Caraan,
         Carl Aaron D. Caraan - Web Developer,
         Web Developer,
+        Programmer,
         Fullstack Developer,
         Frontend Developer,
         Backend Developer,
