@@ -6,6 +6,7 @@ export default function Document() {
     <Html lang="en" className="scroll-smooth">
       <Head>
         <Meta />
+        <link rel="icon" type="image/x-icon" href="/carl_jpeg.ico"></link>
       </Head>
       <body className="antialiased relative">
         <Main />

@@ -12,7 +12,9 @@ import UserImage from "../public/images/userbg.png";
 import ProjectImage1 from "../public/images/landing_page/Project 1.png";
 import ProjectImage2 from "../public/images/landing_page/Project 2.png";
 import ProjectImage3 from "../public/images/landing_page/Project 3.png";
-import User from "../public/images/landing_page/User.png";
+// import User from "../public/images/landing_page/User.png";
+import CarlPNG from "../public/images/carl_png.png";
+import CarlJPEG from "../public/images/carl_jpeg.jpg";
 
 // Framer Motion
 import { motion } from "framer-motion";
@@ -80,7 +82,7 @@ export default function Home() {
                   className="w-3/4 mx-auto 
                   md:w-5/6 lg:mr-0"
                   // src="/images/userbg.png"
-                  src={UserImage}
+                  src={CarlPNG}
                   alt="carlcaraan"
                 />
               </div>
@@ -235,16 +237,16 @@ export default function Home() {
               <div className="flex flex-row md:flex-col">
                 <div>
                   <Image
-                    className="float-left w-[4rem] 
-					lg:w-auto sm:w-[5rem]"
-                    src={User}
+                    className="float-left w-[4rem] bg-slate-100 rounded-full
+                    xl:w-[7rem] lg:w-[5.5rem] md:w-[4rem] sm:w-[5rem]"
+                    src={CarlPNG}
                     alt="Carl Caraan"
                   ></Image>
                   <Link
                     href="/projects"
                     className="float-left text-grayLight text-2xl ml-2 mt-4
-					xl:text-9xl lg:text-8xl md:text-7xl sm:text-4xl lg:ml-8 md:ml-4 md:mt-0
-					dark:text-white"
+                    xl:text-9xl lg:text-8xl md:text-7xl sm:text-4xl lg:ml-8 md:ml-4 md:mt-0
+                    dark:text-white"
                   >
                     Show the
                   </Link>
