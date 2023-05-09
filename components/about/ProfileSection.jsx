@@ -30,7 +30,7 @@ function ProfileSection({ props }) {
             {/* Start Flex Container */}
             <div
               className="flex flex-col-reverse
-                  xl:flex-row"
+              xl:flex-row"
             >
               <div className="basis-1/2">
                 <div className="pt-12">

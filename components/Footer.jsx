@@ -6,6 +6,7 @@ function Footer() {
   const router = useRouter();
   const { pathname } = router;
 
+  // Icons SVG
   const FacebookIcon = (props) => (
     <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" {...props}>
       <path d="M26 20v-3c0-1.3.3-2 2.4-2H31v-5h-4c-5 0-7 3.3-7 7v3h-4v5h4v15h6V25h4.4l.6-5h-5z" />
@@ -32,7 +33,7 @@ function Footer() {
         {/* Horizontal Line */}
         <div
           className="border-t-4 border-t-grayLighter w-full
-        dark:border-t-grayLightest"
+          dark:border-t-grayLightest"
         ></div>
 
         {/* Start Flex Container */}
@@ -44,7 +45,7 @@ function Footer() {
           <div className="basis-1/2">
             <div
               className="uppercase font-linksL text-lg text-grayLight text-center lg:text-left
-            dark:text-white"
+              dark:text-white"
             >
               Follow Me
             </div>
@@ -56,22 +57,22 @@ function Footer() {
               <Link href="https://www.facebook.com/caraancarl/" target="_blank">
                 <div
                   className="group rounded-full border border-grayLighter p-2 hover:border-violet duration-300
-                dark:border-grayLightest dark:hover:border-violet"
+                  dark:border-grayLightest dark:hover:border-violet"
                 >
                   <FacebookIcon
                     className="w-8 fill-grayLighter group-hover:fill-violet duration-300
-                  dark:fill-grayLightest"
+                    dark:fill-grayLightest"
                   />
                 </div>
               </Link>
               <Link href="https://github.com/CarlCaraan" target="_blank">
                 <div
                   className="group rounded-full border border-grayLight p-3 hover:border-violet duration-300
-                dark:border-grayLightest dark:hover:border-violet"
+                  dark:border-grayLightest dark:hover:border-violet"
                 >
                   <GithubIcon
                     className="w-6 fill-grayLighter group-hover:fill-violet duration-300
-                   dark:fill-grayLightest"
+                    dark:fill-grayLightest"
                   />
                 </div>
               </Link>
@@ -81,11 +82,11 @@ function Footer() {
               >
                 <div
                   className="group rounded-full border border-grayLight p-3 hover:border-violet duration-300
-                dark:border-grayLightest dark:hover:border-violet"
+                  dark:border-grayLightest dark:hover:border-violet"
                 >
                   <LinkedinIcon
                     className="w-6 fill-grayLighter group-hover:fill-violet duration-300
-                   dark:fill-grayLightest"
+                    dark:fill-grayLightest"
                   />
                 </div>
               </Link>
@@ -98,7 +99,7 @@ function Footer() {
             {/* Start Footer Flex Links */}
             <div
               className="flex flex-col space-x-0 mt-[3.5rem] text-center space-y-4 text-base
-                xl:space-x-16 lg:space-x-8 lg:flex-row lg:space-y-0 lg:text-left lg:float-right sm:space-y-6"
+              xl:space-x-16 lg:space-x-8 lg:flex-row lg:space-y-0 lg:text-left lg:float-right sm:space-y-6"
             >
               <div>
                 <Link
