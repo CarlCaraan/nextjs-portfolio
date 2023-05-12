@@ -14,7 +14,7 @@ import ProjectImage2 from "../public/images/landing_page/Project 2.png";
 import ProjectImage3 from "../public/images/landing_page/Project 3.png";
 // import User from "../public/images/landing_page/User.png";
 import CarlPNG from "../public/images/carl_png.png";
-import CarlJPEG from "../public/images/carl_jpeg.jpg";
+// import CarlJPEG from "../public/images/carl_jpeg.jpg";
 
 // Framer Motion
 import { motion } from "framer-motion";

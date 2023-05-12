@@ -1,9 +1,11 @@
 import React, { Fragment } from "react";
+import Image from "next/image";
+import Link from "next/link";
+
+// Components
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import TopScroll from "../components/TopScroll";
-import Image from "next/image";
-import Link from "next/link";
 
 // Images
 import project0 from "../public/images/projects/project0.jpg";
