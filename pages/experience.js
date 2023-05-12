@@ -1,8 +1,12 @@
 import React, { Fragment } from "react";
+import Image from "next/image";
+
+// Components
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import TopScroll from "../components/TopScroll";
-import Image from "next/image";
+
+// Images
 import cert1 from "../public/images/experience/cert1.jpg";
 import cert2 from "../public/images/experience/cert2.jpg";
 import cert3 from "../public/images/experience/cert3.jpg";
