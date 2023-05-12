@@ -5,7 +5,8 @@ import Image from "next/image";
 import AboutHeading from "./AboutHeading";
 
 // Images
-import UserImage from "../../public/images/userbg.png";
+// import UserImage from "../../public/images/userbg.png";
+import CarlPNG from "../../public/images/carl_png.png";
 
 function ProfileSection({ props }) {
   return (
@@ -145,7 +146,7 @@ function ProfileSection({ props }) {
                   data-aos="zoom-in"
                   className="w-full mx-auto 
                   md:mx-0 md:w-3/4 xl:w-full"
-                  src={UserImage}
+                  src={CarlPNG}
                   alt="carlcaraan"
                 />
               </div>
