@@ -1,6 +1,8 @@
-import "../styles/globals.css";
 import { ThemeProvider } from "next-themes";
 import { useEffect } from "react";
+
+// Styles
+import "../styles/globals.css";
 
 // Framer Motion
 import { AnimatePresence } from "framer-motion";
