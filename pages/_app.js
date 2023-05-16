@@ -1,5 +1,5 @@
-import { ThemeProvider } from "next-themes";
 import { useEffect } from "react";
+import { ThemeProvider } from "next-themes";
 
 // Styles
 import "../styles/globals.css";
