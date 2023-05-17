@@ -13,7 +13,6 @@ function Meta() {
         content="CarlCaraan,
         Carl Caraan,
         Carl Aaron D. Caraan,
-        Carl Aaron D. Caraan - Web Developer,
         Web Developer,
         Programmer,
         Fullstack Developer,
