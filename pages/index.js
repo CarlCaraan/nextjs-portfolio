@@ -1,9 +1,9 @@
 import Link from "next/link";
-import Navbar from "../components/Navbar";
 import { Fragment } from "react";
 import Image from "next/image";
 
 // Components
+import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import TopScroll from "../components/TopScroll";
 
