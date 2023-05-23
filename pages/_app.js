@@ -7,7 +7,7 @@ import "../styles/globals.css";
 // Framer Motion
 import { AnimatePresence } from "framer-motion";
 
-// AOS
+// AOS Animation
 import AOS from "aos";
 import "aos/dist/aos.css";
 
