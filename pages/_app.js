@@ -7,14 +7,14 @@ import "../styles/globals.css";
 // Framer Motion
 import { AnimatePresence } from "framer-motion";
 
-// AOS 
+// AOS
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 export default function App({ Component, pageProps }) {
   useEffect(() => {
     AOS.init({
-      // Add options here
+      // ADD OPTIONS HERE
       // disable: "mobile",
       once: true,
     });
