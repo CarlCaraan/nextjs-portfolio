@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 /* ========= ALL FONTS ========= */
+/* Sans-Serif */
 /* Graphik */
 @font-face {
   font-family: "Graphik Regular";
@@ -15,12 +16,6 @@
 @font-face {
   font-family: "Graphik Bold";
   src: url("../fonts/Graphik-Bold.ttf") format("truetype");
-}
-
-/* Amiri Serif */
-@font-face {
-  font-family: "Amiri";
-  src: url("../fonts/Amiri-Regular.ttf") format("truetype");
 }
 
 /* Poppins */
@@ -39,6 +34,13 @@
 @font-face {
   font-family: "Poppins ExtraBold";
   src: url("../fonts/Poppins-ExtraBold.ttf") format("truetype");
+}
+
+/* Serif */
+/* Amiri */
+@font-face {
+  font-family: "Amiri";
+  src: url("../fonts/Amiri-Regular.ttf") format("truetype");
 }
 
 @layer base {
