@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* ========= ALL FONTS ========= */
-/* Sans-Serif */
+/* SANS-SERIF */
 /* Graphik */
 @font-face {
   font-family: "Graphik Regular";
@@ -36,7 +36,7 @@
   src: url("../fonts/Poppins-ExtraBold.ttf") format("truetype");
 }
 
-/* Serif */
+/* SERIF */
 /* Amiri */
 @font-face {
   font-family: "Amiri";
