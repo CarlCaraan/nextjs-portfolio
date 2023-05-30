@@ -26,7 +26,11 @@ function contact() {
       >
         <main>
           {/* ========= Start Contact Section ========= */}
-          <section className="mb-12 sm:mb-24 xl:mb-44" id="experience">
+          <section
+            className="mb-12 
+            sm:mb-24 xl:mb-44"
+            id="experience"
+          >
             <div className="section-container">
               {/* Start Heading */}
               <div className="mt-12 lg:mt-24">
