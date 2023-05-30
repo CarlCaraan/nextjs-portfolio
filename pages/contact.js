@@ -36,7 +36,8 @@ function contact() {
               <div className="mt-12 lg:mt-24">
                 <h1 className="big-heading-text">Get in touch</h1>
                 <h4
-                  className="text-lg font-sansSB text-black sm:text-2xl mt-12
+                  className="text-lg font-sansSB text-black 
+                  sm:text-2xl mt-12
                   dark:text-white"
                 >
                   Ready to work together? Let&#39;s talk.
