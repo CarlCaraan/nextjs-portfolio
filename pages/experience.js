@@ -16,6 +16,7 @@ import cert6 from "../public/images/experience/cert6.png";
 import cert7 from "../public/images/experience/cert7.jpg";
 import cert8 from "../public/images/experience/cert8.png";
 import cert9 from "../public/images/experience/cert9.jpg";
+import cert10 from "../public/images/experience/cert10.png";
 
 // Framer Motion
 import { motion } from "framer-motion";
@@ -262,6 +263,17 @@ function experience() {
                         className="experience-image"
                         src={cert9}
                         alt={cert9}
+                      />
+                    </div>
+                    {/* Item */}
+                    <div
+                      className="group experience-cert-box"
+                      data-aos="zoom-in"
+                    >
+                      <Image
+                        className="experience-image"
+                        src={cert10}
+                        alt={cert10}
                       />
                     </div>
                   </div>
