@@ -47,7 +47,7 @@
 
 @layer base {
   /* ========= SCROLL BAR ========= */
-  /* Width */
+  /* Scroll Width */
   ::-webkit-scrollbar {
     width: 10px;
   }
