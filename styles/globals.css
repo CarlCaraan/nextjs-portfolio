@@ -4,6 +4,7 @@
 
 /* ========= ALL FONTS ========= */
 /* SANS-SERIF */
+
 /* Graphik */
 @font-face {
   font-family: "Graphik Regular";
@@ -37,6 +38,7 @@
 }
 
 /* SERIF */
+
 /* Amiri */
 @font-face {
   font-family: "Amiri";
@@ -45,7 +47,7 @@
 
 @layer base {
   /* ========= SCROLL BAR ========= */
-  /* width */
+  /* Scroll Width */
   ::-webkit-scrollbar {
     width: 10px;
   }
