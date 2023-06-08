@@ -14,9 +14,9 @@ import "aos/dist/aos.css";
 export default function App({ Component, pageProps }) {
   useEffect(() => {
     AOS.init({
-      // ~Add options here
-      // disable: "mobile",
+      // Add options here
       once: true,
+      // disable: "mobile",
     });
   }, []);
 
