@@ -102,6 +102,26 @@ function experience() {
                       {/* Item */}
                       <div>
                         <h4 className="education-title">
+                          Extension and Training Services (OJT)
+                        </h4>
+                        <p className="education-subtitle">
+                          Laguna State Polytechnic University
+                        </p>
+                      </div>
+
+                      {/* Item */}
+                      <div>
+                        <h4 className="education-title">
+                          SDO Laguna (Capstone)
+                        </h4>
+                        <p className="education-subtitle">
+                          Laguna State Polytechnic University
+                        </p>
+                      </div>
+
+                      {/* Item */}
+                      <div>
+                        <h4 className="education-title">
                           Major in Web Development
                         </h4>
                         <p className="education-subtitle">
