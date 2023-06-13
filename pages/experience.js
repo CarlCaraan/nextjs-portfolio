@@ -39,33 +39,54 @@ function experience() {
       >
         <main>
           {/* ========= Start Experience Section ========= */}
-          <section className="mb-12 sm:mb-24 xl:mb-44" id="experience">
+          <section
+            className="mb-12 
+            sm:mb-24 xl:mb-44"
+            id="experience"
+          >
             <div className="section-container">
               {/* Start Heading */}
-              <div className="mt-12 lg:mt-24">
+              <div
+                className="mt-12 
+                lg:mt-24"
+              >
                 <h1 className="big-heading-text">Experience</h1>
               </div>
               {/* End Heading */}
               {/* Start Education Section */}
-              <div className="mt-24 md:mt-44">
+              <div
+                className="mt-24 
+                md:mt-44"
+              >
                 <div className="socket"></div>
-                <div className="mt-12 md:mt-16 lg:mt-28">
+                <div
+                  className="mt-12 
+                  md:mt-16 lg:mt-28"
+                >
                   <h1 className="experience-heading">Education & Experience</h1>
                   {/* Start Flex Container */}
                   <div
-                    className="flex flex-col mt-12 gap-4 space-y-12 md:space-y-0
-                    md:flex-row"
+                    className="flex flex-col mt-12 gap-4 space-y-12 
+                    md:space-y-0 md:flex-row"
                   >
                     <div className="education-flex-item">
                       {/* Year Heading */}
                       <div className="text-base text-grayLightest">
-                        2019 - Present
+                        2023 - Present
                       </div>
 
                       {/* Item */}
                       <div>
-                        <h4 className="education-title">Web Developer</h4>
-                        <p className="education-subtitle">Freelancer</p>
+                        <h4 className="education-title">CEO & CO-Founder</h4>
+                        <p className="education-subtitle">
+                          Matrix Software Solutions PH
+                        </p>
+                      </div>
+                    </div>
+                    <div className="education-flex-item">
+                      {/* Year Heading */}
+                      <div className="text-base text-grayLightest">
+                        2019 - 2023
                       </div>
 
                       {/* Item */}
