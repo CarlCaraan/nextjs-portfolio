@@ -82,7 +82,7 @@ function Navbar() {
             </div>
           </div>
 
-          {/* Start Hamburger Button  */}
+          {/* Start Hamburger Button */}
           <div className="md:hidden">
             <button
               type="button"
@@ -98,7 +98,7 @@ function Navbar() {
               <span className="hamburger-bottom"></span>
             </button>
           </div>
-          {/* End Hamburger Button  */}
+          {/* End Hamburger Button */}
         </div>
         {/* End Flex Container */}
       </nav>
