@@ -192,15 +192,27 @@ function experience() {
               {/* End Education Section */}
 
               {/* Start Certification Section */}
-              <div className="mt-24 md:mt-44">
+              <div
+                className="mt-24 
+                md:mt-44"
+              >
                 <div className="socket"></div>
-                <div className="mt-12 md:mt-16 lg:mt-28">
+                <div
+                  className="mt-12 
+                  md:mt-16 lg:mt-28"
+                >
                   <h1 className="experience-heading">Certifications</h1>
-                  <h6 className="text-grayLightest text-center mt-6 text-sm sm:text-base">
+                  <h6
+                    className="text-grayLightest text-center mt-6 text-sm 
+                    sm:text-base"
+                  >
                     Earned from different online courses out there.
                   </h6>
                   {/* Start Grid Container */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-12 xl:mt-24 gap-6">
+                  <div
+                    className="grid grid-cols-1 gap-6 
+                    md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-12 xl:mt-24"
+                  >
                     {/* Item */}
                     <div
                       className="group experience-cert-box"
