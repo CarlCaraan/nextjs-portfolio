@@ -6,6 +6,10 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import TopScroll from "../components/TopScroll";
 
+// Framer Motion
+import { motion } from "framer-motion";
+import slideInUp from "../components/animation/slideInUp";
+
 // Images
 import cert1 from "../public/images/experience/cert1.jpg";
 import cert2 from "../public/images/experience/cert2.jpg";
@@ -18,9 +22,51 @@ import cert8 from "../public/images/experience/cert8.png";
 import cert9 from "../public/images/experience/cert9.jpg";
 import cert10 from "../public/images/experience/cert10.png";
 
-// Framer Motion
-import { motion } from "framer-motion";
-import slideInUp from "../components/animation/slideInUp";
+const certImages = [
+  {
+    id: 1,
+    src: cert1,
+  },
+  {
+    id: 2,
+    src: cert2,
+  },
+  {
+    id: 3,
+    src: cert3,
+  },
+  {
+    id: 4,
+    src: cert4,
+  },
+  {
+    id: 5,
+    src: cert5,
+  },
+  {
+    id: 6,
+    src: cert6,
+  },
+  {
+    id: 7,
+    src: cert7,
+  },
+  {
+    id: 8,
+    src: cert8,
+  },
+  {
+    id: 9,
+    src: cert9,
+  },
+  {
+    id: 10,
+    src: cert10,
+  },
+];
+
+// Sorting Cert Images
+const sortedCertImages = certImages.sort((a, b) => b.id - a.id);
 
 function experience() {
   return (
@@ -213,122 +259,22 @@ function experience() {
                     className="grid grid-cols-1 gap-6 
                     md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-12 xl:mt-24"
                   >
-                    {/* Item */}
-                    <div
-                      className="group experience-cert-box"
-                      data-aos="zoom-in"
-                    >
-                      <Image
-                        className="experience-image"
-                        src={cert1}
-                        alt={cert1}
-                      />
-                    </div>
-                    {/* Item */}
-                    <div
-                      className="group experience-cert-box"
-                      data-aos="zoom-in"
-                      data-aos-delay="50"
-                    >
-                      <Image
-                        className="experience-image"
-                        src={cert2}
-                        alt={cert2}
-                      />
-                    </div>
-                    {/* Item */}
-                    <div
-                      className="group experience-cert-box"
-                      data-aos="zoom-in"
-                      data-aos-delay="100"
-                    >
-                      <Image
-                        className="experience-image"
-                        src={cert3}
-                        alt={cert3}
-                      />
-                    </div>
-                    {/* Item */}
-                    <div
-                      className="group experience-cert-box"
-                      data-aos="zoom-in"
-                      data-aos-delay="150"
-                    >
-                      <Image
-                        className="experience-image"
-                        src={cert4}
-                        alt={cert4}
-                      />
-                    </div>
-                    {/* Item */}
-                    <div
-                      className="group experience-cert-box"
-                      data-aos="zoom-in"
-                    >
-                      <Image
-                        className="experience-image"
-                        src={cert5}
-                        alt={cert5}
-                      />
-                    </div>
-                    {/* Item */}
-                    <div
-                      className="group experience-cert-box"
-                      data-aos="zoom-in"
-                      data-aos-delay="50"
-                    >
-                      <Image
-                        className="experience-image"
-                        src={cert6}
-                        alt={cert6}
-                      />
-                    </div>
-                    {/* Item */}
-                    <div
-                      className="group experience-cert-box"
-                      data-aos="zoom-in"
-                      data-aos-delay="100"
-                    >
-                      <Image
-                        className="experience-image"
-                        src={cert7}
-                        alt={cert7}
-                      />
-                    </div>
-                    {/* Item */}
-                    <div
-                      className="group experience-cert-box"
-                      data-aos="zoom-in"
-                      data-aos-delay="150"
-                    >
-                      <Image
-                        className="experience-image"
-                        src={cert8}
-                        alt={cert8}
-                      />
-                    </div>
-                    {/* Item */}
-                    <div
-                      className="group experience-cert-box"
-                      data-aos="zoom-in"
-                    >
-                      <Image
-                        className="experience-image"
-                        src={cert9}
-                        alt={cert9}
-                      />
-                    </div>
-                    {/* Item */}
-                    <div
-                      className="group experience-cert-box"
-                      data-aos="zoom-in"
-                    >
-                      <Image
-                        className="experience-image"
-                        src={cert10}
-                        alt={cert10}
-                      />
-                    </div>
+                    {sortedCertImages &&
+                      sortedCertImages.map((certImage) => {
+                        return (
+                          <div
+                            key={certImage.id}
+                            className="group experience-cert-box"
+                            data-aos="zoom-in"
+                          >
+                            <Image
+                              className="experience-image"
+                              src={certImage.src}
+                              alt={certImage.src}
+                            />
+                          </div>
+                        );
+                      })}
                   </div>
                   {/* End Grid Container */}
                 </div>
