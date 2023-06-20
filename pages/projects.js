@@ -24,6 +24,7 @@ import project12 from "../public/images/projects/project12.png";
 import project13 from "../public/images/projects/project13.png";
 import project14 from "../public/images/projects/project14.png";
 import project15 from "../public/images/projects/project15.png";
+import project16 from "../public/images/projects/project16.png";
 
 // Framer Motion
 import { motion } from "framer-motion";
@@ -142,6 +143,13 @@ function projects() {
       title: "Project Blog App",
       subtitle: "React, CSS, Firebase",
       link: "https://reactjs-blog-chatapp.web.app/",
+    },
+    {
+      id: 16,
+      image: project16,
+      title: "Matrix Software Solution",
+      subtitle: "NextJs, Tailwind",
+      link: "",
     },
   ];
   return (
