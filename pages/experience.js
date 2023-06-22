@@ -123,9 +123,7 @@ function experience() {
 
                       {/* Item */}
                       <div>
-                        <h4 className="education-title">
-                          CO-Founder & Web Developer
-                        </h4>
+                        <h4 className="education-title">Freelancer</h4>
                         <p className="education-subtitle">
                           Matrix Software Solutions PH
                         </p>
