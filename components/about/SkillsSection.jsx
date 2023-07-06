@@ -256,7 +256,7 @@ function SkillsSection({ props }) {
                   href="/downloads/Carl Caraan - Resume.pdf"
                   target="_blank"
                 >
-                  Download CV
+                  Download Resume
                 </Link>
               </div>
 
