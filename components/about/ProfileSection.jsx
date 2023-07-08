@@ -38,13 +38,13 @@ function ProfileSection({ props }) {
                     className="text-2xl 
                     md:text-3xl lg:text-4xl xl:text-5xl"
                   >
-                    Caraan Carl
+                    Carl Aaron D. Caraan
                   </h1>
                   <p
                     className="text-base 
                     sm:text-xl"
                   >
-                    Carl Aaron D. Caraan
+                    Personal Information
                   </p>
                 </div>
 
@@ -116,9 +116,10 @@ function ProfileSection({ props }) {
                       xl:off-hyphen sm:text-xl
                       dark:text-grayLightest"
                     >
-                      I love art and drawing since I was in elementary school. I
-                      think that practice has shaped the abilities that enable
-                      me to fully immerse myself in the things I enjoy.
+                      Frontend Developer, Web Design, Web Developer, Backend
+                      Developer, Responsive Design, Backend Logic,
+                      Problem-solving, Creativity, Collaboration, Continues
+                      Learning.
                     </div>
                   </div>
                   {/* Item 5 */}
@@ -135,7 +136,7 @@ function ProfileSection({ props }) {
                       sm:text-xl
                       dark:text-grayLightest"
                     >
-                      Interaction Design, Backend Logic
+                      Interaction Design, Coding
                     </div>
                   </div>
                 </div>
