@@ -12,7 +12,7 @@ import slideInUp from "../components/animation/slideInUp";
 
 // Images
 import cert1 from "../public/images/experience/cert1.jpg";
-import cert2 from "../public/images/experience/cert2.jpg";
+import cert2 from "../public/images/experience/cert2.png";
 import cert3 from "../public/images/experience/cert3.jpg";
 import cert4 from "../public/images/experience/cert4.jpg";
 import cert5 from "../public/images/experience/cert5.jpg";
@@ -20,7 +20,8 @@ import cert6 from "../public/images/experience/cert6.png";
 import cert7 from "../public/images/experience/cert7.jpg";
 import cert8 from "../public/images/experience/cert8.png";
 import cert9 from "../public/images/experience/cert9.jpg";
-import cert10 from "../public/images/experience/cert10.png";
+import cert10 from "../public/images/experience/cert10.jpg";
+import cert11 from "../public/images/experience/cert11.png";
 
 const certImages = [
   {
@@ -62,6 +63,10 @@ const certImages = [
   {
     id: 10,
     src: cert10,
+  },
+  {
+    id: 11,
+    src: cert11,
   },
 ];
 
