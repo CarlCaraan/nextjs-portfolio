@@ -4,14 +4,21 @@ import Meta from "../components/Meta";
 export default function Document() {
   return (
     <Html lang="en" className="scroll-smooth">
+      {/* ========= Start Head ========= */}
       <Head>
+        {/* Meta */}
         <Meta />
+        {/* FavIcon */}
         <link rel="icon" type="image/x-icon" href="/carl_jpeg.ico"></link>
       </Head>
+      {/* ========= End Head ========= */}
+
+      {/* ========= Start Body ========= */}
       <body className="antialiased relative">
         <Main />
         <NextScript />
       </body>
+      {/* ========= End Body ========= */}
     </Html>
   );
 }
