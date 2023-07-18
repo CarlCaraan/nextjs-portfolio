@@ -15,7 +15,9 @@ export default function Document() {
 
       {/* ========= Start Body ========= */}
       <body className="antialiased relative">
+        {/* Start Main Content */}
         <Main />
+        {/* End Main Content */}
         <NextScript />
       </body>
       {/* ========= End Body ========= */}
