@@ -125,7 +125,16 @@ function Navbar() {
       >
         <Link className="mb-12" href="/" onClick={navClickHandler}>
           <div className="flex flex-col select-none">
-            <span className="text-xl">Carl Caraan</span>
+            <div className="flex space-x-1">
+              <span className="text-xl">Carl Caraan</span>
+              <Image
+                className="w-5"
+                width="0"
+                height="0"
+                src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Twitter_Verified_Badge.svg"
+                alt="verified-icon"
+              />
+            </div>
             <span className="text-grayLightest text-base">Web Developer</span>
           </div>
         </Link>
