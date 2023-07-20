@@ -31,7 +31,7 @@ function Navbar() {
           {/* Brand */}
           <Link href="/">
             <div className="flex flex-col select-none">
-              <div className="text-2xl flex space-x-2">
+              <div className="text-2xl flex space-x-1">
                 <span>Carl Caraan</span>
                 <Image
                   className="w-5"
