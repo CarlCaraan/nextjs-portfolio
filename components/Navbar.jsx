@@ -1,6 +1,9 @@
-import React, { Fragment, useState, useEffect } from "react";
+import React, { Fragment, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
+
+// Components
 import ThemeToggler from "./ThemeToggler";
 
 function Navbar() {
@@ -28,7 +31,16 @@ function Navbar() {
           {/* Brand */}
           <Link href="/">
             <div className="flex flex-col select-none">
-              <span className="text-2xl">Carl Caraan</span>
+              <div className="text-2xl flex space-x-2">
+                <span>Carl Caraan</span>
+                <Image
+                  className="w-5"
+                  width="0"
+                  height="0"
+                  src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Twitter_Verified_Badge.svg"
+                  alt="verified-icon"
+                />
+              </div>
               <span className="text-grayLightest">Web Developer</span>
             </div>
           </Link>
