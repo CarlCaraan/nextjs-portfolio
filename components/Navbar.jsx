@@ -24,7 +24,7 @@ function Navbar() {
     setActive(!isActive);
   };
 
-  // Use Theme
+  // Use Theme Function
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
@@ -42,15 +42,19 @@ function Navbar() {
           {/* Brand */}
           <Link href="/">
             <div className="flex flex-row space-x-2">
-              {/* Logo Image */}
+              {/* Start Dynamic Logo */}
               {theme === "light" ? (
                 <Image className="w-14 h-14" src={logoLight} alt="logo-light" />
               ) : (
                 <Image className="w-14 h-14" src={logoDark} alt="logo-dark" />
               )}
+              {/* End Dynamic Logo */}
 
               <div className="flex flex-col select-none">
-                <div className="text-2xl flex space-x-1">
+                <div
+                  className="text-xl flex space-x-1
+                  lg:text-2xl"
+                >
                   <span>Carl Caraan</span>
                   <Image
                     className="w-5"
@@ -143,21 +147,20 @@ function Navbar() {
             : "md:hidden flex mobile-navigation"
         }
       >
+        {/* Start Dynamic Logo */}
         <Link className="mb-12" href="/" onClick={navClickHandler}>
-          <div className="flex flex-col select-none">
-            <div className="flex space-x-1">
-              <span className="text-xl">Carl Caraan</span>
-              <Image
-                className="w-5"
-                width="0"
-                height="0"
-                src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Twitter_Verified_Badge.svg"
-                alt="verified-icon"
-              />
-            </div>
-            <span className="text-grayLightest text-base">Web Developer</span>
+          <div className="flex flex-row space-x-2">
+            {/* Start Logo Image */}
+            {theme === "light" ? (
+              <Image className="w-14 h-14" src={logoLight} alt="logo-light" />
+            ) : (
+              <Image className="w-14 h-14" src={logoDark} alt="logo-dark" />
+            )}
+            {/* End Logo Image */}
           </div>
         </Link>
+        {/* End Dynamic Logo */}
+
         <div>
           <Link
             className={
