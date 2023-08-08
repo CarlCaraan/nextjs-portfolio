@@ -150,13 +150,7 @@ function Navbar() {
       </nav>
 
       {/* ========= Start Mobile Navigation ========= */}
-      <div
-        className={
-          isActive
-            ? "hidden mobile-navigation"
-            : "md:hidden flex mobile-navigation"
-        }
-      >
+      <div className={isActive ? "hidden" : "md:hidden flex mobile-navigation"}>
         {/* Start Dynamic Logo */}
         <Link className="mb-12" href="/" onClick={navClickHandler}>
           <div className="flex flex-row space-x-2">
