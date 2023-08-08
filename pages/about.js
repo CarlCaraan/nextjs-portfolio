@@ -38,16 +38,16 @@ function about() {
               >
                 <div className="basis-2/5 pt-16">
                   <div
-                    className="uppercase text-[6.6vw] leading-none 
+                    className="text-[6.6vw] leading-none
                     lg:select-none"
                   >
-                    About{" "}
-                    <span
-                      className="block 
+                    <span className="hidden md:block uppercase">About</span>
+                    <h1
+                      className="big-heading-text block 
                       md:hidden"
                     >
-                      Me
-                    </span>
+                      About Me
+                    </h1>
                   </div>
                   <div
                     className="uppercase text-[6.6vw] leading-none ml-[16.7vw] hidden 
