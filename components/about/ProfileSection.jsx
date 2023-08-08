@@ -112,14 +112,20 @@ function ProfileSection({ props }) {
                       Interests
                     </div>
                     <div
-                      className="basis-3/5 text-sm text-grayLight text-justify auto-hyphen
+                      className="basis-3/5 text-sm text-grayLight text-justify auto-hyphen flex flex-col
                       xl:off-hyphen sm:text-xl
                       dark:text-grayLightest"
                     >
-                      Frontend Developer, Web Design, Web Developer, Backend
-                      Developer, Responsive Design, Backend Logic,
-                      Problem-solving, Creativity, Collaboration, Continues
-                      Learning.
+                      <span>Frontend Development</span>
+                      <span>Backend Development</span>
+                      <span>Web Design</span>
+                      <span>Web Development</span>
+                      <span>Full-Stack Development</span>
+                      <span>Responsive Design</span>
+                      <span>Backend Logic</span>
+                      <span>Problem-solving</span>
+                      <span>Creativity</span>
+                      <span>Continues Learning</span>
                     </div>
                   </div>
                   {/* Item 5 */}
