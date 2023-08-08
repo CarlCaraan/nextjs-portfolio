@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import Head from "next/head";
 
 // Components
 import Navbar from "../components/Navbar";
@@ -12,7 +13,10 @@ import slideInUp from "../components/animation/slideInUp";
 function contact() {
   return (
     <Fragment>
-      <title>Carl Caraan | Contact</title>
+      <Head>
+        <title>Carl Caraan | Contact</title>
+      </Head>
+
       {/* ========= Start Navigation ========= */}
       <Navbar />
       {/* ========= End Navigation ========= */}

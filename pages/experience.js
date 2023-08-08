@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import Head from "next/head";
 import Image from "next/image";
 
 // Components
@@ -76,7 +77,10 @@ const sortedCertImages = certImages.sort((a, b) => b.id - a.id);
 function experience() {
   return (
     <Fragment>
-      <title>Carl Caraan | Experience</title>
+      <Head>
+        <title>Carl Caraan | Experience</title>
+      </Head>
+
       {/* ========= Start Navigation ========= */}
       <Navbar />
       {/* ========= End Navigation ========= */}

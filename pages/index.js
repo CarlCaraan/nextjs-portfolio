@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Fragment } from "react";
+import Head from "next/head";
 import Image from "next/image";
 
 // Components
@@ -19,7 +20,10 @@ import { motion } from "framer-motion";
 export default function Home() {
   return (
     <Fragment>
-      <title>Carl Caraan | Web Developer</title>
+      <Head>
+        <title>Carl Caraan | Web Developer</title>
+      </Head>
+
       {/* ========= Start Navigation ========= */}
       <Navbar />
       {/* ========= End Navigation ========= */}

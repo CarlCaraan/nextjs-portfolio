@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -154,7 +155,10 @@ function projects() {
   ];
   return (
     <Fragment>
-      <title>Carl Caraan | Projects</title>
+      <Head>
+        <title>Carl Caraan | Projects</title>
+      </Head>
+
       {/* ========= Start Navigation ========= */}
       <Navbar />
       {/* ========= End Navigation ========= */}
