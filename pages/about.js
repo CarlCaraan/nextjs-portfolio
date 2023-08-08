@@ -56,7 +56,7 @@ function about() {
                     Me
                   </div>
                 </div>
-                <div className="basis-3/5 py-[12vw]">
+                <div className="basis-3/5 py-12 md:py-[12vw]">
                   <h1
                     className="text-base leading-tight text-justify
                     sm:text-[3.6vw] lg:select-none"
