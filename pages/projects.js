@@ -171,7 +171,10 @@ function projects() {
           <section className="sm:mb-28" id="project">
             <div className="section-container">
               {/* Start Heading */}
-              <div className="mt-12 lg:mt-24">
+              <div
+                className="mt-12 
+                lg:mt-24"
+              >
                 <h1 className="big-heading-text">Latest Projects</h1>
                 <p
                   className="text-sm leading-snug text-grayLight text-justify mt-12
