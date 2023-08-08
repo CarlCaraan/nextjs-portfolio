@@ -2,9 +2,14 @@ import React, { Fragment, useState } from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import Link from "next/link";
+import { useTheme } from "next-themes";
 
 // Components
 import ThemeToggler from "./ThemeToggler";
+
+// Images
+import logoLight from "../public/logoLight.svg";
+import logoDark from "../public/logoDark.svg";
 
 function Navbar() {
   const router = useRouter();
@@ -19,6 +24,9 @@ function Navbar() {
     setActive(!isActive);
   };
 
+  // Use Theme
+  const { theme, setTheme } = useTheme();
+
   return (
     <Fragment>
       <nav
@@ -30,18 +38,26 @@ function Navbar() {
         <div className="flex justify-between items-center">
           {/* Brand */}
           <Link href="/">
-            <div className="flex flex-col select-none">
-              <div className="text-2xl flex space-x-1">
-                <span>Carl Caraan</span>
-                <Image
-                  className="w-5"
-                  width="0"
-                  height="0"
-                  src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Twitter_Verified_Badge.svg"
-                  alt="verified-icon"
-                />
+            <div className="flex flex-row space-x-2">
+              {theme === "light" ? (
+                <Image className="w-14 h-14" src={logoLight} alt="logo-light" />
+              ) : (
+                <Image className="w-14 h-14" src={logoDark} alt="logo-dark" />
+              )}
+
+              <div className="flex flex-col select-none">
+                <div className="text-2xl flex space-x-1">
+                  <span>Carl Caraan</span>
+                  <Image
+                    className="w-5"
+                    width="0"
+                    height="0"
+                    src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Twitter_Verified_Badge.svg"
+                    alt="verified-icon"
+                  />
+                </div>
+                <span className="text-grayLightest">Web Developer</span>
               </div>
-              <span className="text-grayLightest">Web Developer</span>
             </div>
           </Link>
 
