@@ -9,7 +9,7 @@ export default function Document() {
         {/* Meta */}
         <Meta />
         {/* FavIcon */}
-        <link rel="icon" type="image/x-icon" href="/carl_jpeg.ico"></link>
+        <link rel="icon" type="image/x-icon" href="/favicon.ico"></link>
       </Head>
       {/* ========= End Head ========= */}
 

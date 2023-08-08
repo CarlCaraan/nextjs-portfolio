@@ -76,7 +76,7 @@ const sortedCertImages = certImages.sort((a, b) => b.id - a.id);
 function experience() {
   return (
     <Fragment>
-      <title>Experience | Carl Caraan</title>
+      <title>Carl Caraan | Experience</title>
       {/* ========= Start Navigation ========= */}
       <Navbar />
       {/* ========= End Navigation ========= */}

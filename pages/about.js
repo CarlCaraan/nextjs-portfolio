@@ -14,7 +14,7 @@ import slideInUp from "../components/animation/slideInUp";
 function about() {
   return (
     <Fragment>
-      <title>About | Carl Caraan</title>
+      <title>Carl Caraan | About</title>
       {/* ========= Start Navigation ========= */}
       <Navbar />
       {/* ========= End Navigation ========= */}

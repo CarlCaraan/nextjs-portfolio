@@ -12,7 +12,7 @@ import slideInUp from "../components/animation/slideInUp";
 function contact() {
   return (
     <Fragment>
-      <title>Contact | Carl Caraan</title>
+      <title>Carl Caraan | Contact</title>
       {/* ========= Start Navigation ========= */}
       <Navbar />
       {/* ========= End Navigation ========= */}
