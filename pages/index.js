@@ -84,6 +84,7 @@ export default function Home() {
                   // src="/images/userbg.png"
                   src={CarlPNG}
                   alt="carlcaraan"
+                  priority
                 />
               </div>
             </div>
@@ -241,6 +242,7 @@ export default function Home() {
                     xl:w-[7rem] lg:w-[5.5rem] md:w-[4rem] sm:w-[5rem]"
                     src={CarlPNG}
                     alt="Carl Caraan"
+                    priority
                   ></Image>
                   <Link
                     href="/projects"

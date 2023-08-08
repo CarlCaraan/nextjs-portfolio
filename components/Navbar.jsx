@@ -44,9 +44,19 @@ function Navbar() {
             <div className="flex flex-row space-x-2">
               {/* Start Dynamic Logo */}
               {theme === "light" ? (
-                <Image className="w-14 h-14" src={logoLight} alt="logo-light" />
+                <Image
+                  className="w-14 h-14"
+                  src={logoLight}
+                  alt="logo-light"
+                  priority
+                />
               ) : (
-                <Image className="w-14 h-14" src={logoDark} alt="logo-dark" />
+                <Image
+                  className="w-14 h-14"
+                  src={logoDark}
+                  alt="logo-dark"
+                  priority
+                />
               )}
               {/* End Dynamic Logo */}
 
@@ -152,9 +162,19 @@ function Navbar() {
           <div className="flex flex-row space-x-2">
             {/* Start Logo Image */}
             {theme === "light" ? (
-              <Image className="w-14 h-14" src={logoLight} alt="logo-light" />
+              <Image
+                className="w-14 h-14"
+                src={logoLight}
+                alt="logo-light"
+                priority
+              />
             ) : (
-              <Image className="w-14 h-14" src={logoDark} alt="logo-dark" />
+              <Image
+                className="w-14 h-14"
+                src={logoDark}
+                alt="logo-dark"
+                priority
+              />
             )}
             {/* End Logo Image */}
           </div>
