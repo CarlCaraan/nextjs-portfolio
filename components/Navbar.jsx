@@ -39,6 +39,7 @@ function Navbar() {
           {/* Brand */}
           <Link href="/">
             <div className="flex flex-row space-x-2">
+              {/* Logo Image */}
               {theme === "light" ? (
                 <Image className="w-14 h-14" src={logoLight} alt="logo-light" />
               ) : (

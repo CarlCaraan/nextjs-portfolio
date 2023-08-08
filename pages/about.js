@@ -41,7 +41,12 @@ function about() {
                     className="text-[6.6vw] leading-none
                     lg:select-none"
                   >
-                    <span className="hidden md:block uppercase">About</span>
+                    <span
+                      className="hidden 
+                      md:block uppercase"
+                    >
+                      About
+                    </span>
                     <h1
                       className="big-heading-text block 
                       md:hidden"
@@ -56,7 +61,10 @@ function about() {
                     Me
                   </div>
                 </div>
-                <div className="basis-3/5 py-12 md:py-[12vw]">
+                <div
+                  className="basis-3/5 py-12 
+                  md:py-[12vw]"
+                >
                   <h1
                     className="text-base leading-tight text-justify
                     sm:text-[3.6vw] lg:select-none"
