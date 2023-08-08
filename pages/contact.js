@@ -14,7 +14,7 @@ function contact() {
   return (
     <Fragment>
       <Head>
-        <title>Carl Caraan | Contact</title>
+        <title>Contact | Carl Caraan</title>
       </Head>
 
       {/* ========= Start Navigation ========= */}

@@ -156,7 +156,7 @@ function projects() {
   return (
     <Fragment>
       <Head>
-        <title>Carl Caraan | Projects</title>
+        <title>Projects | Carl Caraan</title>
       </Head>
 
       {/* ========= Start Navigation ========= */}

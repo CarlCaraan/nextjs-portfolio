@@ -16,7 +16,7 @@ function about() {
   return (
     <Fragment>
       <Head>
-        <title>Carl Caraan | About</title>
+        <title>About | Carl Caraan</title>
       </Head>
 
       {/* ========= Start Navigation ========= */}

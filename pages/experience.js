@@ -78,7 +78,7 @@ function experience() {
   return (
     <Fragment>
       <Head>
-        <title>Carl Caraan | Experience</title>
+        <title>Experience | Carl Caraan</title>
       </Head>
 
       {/* ========= Start Navigation ========= */}
