@@ -45,14 +45,16 @@ function Navbar() {
               {/* Start Dynamic Logo */}
               {theme === "light" ? (
                 <Image
-                  className="w-14 h-14"
+                  className="w-[2.6rem] h-[2.6rem] mt-1 
+                  lg:w-12 lg:h-12"
                   src={logoLight}
                   alt="logo-light"
                   priority
                 />
               ) : (
                 <Image
-                  className="w-14 h-14"
+                  className="w-[2.6rem] h-[2.6rem] mt-1 
+                  lg:w-12 lg:h-12"
                   src={logoDark}
                   alt="logo-dark"
                   priority
@@ -157,14 +159,16 @@ function Navbar() {
             {/* Start Logo Image */}
             {theme === "light" ? (
               <Image
-                className="w-14 h-14"
+                className="w-[2.6rem] h-[2.6rem] mt-1 
+                lg:w-12 lg:h-12"
                 src={logoLight}
                 alt="logo-light"
                 priority
               />
             ) : (
               <Image
-                className="w-14 h-14"
+                className="w-[2.6rem] h-[2.6rem] mt-1 
+                lg:w-12 lg:h-12"
                 src={logoDark}
                 alt="logo-dark"
                 priority
