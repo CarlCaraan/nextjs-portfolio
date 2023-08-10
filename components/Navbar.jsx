@@ -24,7 +24,7 @@ function Navbar() {
     setActive(!isActive);
   };
 
-  // Use Theme Function
+  // UseTheme Function
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
