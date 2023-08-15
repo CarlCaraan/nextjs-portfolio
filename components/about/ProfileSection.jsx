@@ -138,11 +138,12 @@ function ProfileSection({ props }) {
                       Area
                     </div>
                     <div
-                      className="basis-3/5 text-sm text-grayLight
+                      className="basis-3/5 text-sm text-grayLight flex flex-col
                       sm:text-xl
                       dark:text-grayLightest"
                     >
-                      Interaction Design, Coding
+                      <span>Interaction Design</span>
+                      <span>Coding</span>
                     </div>
                   </div>
                 </div>
