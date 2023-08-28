@@ -8,7 +8,7 @@ export default function Document() {
     <Html lang="en" className="scroll-smooth">
       {/* ========= Start Head ========= */}
       <Head>
-        {/* Meta/SEO */}
+        {/* SEO */}
         <Meta />
         {/* FavIcon */}
         <link rel="icon" type="image/x-icon" href="/favicon.ico"></link>
