@@ -10,6 +10,7 @@ export default function Document() {
       <Head>
         {/* SEO */}
         <Meta />
+
         {/* FavIcon */}
         <link rel="icon" type="image/x-icon" href="/favicon.ico"></link>
       </Head>
