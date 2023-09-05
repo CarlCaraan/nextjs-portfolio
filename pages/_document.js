@@ -11,7 +11,7 @@ export default function Document() {
         {/* SEO */}
         <Meta />
 
-        {/* FavIcon */}
+        {/* Favicon */}
         <link rel="icon" type="image/x-icon" href="/favicon.ico"></link>
       </Head>
       {/* ========= End Head ========= */}
