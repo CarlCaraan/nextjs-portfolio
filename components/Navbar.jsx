@@ -74,6 +74,7 @@ function Navbar() {
                     height="0"
                     src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Twitter_Verified_Badge.svg"
                     alt="verified-icon"
+                    priority
                   />
                 </div>
                 <span className="text-grayLightest">Web Developer</span>

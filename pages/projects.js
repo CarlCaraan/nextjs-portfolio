@@ -269,13 +269,16 @@ function projects() {
                                 target={project.demo ? "_blank" : ""}
                               >
                                 <span
-                                  title={!project.link && "Demo not available"}
-                                  className={`flex flex-row bg-violet px-0 py-3 rounded-tl-full rounded-bl-full
-                                  hover:bg-[#a87dff] group-hover:px-6 transition-px duration-500 ${
+                                  title={`${
+                                    !project.demo ? "Demo is not available" : ""
+                                  }`}
+                                  className={`flex flex-row bg-violet px-0 py-2 rounded-tl-full rounded-bl-full text-sm items-center
+                                  hover:bg-[#a87dff] group-hover:px-4 transition-px duration-500 ${
                                     project.demo
                                       ? ""
                                       : "line-through cursor-not-allowed"
-                                  }`}
+                                  }
+                                  sm:text-base sm:group-hover:px-6 sm:py-3`}
                                 >
                                   <MonitorIcon className="w-6 fill-white mr-2" />
                                   Demo
@@ -286,15 +289,18 @@ function projects() {
                                 target={project.github ? "_blank" : ""}
                               >
                                 <span
-                                  title={
-                                    !project.github && "Github not available"
-                                  }
-                                  className={`flex flex-row bg-violet px-0 py-3 rounded-tr-full rounded-br-full
-                                  hover:bg-[#a87dff] group-hover:px-6 transition-px duration-500 ${
+                                  title={`${
+                                    !project.github
+                                      ? "Github is not available"
+                                      : ""
+                                  }`}
+                                  className={`flex flex-row bg-violet px-0 py-2 rounded-tr-full rounded-br-full text-sm items-center
+                                  hover:bg-[#a87dff] group-hover:px-4 transition-px duration-500 ${
                                     project.github
                                       ? ""
                                       : "line-through cursor-not-allowed"
-                                  }`}
+                                  }
+                                  sm:text-base sm:group-hover:px-6 sm:py-3`}
                                 >
                                   <GithubIcon className="w-6 fill-white mr-2" />
                                   Code
@@ -304,7 +310,11 @@ function projects() {
                           </div>
                           {/* End Overlay */}
                           <div className="group-hover:grayscale group-hover:blur-[1px] duration-300">
-                            <Image src={project.image} alt={project.image} />
+                            <Image
+                              src={project.image}
+                              alt={project.image}
+                              priority
+                            />
                           </div>
                         </div>
                         <div>
