@@ -152,6 +152,7 @@ export default function Home() {
                 <div
                   className="col-span-full group relative overflow-hidden shadow-lg"
                   data-aos="fade-up"
+                  data-aos-delay="100"
                 >
                   <Image
                     className="border border-white rounded-sm w-full"
@@ -166,6 +167,7 @@ export default function Home() {
                   className="col-span-full group relative overflow-hidden shadow-lg row-span-2
                   md:col-span-5"
                   data-aos="fade-up"
+                  data-aos-delay="200"
                 >
                   <Image
                     className="border border-white rounded-sm w-full"
@@ -182,7 +184,7 @@ export default function Home() {
                   className="col-span-full group relative overflow-hidden shadow-lg row-span-1
                   md:col-span-3"
                   data-aos="fade-up"
-                  data-aos-delay="100"
+                  data-aos-delay="300"
                 >
                   <Image
                     className="border border-white rounded-sm w-full"
@@ -217,6 +219,7 @@ export default function Home() {
                 xl:px-24
                 dark:text-white"
                 data-aos="zoom-in"
+                data-aos-delay="200"
               >
                 “We can not solve our problems with the same level of thinking
                 that created them.”

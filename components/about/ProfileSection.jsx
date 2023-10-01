@@ -152,7 +152,7 @@ function ProfileSection({ props }) {
               <div className="basis-1/2">
                 <Image
                   data-aos="zoom-in"
-                  data-aos-delay="200"
+                  data-aos-delay="300"
                   className="w-full mx-auto 
                   md:mx-0 md:w-3/4 xl:w-full"
                   src={CarlPNG}
