@@ -12,7 +12,7 @@ module.exports = {
         grayLight: "#333333",
         grayLighter: "#515151",
         grayLightest: "#cccccc",
-        violet: "#7456AF",
+        violet: "#805fc2",
         panel: "#f1f1f1",
       },
     },

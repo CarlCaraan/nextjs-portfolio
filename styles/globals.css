@@ -62,7 +62,7 @@
   }
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    @apply bg-[#805fc2];
+    @apply bg-violet;
   }
 
   /* ========= GLOBAL ========= */
@@ -138,10 +138,10 @@
 
   /* Project > Project Container */
   .project_image-box {
-    @apply shadow-lg border border-white hover:grayscale duration-300;
+    @apply shadow-lg border border-white;
   }
   .project_title {
-    @apply text-xl font-sansSB inline-block hover:underline
+    @apply text-xl font-sansSB inline-block group-hover:underline
     xl:text-3xl lg:text-2xl;
   }
   .project_subtitle {
