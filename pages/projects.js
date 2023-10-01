@@ -252,6 +252,7 @@ function projects() {
                     .map((project) => (
                       <div
                         data-aos="zoom-in"
+                        data-aos-delay="200"
                         key={project.id}
                         className="flex flex-col space-y-6 mb-6 group
                         xl:space-y-12"
