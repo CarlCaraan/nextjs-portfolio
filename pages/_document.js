@@ -1,4 +1,6 @@
 import { Html, Head, Main, NextScript } from "next/document";
+
+// SEO
 import Meta from "../components/Meta";
 
 export default function Document() {
