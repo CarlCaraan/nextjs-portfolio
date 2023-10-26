@@ -127,27 +127,13 @@ function experience() {
                     <div className="education-flex-item">
                       {/* Year Heading */}
                       <div className="text-base text-grayLightest">
-                        2023 - Present
-                      </div>
-
-                      {/* Item */}
-                      <div>
-                        <h4 className="education-title">Freelancer</h4>
-                        <p className="education-subtitle">
-                          Matrix Software Solutions PH
-                        </p>
-                      </div>
-                    </div>
-                    <div className="education-flex-item">
-                      {/* Year Heading */}
-                      <div className="text-base text-grayLightest">
-                        2019 - 2023
+                        2022 - Present
                       </div>
 
                       {/* Item */}
                       <div>
                         <h4 className="education-title">
-                          BS in Information Technology
+                          College Graduate (BSIT)
                         </h4>
                         <p className="education-subtitle">
                           Laguna State Polytechnic University
@@ -173,14 +159,17 @@ function experience() {
                           Laguna State Polytechnic University
                         </p>
                       </div>
+                    </div>
+
+                    <div className="education-flex-item">
+                      {/* Year Heading */}
+                      <div className="text-base text-grayLightest">2022</div>
 
                       {/* Item */}
                       <div>
-                        <h4 className="education-title">
-                          Major in Web Development
-                        </h4>
+                        <h4 className="education-title">Freelancer</h4>
                         <p className="education-subtitle">
-                          Laguna State Polytechnic University
+                          Matrix Software Solutions PH
                         </p>
                       </div>
 
@@ -193,7 +182,18 @@ function experience() {
                           Laguna State Polytechnic University
                         </p>
                       </div>
+
+                      {/* Item */}
+                      <div>
+                        <h4 className="education-title">
+                          Major in Web Development
+                        </h4>
+                        <p className="education-subtitle">
+                          Laguna State Polytechnic University
+                        </p>
+                      </div>
                     </div>
+
                     <div className="education-flex-item">
                       {/* Year Heading */}
                       <div className="text-base text-grayLightest">
