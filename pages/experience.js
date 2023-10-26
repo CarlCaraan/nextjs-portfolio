@@ -210,14 +210,6 @@ function experience() {
 
                       {/* Item */}
                       <div>
-                        <h4 className="education-title">NCAE Topnotcher</h4>
-                        <p className="education-subtitle">
-                          Santa Maria Academy
-                        </p>
-                      </div>
-
-                      {/* Item */}
-                      <div>
                         <h4 className="education-title">
                           Biometrics Arduino <small>(Thesis)</small>
                         </h4>
@@ -235,6 +227,14 @@ function experience() {
                       {/* Item */}
                       <div>
                         <h4 className="education-title">Junior Highschool</h4>
+                        <p className="education-subtitle">
+                          Santa Maria Academy
+                        </p>
+                      </div>
+
+                      {/* Item */}
+                      <div>
+                        <h4 className="education-title">NCAE Topnotcher</h4>
                         <p className="education-subtitle">
                           Santa Maria Academy
                         </p>
