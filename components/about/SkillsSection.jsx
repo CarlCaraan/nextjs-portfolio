@@ -23,6 +23,9 @@ import firebase from "../../public/images/about/firebase.svg";
 import mysql from "../../public/images/about/mysql.svg";
 import vscode from "../../public/images/about/vs code.svg";
 import git from "../../public/images/about/git.svg";
+import asp from "../../public/images/about/asp.svg";
+import csharp from "../../public/images/about/csharp.svg";
+import sqlserver from "../../public/images/about/sqlserver.svg";
 
 function SkillsSection({ props }) {
   return (
@@ -176,13 +179,26 @@ function SkillsSection({ props }) {
                       <div className="neumorphism-box">
                         <Image
                           className="w-16
-                          xl:my-0 xl:w-1/2 md:w-12 lg:my-4"
+                          xl:my-0 xl:w-1/2 md:w-12 lg:my-4 md:py-0 sm:py-3"
                           src={next}
                           alt={next}
                         ></Image>
                       </div>
                       <div className="neumorphism-box">
                         <Image src={laravel} alt={laravel}></Image>
+                      </div>
+                    </div>
+                    <div className="skills-inner-flexbox">
+                      <div className="neumorphism-box">
+                        <Image src={asp} alt={asp}></Image>
+                      </div>
+                      <div className="neumorphism-box">
+                        <Image
+                          className="w-12 py-1
+                          xl:my-0 xl:w-1/3 md:w-12 lg:my-1 md:py-0"
+                          src={csharp}
+                          alt={csharp}
+                        ></Image>
                       </div>
                     </div>
                   </div>
@@ -202,7 +218,14 @@ function SkillsSection({ props }) {
                     <div className="neumorphism-box">
                       <Image src={mysql} alt={mysql}></Image>
                     </div>
-                    <div className="neumorphism-box opacity-0"></div>
+                    <div className="neumorphism-box">
+                      <Image
+                        className="w-14
+                          xl:my-0 xl:w-1/2 lg:my-1 md:w-16 md:py-0 sm:py-1"
+                        src={sqlserver}
+                        alt={sqlserver}
+                      ></Image>
+                    </div>
                   </div>
                 </div>
                 {/* Item 6 */}

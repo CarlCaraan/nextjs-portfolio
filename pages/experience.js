@@ -108,6 +108,7 @@ function experience() {
                 <h1 className="big-heading-text">Experience</h1>
               </div>
               {/* End Heading */}
+
               {/* Start Education Section */}
               <div
                 className="mt-24 
@@ -119,7 +120,9 @@ function experience() {
                   md:mt-16 lg:mt-28"
                 >
                   <h1 className="experience-heading">Education & Experience</h1>
+
                   {/* Start Flex Container */}
+                  {/* Row 1 */}
                   <div
                     className="flex flex-col mt-12 gap-4 space-y-12 
                     md:space-y-0 md:flex-row"
@@ -127,7 +130,24 @@ function experience() {
                     <div className="education-flex-item">
                       {/* Year Heading */}
                       <div className="text-base text-grayLightest">
-                        2022 - Present
+                        2023 - Present
+                      </div>
+
+                      {/* Item */}
+                      <div>
+                        <h4 className="education-title">
+                          Full Stack Developer
+                        </h4>
+                        <p className="education-subtitle">
+                          Philsoft Technologies
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="education-flex-item">
+                      {/* Year Heading */}
+                      <div className="text-base text-grayLightest">
+                        2022 - 2023
                       </div>
 
                       {/* Item */}
@@ -160,10 +180,17 @@ function experience() {
                         </p>
                       </div>
                     </div>
-
+                  </div>
+                  {/* Row 2 */}
+                  <div
+                    className="flex flex-col mt-12 gap-4 space-y-12
+                    md:space-y-0 md:flex-row"
+                  >
                     <div className="education-flex-item">
                       {/* Year Heading */}
-                      <div className="text-base text-grayLightest">2022</div>
+                      <div className="text-base text-grayLightest">
+                        2021 - 2022
+                      </div>
 
                       {/* Item */}
                       <div>
@@ -218,6 +245,7 @@ function experience() {
                         </p>
                       </div>
                     </div>
+
                     <div className="education-flex-item">
                       {/* Year Heading */}
                       <div className="text-base text-grayLightest">
