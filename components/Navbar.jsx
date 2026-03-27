@@ -77,7 +77,7 @@ function Navbar() {
                     priority
                   />
                 </div>
-                <span className="text-grayLightest">Web Developer</span>
+                <span className="text-grayLightest">Full-Stack Developer</span>
               </div>
             </div>
           </Link>

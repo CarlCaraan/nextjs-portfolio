@@ -189,7 +189,7 @@ function Footer() {
           lg:text-right lg:text-[22px]
           dark:text-white"
         >
-          &copy; C.Caraan {new Date().getFullYear()}
+          &copy; C.Caraan {/*{new Date().getFullYear()}*/} 2023
         </div>
       </div>
       {/* End Container */}
