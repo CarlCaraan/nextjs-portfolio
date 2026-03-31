@@ -137,7 +137,7 @@ function Navbar() {
               type="button"
               className={
                 isActive
-                  ? "hamburger z-40 block md:hidden focus:outline-none"
+                  ? "hamburger-default z-40 block md:hidden focus:outline-none"
                   : "open hamburger z-40 block md:hidden focus:outline-none"
               }
               onClick={hamburgerClickHandler}
