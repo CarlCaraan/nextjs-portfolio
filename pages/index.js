@@ -104,7 +104,7 @@ export default function Home() {
           >
             {/* Start Content Heading */}
             <div
-              className="relative text-[6.7vw] big-title font-linksB text-center pt-12 lg:pt-[4.3vw] text-white select-none
+              className="relative text-[6.7vw] font-linksB text-center pt-12 lg:pt-[4.3vw] text-white select-none
               dark:text-grayLightest"
             >
               Full Stack Developer
