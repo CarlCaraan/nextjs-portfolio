@@ -77,7 +77,7 @@ function Navbar() {
                     priority
                   />
                 </div>
-                <span className="text-grayLightest">Full-Stack Developer</span>
+                <span className="job-title">AI | .Net Developer</span>
               </div>
             </div>
           </Link>

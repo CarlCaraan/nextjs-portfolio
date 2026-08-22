@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <Fragment>
       <Head>
-        <title>Carl Caraan | Web Developer</title>
+        <title>Carl Caraan</title>
       </Head>
 
       {/* ========= Start Navigation ========= */}
@@ -45,7 +45,7 @@ export default function Home() {
               {/* Left Section */}
               <div className="lg:basis-1/2">
                 <h1
-                  className="text-2xl font-sansB text-center mt-12
+                  className="big-title text-2xl font-sansB text-center mt-12
                   lg:text-start sm:text-5xl lg:mt-12 xl:mt-0"
                 >
                   Let&#39;s Build <br /> Something Epic
@@ -55,7 +55,9 @@ export default function Home() {
                   lg:text-start
                   dark:text-grayLightest"
                 >
-                  <span className="sm:text-2xl font-sansSB">Web Developer</span>{" "}
+                  <span className="sm:text-2xl font-sansSB">
+                    Software Engineer
+                  </span>{" "}
                   <span className="sm:text-2xl">
                     based in Laguna, Philippines
                   </span>
