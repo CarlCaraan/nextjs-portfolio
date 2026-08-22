@@ -45,7 +45,7 @@ export default function Home() {
               {/* Left Section */}
               <div className="lg:basis-1/2">
                 <h1
-                  className="big-title text-2xl font-sansB text-center mt-12
+                  className="text-2xl font-sansB text-center mt-12
                   lg:text-start sm:text-5xl lg:mt-12 xl:mt-0"
                 >
                   Let&#39;s Build <br /> Something Epic
@@ -104,12 +104,12 @@ export default function Home() {
           >
             {/* Start Content Heading */}
             <div
-              className="relative text-[6.7vw] font-linksB text-center pt-12 lg:pt-[4.3vw] text-white select-none
+              className="relative text-[6.7vw] big-title font-linksB text-center pt-12 lg:pt-[4.3vw] text-white select-none
               dark:text-grayLightest"
             >
               Full Stack Developer
               <span
-                className="hidden absolute font-linksSB text-black text-[2.5vw] left-[25vw] top-[10.2vw] 
+                className="hidden absolute big-title font-linksSB text-black text-[2.5vw] left-[25vw] top-[10.2vw] 
                 lg:block
                 dark:text-white"
               >
@@ -253,7 +253,7 @@ export default function Home() {
                   <Link
                     href="https://github.com/CarlCaraan"
                     target="_blank"
-                    className="float-left text-grayLight text-2xl ml-2 mt-4
+                    className="float-left big-title text-grayLight text-2xl ml-2 mt-4
                     xl:text-9xl lg:text-8xl md:text-7xl sm:text-4xl lg:ml-8 md:ml-4 md:mt-0
                     dark:text-white"
                   >
@@ -263,11 +263,11 @@ export default function Home() {
                 <Link
                   href="https://github.com/CarlCaraan"
                   target="_blank"
-                  className=" text-grayLight ml-2 mt-4 text-2xl
+                  className=" text-grayLight big-title ml-2 mt-4 text-2xl
                   xl:text-9xl lg:text-8xl md:text-7xl sm:text-4xl md:ml-0 md:mt-0
                   dark:text-white"
                 >
-                  code <strong>&rarr;</strong>
+                  code <strong className="big-title"></strong>
                 </Link>
               </div>
             </div>

@@ -48,6 +48,10 @@
   font-family: "Spidey";
   src: url("../fonts/Spidey.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Blurry";
+  src: url("../fonts/Blurry.otf") format("truetype");
+}
 
 /* SERIF */
 
@@ -125,6 +129,7 @@
   }
   .big-title {
     //font-family: "BigDotted", sans-serif !important;
+    font-family: "Blurry", sans-serif !important;
     //font-family: "Spidey", sans-serif !important;
     //font-size: 2.1rem !important;
   }
