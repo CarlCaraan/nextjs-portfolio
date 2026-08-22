@@ -45,8 +45,8 @@ export default function Home() {
               {/* Left Section */}
               <div className="lg:basis-1/2">
                 <h1
-                  className="big-title md:text-3xl text-xl font-sansB text-center mt-12
-                  lg:text-start sm:text-2xl lg:mt-12 xl:mt-0"
+                  className="big-title text-2xl font-sansB text-center mt-12
+                  lg:text-start sm:text-5xl lg:mt-12 xl:mt-0"
                 >
                   Let&#39;s Build <br /> Something Epic
                 </h1>
