@@ -73,7 +73,7 @@ function about() {
                     className="text-base leading-tight text-justify
                     sm:text-[3.6vw] lg:select-none"
                   >
-                    To be a developer who solves real world problem
+                    A developer who solves real world problem
                   </h1>
                   <p
                     className="text-sm text-grayLighter mt-5 text-justify

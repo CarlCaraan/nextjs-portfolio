@@ -223,11 +223,12 @@ export default function Home() {
                 data-aos="zoom-in"
                 data-aos-delay="200"
               >
-                “We can not solve our problems with the same level of thinking
-                that created them.”
+                {/*“We can not solve our problems with the same level of thinking
+                that created them.”*/}
+                "With great technology comes great innovation."
               </blockquote>
               <h3 className="mt-20 text-center lg:text-3xl font-sansSB">
-                Albert Einstein
+                Claude
               </h3>
             </div>
             {/* End Container */}
