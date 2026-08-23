@@ -130,16 +130,18 @@ function experience() {
                     <div className="education-flex-item">
                       {/* Year Heading */}
                       <div className="text-base text-grayLightest">
-                        2023 - Present
+                        2023 - 2027
                       </div>
 
                       {/* Item */}
                       <div>
-                        <h4 className="education-title">
-                          Full Stack Developer
-                        </h4>
+                        <h4 className="education-title">.Net Developer</h4>
                         <p className="education-subtitle">
-                          Philsoft Technologies
+                          <span className="text-black dark:text-white">
+                            Full-Stack Developer
+                          </span>
+                          <br />
+                          Philsoft Technologies Group, Inc.
                         </p>
                       </div>
                     </div>
