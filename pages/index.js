@@ -225,7 +225,7 @@ export default function Home() {
               >
                 {/*“We can not solve our problems with the same level of thinking
                 that created them.”*/}
-                "With great technology comes great innovation."
+                &quot;With great technology comes great innovation.&quot;
               </blockquote>
               <h3 className="mt-20 text-center lg:text-3xl font-sansSB">
                 Claude
