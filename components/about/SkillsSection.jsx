@@ -276,7 +276,7 @@ function SkillsSection({ props }) {
                 <Link
                   className="text-base font-sansSB underline hover:no-underline 
                   sm:text-xl"
-                  href="/downloads/Carl Caraan - Resume.pdf"
+                  href="/downloads/Carl Caraan - Resume 2.pdf"
                   target="_blank"
                 >
                   Download CV
