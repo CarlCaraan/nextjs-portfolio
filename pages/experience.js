@@ -135,12 +135,8 @@ function experience() {
 
                       {/* Item */}
                       <div>
-                        <h4 className="education-title">.Net Developer</h4>
+                        <h4 className="education-title">Full-Stack .NET Developer</h4>
                         <p className="education-subtitle">
-                          <span className="text-black dark:text-white">
-                            Full-Stack Developer
-                          </span>
-                          <br />
                           Philsoft Technologies Group, Inc.
                         </p>
                       </div>
