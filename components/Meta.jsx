@@ -3,23 +3,31 @@ import React, { Fragment } from "react";
 function Meta() {
   return (
     <Fragment>
-      <meta name="title" content="Carl Caraan Web Developer"></meta>
+      <meta name="title" content="Carl Caraan Full-Stack .NET Developer"></meta>
       <meta
         name="description"
-        content="Looking for a skilled web developer? Meet Carl Caraan, based in Laguna, Philippines. With a strong portfolio of impressive projects, Carl is a reliable choice for your web development needs."
+        content="Looking for a skilled full-stack developer? Meet Carl Caraan, based in Laguna, Philippines. With a strong portfolio of impressive projects, Carl is a reliable choice for your web development needs."
       ></meta>
       <meta
         name="keywords"
         content="CarlCaraan,
         Carl Caraan,
         Carl Aaron D. Caraan,
-        Web Developer,
+        Full-Stack Developer,
+        Full-Stack .NET Developer,
         Programmer,
-        Fullstack Developer,
+        .NET Developer,
+        DotNet Developer,
+        MVC,
+        AI,
+        Software Engineer,
+        .NET Core,
+        ASP.NET,
+        Artificial Intelligence,
         Frontend Developer,
         Backend Developer,
         React Developer,
-        Laguna, Santa Cruz, Philippines,
+        Laguna, Bay, Philippines,
         Project Blog App,
         Pokeflip Card Game,
         Sdo Laguna,
