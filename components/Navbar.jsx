@@ -11,6 +11,7 @@ import useScrollSpy from "../hooks/useScrollSpy";
 // Images
 import logoLight from "../public/logoLight.svg";
 import logoDark from "../public/logoDark.svg";
+import verifiedBadge from "../public/Twitter_Verified_Badge.svg";
 
 function Navbar() {
   const { activeSection, scrollToSection, scrollToTop } = useScrollSpy(
@@ -91,10 +92,8 @@ function Navbar() {
                   <div className="text-xl flex space-x-1 lg:text-2xl">
                     <span>Carl Caraan</span>
                     <Image
-                      className="w-5"
-                      width="0"
-                      height="0"
-                      src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Twitter_Verified_Badge.svg"
+                      className="w-5 h-5 mt-1"
+                      src={verifiedBadge}
                       alt="verified-icon"
                       priority
                     />
