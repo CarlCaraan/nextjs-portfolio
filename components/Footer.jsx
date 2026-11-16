@@ -1,10 +1,12 @@
 import React from "react";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import useScrollSpy from "../hooks/useScrollSpy";
 
 function Footer() {
-  const router = useRouter();
-  const { pathname } = router;
+  const { activeSection, scrollToSection } = useScrollSpy(
+    ["about", "projects", "experience", "contact"],
+    120
+  );
 
   // Icons SVG
   const FacebookIcon = (props) => (
@@ -32,61 +34,58 @@ function Footer() {
       <div className="section-container">
         {/* Horizontal Line */}
         <div
-          className="border-t-4 border-t-grayLighter w-full
-          dark:border-t-grayLightest"
+          className="border-t-4 border-t-grayLighter w-full dark:border-t-grayLightest"
         ></div>
 
         {/* Start Flex Container */}
-        <div
-          className="flex flex-col mt-20 
-            lg:flex-row"
-        >
+        <div className="flex flex-col mt-20 lg:flex-row">
           {/* Start Left Section */}
           <div className="basis-1/2">
             <div
-              className="uppercase font-linksL text-lg text-grayLight text-center lg:text-left
-              dark:text-white"
+              className="uppercase font-linksL text-lg text-grayLight text-center lg:text-left dark:text-white"
             >
               Follow Me
             </div>
             {/* Icon Wrapper Flex */}
             <div
-              className="flex mt-4 space-x-4 justify-center pb-8 
-              lg:justify-start lg:pb-0"
+              className="flex mt-4 space-x-4 justify-center pb-8 lg:justify-start lg:pb-0"
             >
-              <Link href="https://www.facebook.com/caraancarl/" target="_blank">
+              <Link
+                href="https://www.facebook.com/caraancarl/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <div
-                  className="group rounded-full border border-grayLighter p-2 hover:border-violet duration-300
-                  dark:border-grayLightest dark:hover:border-violet"
+                  className="group rounded-full border border-grayLighter p-2 hover:border-violet duration-300 dark:border-grayLightest dark:hover:border-violet"
                 >
                   <FacebookIcon
-                    className="w-8 fill-grayLighter group-hover:fill-violet duration-300
-                    dark:fill-grayLightest"
+                    className="w-8 fill-grayLighter group-hover:fill-violet duration-300 dark:fill-grayLightest"
                   />
                 </div>
               </Link>
-              <Link href="https://github.com/CarlCaraan" target="_blank">
+              <Link
+                href="https://github.com/CarlCaraan"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <div
-                  className="group rounded-full border border-grayLight p-3 hover:border-violet duration-300
-                  dark:border-grayLightest dark:hover:border-violet"
+                  className="group rounded-full border border-grayLight p-3 hover:border-violet duration-300 dark:border-grayLightest dark:hover:border-violet"
                 >
                   <GithubIcon
-                    className="w-6 fill-grayLighter group-hover:fill-violet duration-300
-                    dark:fill-grayLightest"
+                    className="w-6 fill-grayLighter group-hover:fill-violet duration-300 dark:fill-grayLightest"
                   />
                 </div>
               </Link>
               <Link
                 href="https://www.linkedin.com/in/caraancarlaaron/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <div
-                  className="group rounded-full border border-grayLight p-3 hover:border-violet duration-300
-                  dark:border-grayLightest dark:hover:border-violet"
+                  className="group rounded-full border border-grayLight p-3 hover:border-violet duration-300 dark:border-grayLightest dark:hover:border-violet"
                 >
                   <LinkedinIcon
-                    className="w-6 fill-grayLighter group-hover:fill-violet duration-300
-                    dark:fill-grayLightest"
+                    className="w-6 fill-grayLighter group-hover:fill-violet duration-300 dark:fill-grayLightest"
                   />
                 </div>
               </Link>
@@ -98,84 +97,87 @@ function Footer() {
           <div className="basis-1/2">
             {/* Start Footer Flex Links */}
             <div
-              className="flex flex-col space-x-0 mt-[3.5rem] text-center space-y-4 text-base
-              xl:space-x-16 lg:space-x-8 lg:flex-row lg:space-y-0 lg:text-left lg:float-right sm:space-y-6"
+              className="flex flex-col space-x-0 mt-[3.5rem] text-center space-y-4 text-base xl:space-x-16 lg:space-x-8 lg:flex-row lg:space-y-0 lg:text-left lg:float-right sm:space-y-6"
             >
               <div>
-                <Link
+                <a
                   className={
-                    pathname === "/about"
+                    activeSection === "about"
                       ? "footer-links group underline lg:no-underline"
-                      : "footer-links group"
+                      : "footer-links group cursor-pointer"
                   }
-                  href="/about"
+                  href="#about"
+                  onClick={(e) => scrollToSection(e, "about")}
                 >
                   about
                   <span
                     className={
-                      pathname === "/about"
+                      activeSection === "about"
                         ? "lg:footerlinks-active"
                         : "lg:footerlinks-hover"
                     }
                   ></span>
-                </Link>
+                </a>
               </div>
               <div>
-                <Link
+                <a
                   className={
-                    pathname === "/experience"
+                    activeSection === "projects"
                       ? "footer-links group underline lg:no-underline"
-                      : "footer-links group"
+                      : "footer-links group cursor-pointer"
                   }
-                  href="/experience"
+                  href="#projects"
+                  onClick={(e) => scrollToSection(e, "projects")}
+                >
+                  projects
+                  <span
+                    className={
+                      activeSection === "projects"
+                        ? "lg:footerlinks-active"
+                        : "lg:footerlinks-hover"
+                    }
+                  ></span>
+                </a>
+              </div>
+              <div>
+                <a
+                  className={
+                    activeSection === "experience"
+                      ? "footer-links group underline lg:no-underline"
+                      : "footer-links group cursor-pointer"
+                  }
+                  href="#experience"
+                  onClick={(e) => scrollToSection(e, "experience")}
                 >
                   experience
                   <span
                     className={
-                      pathname === "/experience"
+                      activeSection === "experience"
                         ? "lg:footerlinks-active"
                         : "lg:footerlinks-hover"
                     }
                   ></span>
-                </Link>
+                </a>
               </div>
               <div>
-                <Link
+                <a
                   className={
-                    pathname === "/contact"
+                    activeSection === "contact"
                       ? "footer-links group underline lg:no-underline"
-                      : "footer-links group"
+                      : "footer-links group cursor-pointer"
                   }
-                  href="/contact"
+                  href="#contact"
+                  onClick={(e) => scrollToSection(e, "contact")}
                 >
                   contact
                   <span
                     className={
-                      pathname === "/contact"
+                      activeSection === "contact"
                         ? "lg:footerlinks-active"
                         : "lg:footerlinks-hover"
                     }
                   ></span>
-                </Link>
-              </div>
-              <div>
-                <Link
-                  className={
-                    pathname === "/projects"
-                      ? "footer-links group underline lg:no-underline"
-                      : "footer-links group"
-                  }
-                  href="/projects"
-                >
-                  projects<strong className="lg:ml-2">&#8599;</strong>
-                  <span
-                    className={
-                      pathname === "/projects"
-                        ? "lg:footerlinks-active"
-                        : "lg:footerlinks-hover"
-                    }
-                  ></span>
-                </Link>
+                </a>
               </div>
             </div>
             {/* End Footer Flex Links */}
@@ -185,11 +187,9 @@ function Footer() {
         {/* End Flex Container */}
 
         <div
-          className="text-grayLight mt-12 text-center text-base
-          lg:text-right lg:text-[22px]
-          dark:text-white"
+          className="text-grayLight mt-12 text-center text-base lg:text-right lg:text-[22px] dark:text-white"
         >
-          &copy; C.Caraan {/*{new Date().getFullYear()}*/} 2023
+          &copy; C.Caraan {new Date().getFullYear()}
         </div>
       </div>
       {/* End Container */}
