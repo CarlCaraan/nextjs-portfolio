@@ -2,17 +2,18 @@ import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 
 const ThemeToggler = () => {
-  const { theme, setTheme } = useTheme();
+  const { resolvedTheme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
   if (!mounted) return null;
+  const isDark = resolvedTheme === "dark";
   return (
     <button
       className="text-grayLighter dark:text-violet"
-      onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-      aria-label="Toggle Dark Mode"
+      onClick={() => setTheme(isDark ? "light" : "dark")}
+      aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
     >
-      {theme === "light" ? (
+      {!isDark ? (
         <svg
           className="w-5 h-5"
           fill="currentColor"

@@ -12,6 +12,7 @@ import ContactSection from "../components/ContactSection";
 import QuoteSection from "../components/QuoteSection";
 import Footer from "../components/Footer";
 import TopScroll from "../components/TopScroll";
+import ScrollProgress from "../components/ScrollProgress";
 
 // Framer Motion
 import { motion } from "framer-motion";
@@ -41,6 +42,7 @@ export default function Home() {
 
       {/* ========= Start Navigation ========= */}
       <Navbar />
+      <ScrollProgress />
       {/* ========= End Navigation ========= */}
 
       {/* ========= Start Main Content ========= */}

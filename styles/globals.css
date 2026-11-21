@@ -83,14 +83,47 @@
 
   /* ========= GLOBAL ========= */
   body {
-    @apply text-grayDark bg-white
-    dark:text-white dark:bg-black;
-
-    background-image: url("/webPatternLight.svg");
-    background-position: center;
+    @apply text-grayDark dark:text-white;
+    --sunset-top: #faf8fd;
+    --sunset-bottom: #fff2ec;
+    --palm-cool: #eee6f3;
+    --palm-warm: #f2e0e6;
+    isolation: isolate;
+    background-color: var(--sunset-top);
+    background-image: linear-gradient(var(--sunset-top), var(--sunset-bottom));
+    background-attachment: fixed;
   }
+
   html.dark body {
-    background-image: url("/webPatternDark.svg");
+    --sunset-top: #141321;
+    --sunset-bottom: #281a23;
+    --palm-cool: #25213a;
+    --palm-warm: #342534;
+  }
+
+  body::before,
+  body::after {
+    content: "";
+    position: fixed;
+    z-index: -1;
+    pointer-events: none;
+    width: clamp(8rem, 24vw, 21rem);
+    aspect-ratio: 5 / 4;
+    -webkit-mask: url("/palm-fronds.svg") center / contain no-repeat;
+    mask: url("/palm-fronds.svg") center / contain no-repeat;
+  }
+
+  body::before {
+    bottom: 0;
+    left: 0;
+    background-color: var(--palm-warm);
+  }
+
+  body::after {
+    top: 0;
+    right: 0;
+    transform: rotate(180deg);
+    background-color: var(--palm-cool);
   }
   a {
     @apply font-linksR;
@@ -101,6 +134,17 @@
 }
 
 @layer components {
+  .scroll-progress {
+    position: fixed;
+    z-index: 50;
+    inset: 0 0 auto;
+    height: 3px;
+    pointer-events: none;
+    background: linear-gradient(90deg, #8a67d8, #e85a9e 55%, #ffad75);
+    transform: scaleX(var(--scroll-progress, 0));
+    transform-origin: left center;
+  }
+
   .custom-btn {
     @apply bg-white rounded-md py-2 font-linksR text-grayLight
     lg:pl-7;
@@ -151,24 +195,18 @@
   /* About > Skills */
   .custom-border-dashed {
     background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='gray' stroke-width='2' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='round'/%3e%3c/svg%3e");
-    @apply px-6 py-8
-      xl:px-12 xl:py-8 md:py-4;
+    @apply min-w-0 p-4 sm:p-5;
   }
   .skills-heading {
-    @apply text-base text-grayLighter font-sansSB pb-4
-    xl:text-[1.2vw] md:text-[1.8vw]
-    dark:text-grayLightest;
+    @apply mb-4 font-sansSB text-base text-grayLighter dark:text-grayLightest;
   }
   .neumorphism-box {
-    @apply hover:bg-white rounded-md transition-all ease-in duration-200 w-full xl:w-1/2 py-2 grayscale hover:grayscale-0 flex items-center justify-center
-    dark:bg-grayLightest dark:hover:bg-white dark:shadow-lg;
+    @apply flex h-20 min-w-0 flex-col items-center justify-center gap-1 rounded-md px-2 py-2
+    text-center font-sansSB text-xs leading-tight text-black grayscale transition-all duration-200
+    ease-in hover:bg-white hover:grayscale-0 dark:bg-grayLightest dark:shadow-lg dark:hover:bg-white;
     box-shadow:
       4px 4px 8px #cdcdcd,
       -4px -4px 8px #ffffff;
-  }
-  .skills-inner-flexbox {
-    @apply flex flex-col justify-between gap-4 
-    xl:flex-row;
   }
 
   /* Project > Project Container */
@@ -289,6 +327,6 @@
 
 /* ========= Hidden Navigation (Mobile) ========= */
 .mobile-navigation {
-  @apply flex flex-col fixed inset-0 w-full h-screen py-1 pt-8 pl-6 space-y-3 text-lg text-black bg-panel z-50
+  @apply flex flex-col fixed inset-0 w-full overflow-y-auto py-1 pt-8 pl-6 space-y-3 text-lg text-black bg-panel z-50
   dark:bg-black dark:text-white;
 }

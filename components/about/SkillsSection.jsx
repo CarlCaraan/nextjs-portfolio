@@ -26,6 +26,94 @@ import git from "../../public/images/about/git.svg";
 import asp from "../../public/images/about/asp.svg";
 import csharp from "../../public/images/about/csharp.svg";
 import sqlserver from "../../public/images/about/sqlserver.svg";
+import angular from "../../public/images/about/angular.svg";
+import azure from "../../public/images/about/azure.svg";
+import github from "../../public/images/about/github.svg";
+import claude from "../../public/images/about/claude.svg";
+import codex from "../../public/images/about/codex.svg";
+import antigravity from "../../public/images/about/antigravity.svg";
+import gemini from "../../public/images/about/gemini.svg";
+import githubCopilot from "../../public/images/about/githubcopilot.svg";
+
+const skillGroups = [
+  {
+    title: "Tech Stacks",
+    skills: [
+      ["React", react],
+      ["Node.js", node],
+      ["Next.js", next],
+      ["Laravel", laravel],
+      [".NET", asp],
+      ["C#", csharp],
+      ["Angular", angular, true],
+    ],
+  },
+  {
+    title: "Web",
+    skills: [
+      ["HTML", html],
+      ["CSS", css],
+      ["Sass", sass],
+      ["JavaScript", javascript],
+      ["jQuery", jquery],
+    ],
+  },
+  {
+    title: "Tools & Cloud",
+    skills: [
+      ["Visual Studio Code", vscode],
+      ["Git", git],
+      ["GitHub", github, true],
+      ["Microsoft Azure", azure, true],
+    ],
+  },
+  {
+    title: "Database",
+    skills: [
+      ["Firebase", firebase],
+      ["MySQL", mysql],
+      ["SQL Server", sqlserver],
+    ],
+  },
+  {
+    title: "UX/UI",
+    skills: [
+      ["Figma", figma],
+      ["Adobe XD", adobeXD, true],
+    ],
+  },
+  {
+    title: "CSS Frameworks",
+    skills: [
+      ["Bootstrap", bootstrap],
+      ["Tailwind CSS", tailwind],
+    ],
+  },
+  {
+    title: "AI Development Tools",
+    wide: true,
+    skills: [
+      ["Claude", claude, true],
+      ["Codex", codex, true],
+      ["Antigravity", antigravity, true],
+      ["Gemini", gemini, true],
+      ["GitHub Copilot", githubCopilot, true],
+    ],
+  },
+];
+
+function SkillTile({ name, logo, showLabel }) {
+  return (
+    <li className="neumorphism-box">
+      <Image
+        className={showLabel ? "h-7 w-7 object-contain" : "h-11 w-full max-w-[7rem] object-contain"}
+        src={logo}
+        alt={showLabel ? "" : name}
+      />
+      {showLabel && <span>{name}</span>}
+    </li>
+  );
+}
 
 function SkillsSection({ props }) {
   return (
@@ -52,11 +140,11 @@ function SkillsSection({ props }) {
               xl:off-hyphen sm:text-xl lg:text-2xl
               dark:text-white"
             >
-              I am highly skilled in programming, with expertise in languages
-              such as Javascript and Php, as well as experience with databases
-              and software development frameworks. I have used these skills to
-              design and implement software solutions for various projects, and
-              have a track record of delivering high-quality, efficient code.
+              I build and maintain enterprise web applications with .NET,
+              Angular, and SQL Server. My work spans system design, REST API
+              development, database optimization, and Azure deployments. I use
+              GitHub for version control and CI/CD and AI tools to support
+              software development.
             </div>
             {/* End Heading Text */}
           </div>
@@ -71,190 +159,31 @@ function SkillsSection({ props }) {
         dark:bg-grayLight"
       >
         <div className="section-container-fluid">
-          {/* Start Grid Container */}
-          <div className="grid">
-            <div
-              className="col-start-1 col-span-1 w-60 hidden 
-              xl:block"
-            ></div>
-            <div
-              className="col-start-1 col-span-10 
-              md:col-start-2"
-            >
-              {/* Start Inner Grid Container */}
-              <div className="grid grid-cols-7 md:grid-rows-3 gap-6">
-                {/* Item 1 */}
-                <div
-                  data-aos="fade-up"
-                  className="custom-border-dashed col-span-7 
-                  md:col-span-2"
+          <div className="mx-auto grid max-w-6xl gap-4 md:grid-cols-2 md:gap-6">
+            {skillGroups.map(({ title, skills, wide }) => (
+              <div
+                key={title}
+                data-aos="fade-up"
+                className={wide
+                  ? "custom-border-dashed md:col-span-2"
+                  : "custom-border-dashed"}
+              >
+                <h4 className="skills-heading">{title}</h4>
+                <ul
+                  className={`grid grid-cols-2 gap-3 sm:grid-cols-3 ${wide ? "md:grid-cols-6" : ""}`}
                 >
-                  <h4 className="skills-heading">UX/UI</h4>
-                  <div className="skills-inner-flexbox">
-                    <div className="neumorphism-box">
-                      <Image src={figma} alt={figma}></Image>
-                    </div>
-                    <div className="neumorphism-box">
-                      <span
-                        className="font-sansSB text-xl mr-1 cursor-default select-none
-                        xl:text-[.9vw] lg:text-2xl
-                        dark:text-black"
-                      >
-                        Adobe
-                      </span>
-                      <Image
-                        className="w-16
-                        xl:my-0 xl:w-1/3 md:w-12 lg:my-2"
-                        src={adobeXD}
-                        alt={adobeXD}
-                      ></Image>
-                    </div>
-                  </div>
-                </div>
-                {/* Item 2 */}
-                <div
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                  className="custom-border-dashed col-span-7 
-                  md:row-span-2 md:col-span-3"
-                >
-                  <h4 className="skills-heading">Web</h4>
-                  <div className="flex flex-col gap-4">
-                    <div className="skills-inner-flexbox">
-                      <div className="neumorphism-box">
-                        <Image src={html} alt={html}></Image>
-                      </div>
-                      <div className="neumorphism-box">
-                        <Image src={css} alt={css}></Image>
-                      </div>
-                      <div className="neumorphism-box">
-                        <Image src={sass} alt={sass}></Image>
-                      </div>
-                    </div>
-                    <div className="skills-inner-flexbox">
-                      <div className="neumorphism-box">
-                        <Image src={javascript} alt={javascript}></Image>
-                      </div>
-                      <div className="neumorphism-box">
-                        <Image src={jquery} alt={jquery}></Image>
-                      </div>
-                      <div className="neumorphism-box opacity-0"></div>
-                    </div>
-                  </div>
-                </div>
-                {/* Item 3 */}
-                <div
-                  data-aos="fade-up"
-                  data-aos-delay="400"
-                  className="custom-border-dashed col-span-7 
-                  md:col-span-2"
-                >
-                  <h4 className="skills-heading">CSS Frameworks</h4>
-                  <div className="skills-inner-flexbox">
-                    <div className="neumorphism-box">
-                      <Image src={bootstrap} alt={bootstrap}></Image>
-                    </div>
-                    <div className="neumorphism-box">
-                      <Image src={tailwind} alt={tailwind}></Image>
-                    </div>
-                  </div>
-                </div>
-                {/* Item 4 */}
-                <div
-                  data-aos="fade-up"
-                  className="custom-border-dashed col-span-7 
-                  md:row-span-2 md:row-start-2 md:col-span-2"
-                >
-                  <h4 className="skills-heading">Tech Stacks</h4>
-                  <div className="flex flex-col gap-4">
-                    <div className="skills-inner-flexbox">
-                      <div className="neumorphism-box">
-                        <Image src={react} alt={react}></Image>
-                      </div>
-                      <div className="neumorphism-box">
-                        <Image src={node} alt={node}></Image>
-                      </div>
-                    </div>
-                    <div className="skills-inner-flexbox">
-                      <div className="neumorphism-box">
-                        <Image
-                          className="w-16
-                          xl:my-0 xl:w-1/2 md:w-12 lg:my-4 md:py-0 sm:py-3"
-                          src={next}
-                          alt={next}
-                        ></Image>
-                      </div>
-                      <div className="neumorphism-box">
-                        <Image src={laravel} alt={laravel}></Image>
-                      </div>
-                    </div>
-                    <div className="skills-inner-flexbox">
-                      <div className="neumorphism-box">
-                        <Image src={asp} alt={asp}></Image>
-                      </div>
-                      <div className="neumorphism-box">
-                        <Image
-                          className="w-12 py-1
-                          xl:my-0 xl:w-1/3 md:w-12 lg:my-1 md:py-0"
-                          src={csharp}
-                          alt={csharp}
-                        ></Image>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                {/* Item 5 */}
-                <div
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                  className="custom-border-dashed col-span-7 
-                  md:row-start-3 md:col-span-3"
-                >
-                  <h4 className="skills-heading">Database</h4>
-                  <div className="skills-inner-flexbox">
-                    <div className="neumorphism-box">
-                      <Image src={firebase} alt={firebase}></Image>
-                    </div>
-                    <div className="neumorphism-box">
-                      <Image src={mysql} alt={mysql}></Image>
-                    </div>
-                    <div className="neumorphism-box">
-                      <Image
-                        className="w-14
-                          xl:my-0 xl:w-1/2 lg:my-1 md:w-16 md:py-0 sm:py-1"
-                        src={sqlserver}
-                        alt={sqlserver}
-                      ></Image>
-                    </div>
-                  </div>
-                </div>
-                {/* Item 6 */}
-                <div
-                  data-aos="fade-up"
-                  data-aos-delay="400"
-                  className="custom-border-dashed col-span-7 
-                  md:row-span-1 md:col-span-2"
-                >
-                  <h4 className="skills-heading">Tools</h4>
-                  <div className="skills-inner-flexbox">
-                    <div className="neumorphism-box">
-                      <Image src={vscode} alt={vscode}></Image>
-                    </div>
-                    <div className="neumorphism-box">
-                      <Image src={git} alt={git}></Image>
-                    </div>
-                  </div>
-                </div>
+                  {skills.map(([name, logo, showLabel]) => (
+                    <SkillTile key={name} name={name} logo={logo} showLabel={showLabel} />
+                  ))}
+                </ul>
               </div>
-              {/* End Inner Grid Container */}
-            </div>
+            ))}
           </div>
-          {/* End Grid Container */}
 
           {/* Start Post Skills Content */}
           <div
-            className="mt-24 mb-0 text-center text-black 
-            sm:mt-64 sm:mb-8
+            className="mt-16 mb-0 text-center text-black
+            sm:mt-24 sm:mb-8
             dark:text-white"
           >
             <Link

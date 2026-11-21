@@ -5,7 +5,7 @@ import Meta from "../components/Meta";
 
 export default function Document() {
   return (
-    <Html lang="en" className="scroll-smooth">
+    <Html lang="en" className="scroll-smooth" suppressHydrationWarning>
       {/* ========= Start Head ========= */}
       <Head>
         {/* SEO */}

@@ -1,6 +1,5 @@
 import React, { Fragment, useState, useEffect } from "react";
 import Image from "next/image";
-import { useTheme } from "next-themes";
 
 // Components
 import ThemeToggler from "./ThemeToggler";
@@ -9,8 +8,8 @@ import ThemeToggler from "./ThemeToggler";
 import useScrollSpy from "../hooks/useScrollSpy";
 
 // Images
-import logoLight from "../public/logoLight.svg";
-import logoDark from "../public/logoDark.svg";
+import monogram from "../public/navbar-monogram.svg";
+import wordmark from "../public/navbar-wordmark.svg";
 import verifiedBadge from "../public/Twitter_Verified_Badge.svg";
 
 function Navbar() {
@@ -37,18 +36,22 @@ function Navbar() {
 
   // Prevent background scrolling when mobile menu is open
   useEffect(() => {
-    if (isMobileMenuOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "unset";
-    }
+    if (!isMobileMenuOpen) return;
+
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    const desktop = window.matchMedia("(min-width: 768px)");
+    const closeOnDesktop = (event) => {
+      if (event.matches) setIsMobileMenuOpen(false);
+    };
+    desktop.addEventListener("change", closeOnDesktop);
+
     return () => {
-      document.body.style.overflow = "unset";
+      desktop.removeEventListener("change", closeOnDesktop);
+      document.body.style.overflow = previousOverflow;
     };
   }, [isMobileMenuOpen]);
 
-  // UseTheme Function
-  const { theme } = useTheme();
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
 
@@ -70,29 +73,23 @@ function Navbar() {
               className="cursor-pointer"
             >
               <div className="flex flex-row space-x-2">
-                {/* Start Dynamic Logo */}
-                {theme === "light" ? (
-                  <Image
-                    className="w-[2.6rem] h-[2.6rem] mt-1 lg:w-12 lg:h-12"
-                    src={logoLight}
-                    alt="logo-light"
-                    priority
-                  />
-                ) : (
-                  <Image
-                    className="w-[2.6rem] h-[2.6rem] mt-1 lg:w-12 lg:h-12"
-                    src={logoDark}
-                    alt="logo-dark"
-                    priority
-                  />
-                )}
-                {/* End Dynamic Logo */}
+                <Image
+                  className="w-[2.6rem] h-[2.6rem] mt-1 lg:w-12 lg:h-12"
+                  src={monogram}
+                  alt=""
+                  priority
+                />
 
                 <div className="flex flex-col select-none">
-                  <div className="text-xl flex space-x-1 lg:text-2xl">
-                    <span>Carl Caraan</span>
+                  <div className="flex h-7 items-center space-x-1 lg:h-8">
                     <Image
-                      className="w-5 h-5 mt-1"
+                      className="h-auto w-[7.5rem] lg:w-36 dark:brightness-0 dark:invert"
+                      src={wordmark}
+                      alt="Carl Caraan"
+                      priority
+                    />
+                    <Image
+                      className="w-5 h-5"
                       src={verifiedBadge}
                       alt="verified-icon"
                       priority
@@ -191,6 +188,8 @@ function Navbar() {
               <button
                 type="button"
                 aria-label="Toggle Navigation Menu"
+                aria-controls="mobile-navigation"
+                aria-expanded={isMobileMenuOpen}
                 className={
                   isMobileMenuOpen
                     ? "open hamburger z-50 block md:hidden focus:outline-none"
@@ -211,35 +210,32 @@ function Navbar() {
 
       {/* ========= Start Mobile Navigation ========= */}
       <div
+        id="mobile-navigation"
         className={
           isMobileMenuOpen ? "md:hidden flex mobile-navigation" : "hidden"
         }
       >
-        {/* Start Dynamic Logo */}
+        <button
+          type="button"
+          className="absolute right-6 top-8 !mt-0 flex h-11 w-11 items-center justify-center"
+          aria-label="Close navigation menu"
+          onClick={toggleMobileMenu}
+        >
+          <svg aria-hidden="true" viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="m6 6 12 12M18 6 6 18" />
+          </svg>
+        </button>
         <a
           className="mb-12 cursor-pointer"
           href="#"
           onClick={handleMobileBrandClick}
         >
-          <div className="flex flex-row space-x-2">
-            {theme === "light" ? (
-              <Image
-                className="w-[2.6rem] h-[2.6rem] mt-1 lg:w-12 lg:h-12"
-                src={logoLight}
-                alt="logo-light"
-                priority
-              />
-            ) : (
-              <Image
-                className="w-[2.6rem] h-[2.6rem] mt-1 lg:w-12 lg:h-12"
-                src={logoDark}
-                alt="logo-dark"
-                priority
-              />
-            )}
-          </div>
+          <Image
+            className="w-[2.6rem] h-[2.6rem] mt-1"
+            src={monogram}
+            alt="Carl Caraan"
+          />
         </a>
-        {/* End Dynamic Logo */}
 
         <div>
           <a

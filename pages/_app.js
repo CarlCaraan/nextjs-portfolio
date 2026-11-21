@@ -22,7 +22,7 @@ export default function App({ Component, pageProps }) {
 
   return (
     <AnimatePresence mode="wait">
-      <ThemeProvider enableSystem={false} attribute="class">
+      <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
         <Component {...pageProps} />
       </ThemeProvider>
     </AnimatePresence>

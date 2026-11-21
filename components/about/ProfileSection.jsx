@@ -112,20 +112,13 @@ function ProfileSection({ props }) {
                       Interests
                     </div>
                     <div
-                      className="basis-3/5 text-sm text-grayLight text-justify auto-hyphen flex flex-col
-                      xl:off-hyphen sm:text-xl
+                      className="basis-3/5 text-sm text-grayLight flex flex-col gap-2
+                      sm:text-xl
                       dark:text-grayLightest"
                     >
-                      <span>Frontend Development</span>
-                      <span>Backend Development</span>
-                      <span>Web Design</span>
-                      <span>Web Development</span>
-                      <span>Full-Stack Development</span>
-                      <span>Responsive Design</span>
-                      <span>Backend Logic</span>
-                      <span>Problem-solving</span>
-                      <span>Creativity</span>
-                      <span>Continues Learning</span>
+                      <span>Software architecture and process automation</span>
+                      <span>AI-assisted software development</span>
+                      <span>Stock market analysis and trading</span>
                     </div>
                   </div>
                   {/* Item 5 */}
@@ -135,15 +128,17 @@ function ProfileSection({ props }) {
                       sm:text-xl
                       dark:text-white"
                     >
-                      Area
+                      Areas of Expertise
                     </div>
                     <div
-                      className="basis-3/5 text-sm text-grayLight flex flex-col
+                      className="basis-3/5 text-sm text-grayLight flex flex-col gap-2
                       sm:text-xl
                       dark:text-grayLightest"
                     >
-                      <span>Interaction Design</span>
-                      <span>Coding</span>
+                      <span>Enterprise application development with .NET and Angular</span>
+                      <span>REST APIs, SQL Server optimization, and reporting</span>
+                      <span>Azure deployments and CI/CD with GitHub Actions</span>
+                      <span>Requirements analysis and production support</span>
                     </div>
                   </div>
                 </div>
