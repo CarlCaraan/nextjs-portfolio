@@ -1,5 +1,5 @@
-import { ThemeProvider } from "next-themes";
 import { useEffect } from "react";
+import PortfolioThemeProvider from "../components/PortfolioThemeProvider";
 
 // Styles
 import "../styles/globals.css";
@@ -22,9 +22,9 @@ export default function App({ Component, pageProps }) {
 
   return (
     <AnimatePresence mode="wait">
-      <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+      <PortfolioThemeProvider>
         <Component {...pageProps} />
-      </ThemeProvider>
+      </PortfolioThemeProvider>
     </AnimatePresence>
   );
 }

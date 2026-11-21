@@ -12,7 +12,7 @@ export default function Document() {
         <Meta />
 
         {/* Favicon */}
-        <link rel="icon" type="image/x-icon" href="/favicon.ico"></link>
+        <link rel="icon" type="image/svg+xml" sizes="any" href="/navbar-monogram.svg" />
       </Head>
       {/* ========= End Head ========= */}
 

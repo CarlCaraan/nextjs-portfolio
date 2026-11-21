@@ -1,20 +1,30 @@
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
+import { useThemeSelection } from "./PortfolioThemeProvider";
 
 const ThemeToggler = () => {
-  const { resolvedTheme, setTheme } = useTheme();
+  const { forcedTheme, resolvedTheme } = useTheme();
+  const { selection, setSelection } = useThemeSelection();
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
   if (!mounted) return null;
-  const isDark = resolvedTheme === "dark";
+  const isDark = (forcedTheme ?? resolvedTheme) === "dark";
   return (
-    <button
-      className="text-grayLighter dark:text-violet"
-      onClick={() => setTheme(isDark ? "light" : "dark")}
-      aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
-    >
+    <div className="relative h-5 w-5 rounded text-grayLighter focus-within:ring-2 focus-within:ring-violet dark:text-violet">
+      <select
+        aria-label="Color theme"
+        title="Choose System, Light, or Dark"
+        className="absolute inset-0 z-10 h-full w-full cursor-pointer opacity-0"
+        value={selection}
+        onChange={(event) => setSelection(event.target.value)}
+      >
+        <option value="system">System</option>
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+      </select>
       {!isDark ? (
         <svg
+          aria-hidden="true"
           className="w-5 h-5"
           fill="currentColor"
           viewBox="0 0 20 20"
@@ -24,6 +34,7 @@ const ThemeToggler = () => {
         </svg>
       ) : (
         <svg
+          aria-hidden="true"
           className="w-5 h-5"
           fill="currentColor"
           viewBox="0 0 20 20"
@@ -36,7 +47,7 @@ const ThemeToggler = () => {
           ></path>
         </svg>
       )}
-    </button>
+    </div>
   );
 };
 
