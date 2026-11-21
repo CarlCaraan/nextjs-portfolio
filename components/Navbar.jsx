@@ -52,14 +52,22 @@ function Navbar() {
     };
   }, [isMobileMenuOpen]);
 
-  const [mounted, setMounted] = useState(false);
-  useEffect(() => setMounted(true), []);
+  const [isScrolled, setIsScrolled] = useState(false);
 
-  if (!mounted) return null;
+  useEffect(() => {
+    const syncScroll = () => setIsScrolled(window.scrollY > 0);
+
+    syncScroll();
+    window.addEventListener("scroll", syncScroll, { passive: true });
+    return () => window.removeEventListener("scroll", syncScroll);
+  }, []);
 
   return (
     <Fragment>
-      <header className="sticky top-0 z-40 w-full bg-white/80 dark:bg-black/80 backdrop-blur-md transition-colors duration-300">
+      <header
+        className="portfolio-navbar sticky top-0 z-40 w-full"
+        data-scrolled={isScrolled}
+      >
         <nav
           id="navbar"
           className="container mx-auto py-4 px-6 md:px-24 md:py-6"

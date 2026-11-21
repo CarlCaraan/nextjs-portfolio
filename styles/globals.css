@@ -134,6 +134,23 @@
 }
 
 @layer components {
+  .portfolio-navbar {
+    border-bottom: 1px solid transparent;
+    @apply transition-colors duration-300 motion-reduce:transition-none;
+  }
+
+  .portfolio-navbar[data-scrolled="true"] {
+    background-color: rgb(250 248 253 / 72%);
+    border-bottom-color: rgb(77 49 101 / 14%);
+    -webkit-backdrop-filter: blur(14px) saturate(140%);
+    backdrop-filter: blur(14px) saturate(140%);
+  }
+
+  html.dark .portfolio-navbar[data-scrolled="true"] {
+    background-color: rgb(22 17 29 / 60%);
+    border-bottom-color: rgb(204 173 228 / 15%);
+  }
+
   .scroll-progress {
     position: fixed;
     z-index: 50;
