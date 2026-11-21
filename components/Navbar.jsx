@@ -103,7 +103,7 @@ function Navbar() {
                       priority
                     />
                   </div>
-                  <span className="job-title">AI | .NET Developer</span>
+                  <span className="job-title">AI | Full-Stack Developer</span>
                 </div>
               </div>
             </a>
@@ -113,11 +113,10 @@ function Navbar() {
               className="hidden space-x-6 items-center text-grayLight md:flex lg:space-x-12 dark:text-white"
             >
               <a
-                className={`group cursor-pointer font-linksR transition-colors duration-200 ${
-                  activeSection === "about"
-                    ? "text-black dark:text-white font-medium"
-                    : "text-grayLight hover:text-black dark:text-grayLightest dark:hover:text-white"
-                }`}
+                className={`group cursor-pointer font-linksR transition-colors duration-200 ${activeSection === "about"
+                  ? "text-black dark:text-white font-medium"
+                  : "text-grayLight hover:text-black dark:text-grayLightest dark:hover:text-white"
+                  }`}
                 href="#about"
                 onClick={(e) => scrollToSection(e, "about")}
               >
@@ -131,11 +130,10 @@ function Navbar() {
                 ></span>
               </a>
               <a
-                className={`group cursor-pointer font-linksR transition-colors duration-200 ${
-                  activeSection === "projects"
-                    ? "text-black dark:text-white font-medium"
-                    : "text-grayLight hover:text-black dark:text-grayLightest dark:hover:text-white"
-                }`}
+                className={`group cursor-pointer font-linksR transition-colors duration-200 ${activeSection === "projects"
+                  ? "text-black dark:text-white font-medium"
+                  : "text-grayLight hover:text-black dark:text-grayLightest dark:hover:text-white"
+                  }`}
                 href="#projects"
                 onClick={(e) => scrollToSection(e, "projects")}
               >
@@ -149,11 +147,10 @@ function Navbar() {
                 ></span>
               </a>
               <a
-                className={`group cursor-pointer font-linksR transition-colors duration-200 ${
-                  activeSection === "experience"
-                    ? "text-black dark:text-white font-medium"
-                    : "text-grayLight hover:text-black dark:text-grayLightest dark:hover:text-white"
-                }`}
+                className={`group cursor-pointer font-linksR transition-colors duration-200 ${activeSection === "experience"
+                  ? "text-black dark:text-white font-medium"
+                  : "text-grayLight hover:text-black dark:text-grayLightest dark:hover:text-white"
+                  }`}
                 href="#experience"
                 onClick={(e) => scrollToSection(e, "experience")}
               >
@@ -167,11 +164,10 @@ function Navbar() {
                 ></span>
               </a>
               <a
-                className={`group cursor-pointer font-linksR transition-colors duration-200 ${
-                  activeSection === "contact"
-                    ? "text-black dark:text-white font-medium"
-                    : "text-grayLight hover:text-black dark:text-grayLightest dark:hover:text-white"
-                }`}
+                className={`group cursor-pointer font-linksR transition-colors duration-200 ${activeSection === "contact"
+                  ? "text-black dark:text-white font-medium"
+                  : "text-grayLight hover:text-black dark:text-grayLightest dark:hover:text-white"
+                  }`}
                 href="#contact"
                 onClick={(e) => scrollToSection(e, "contact")}
               >

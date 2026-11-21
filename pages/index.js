@@ -37,7 +37,7 @@ export default function Home() {
   return (
     <Fragment>
       <Head>
-        <title>Carl Caraan | Full Stack .NET Developer</title>
+        <title>Carl Caraan</title>
       </Head>
 
       {/* ========= Start Navigation ========= */}
