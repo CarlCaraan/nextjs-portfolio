@@ -178,12 +178,10 @@
   /* ========= ALL LINKS ========= */
   /* Navigation */
   .navlinks-active {
-    @apply mx-auto block w-full border border-black
-    dark:border-white;
+    @apply mx-auto block h-px w-full bg-current;
   }
   .navlinks-hover {
-    @apply mx-auto ease-out duration-300 block w-0 border border-white group-hover:w-full group-hover:border group-hover:border-grayLight
-    dark:border-black dark:group-hover:border-white;
+    @apply mx-auto block h-px w-0 bg-current transition-[width] duration-300 ease-out group-hover:w-full;
   }
   .job-title {
     font-family: "Dotted", sans-serif;
