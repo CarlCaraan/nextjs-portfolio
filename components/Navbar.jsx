@@ -182,9 +182,7 @@ function Navbar() {
               </a>
 
               {/* Dark Mode Button */}
-              <div className="w-5">
-                <ThemeToggler />
-              </div>
+              <ThemeToggler />
             </div>
 
             {/* Start Hamburger Button */}
@@ -295,7 +293,7 @@ function Navbar() {
         </div>
 
         {/* Dark Mode Button */}
-        <div className="pt-12 w-5">
+        <div className="pt-12">
           <ThemeToggler />
         </div>
       </div>
