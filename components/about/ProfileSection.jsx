@@ -98,8 +98,8 @@ function ProfileSection({ props }) {
                       sm:text-xl
                       dark:text-grayLightest"
                     >
-                      BS Information Technology <br />
-                      Laguna State Polytechnic University
+                      Bachelor of Science in Information Technology <br />
+                        Laguna State Polytechnic University
                     </div>
                   </div>
                   {/* Item 4 */}
@@ -118,8 +118,9 @@ function ProfileSection({ props }) {
                     >
                       <span>Software architecture and process automation</span>
                       <span>AI-assisted software development</span>
+                      <span>AI Automation workflows</span>
                       <span>Stock market analysis and trading</span>
-                    </div>
+                      </div>
                   </div>
                   {/* Item 5 */}
                   <div className="flex">

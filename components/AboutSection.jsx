@@ -19,11 +19,11 @@ function AboutSection() {
           </div>
           <div className="basis-3/5 py-6 md:py-[4vw]">
             <h3 className="text-base leading-tight text-justify sm:text-[3.6vw] lg:select-none">
-              A developer who solves real world problem
+              A developer who solves real-world problems
             </h3>
             <p className="text-sm text-grayLighter mt-5 text-justify md:text-[1.6vw] md:leading-tight md:text-grayLight dark:text-grayLightest">
-              I am looking for a challenging opportunity that will enable me to
-              use my skills and abilities to achieve a challenging goal.
+              I am seeking a role where I can apply my technical skills to solve
+              meaningful problems and contribute to impactful projects.
             </p>
           </div>
         </div>
