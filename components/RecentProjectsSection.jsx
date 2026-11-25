@@ -29,23 +29,25 @@ function RecentProjectsSection() {
       id="content"
     >
       {/* Start Content Heading */}
-      <div
-        className="relative text-[6.7vw] font-linksB text-center pt-12 lg:pt-[4.3vw] text-white select-none dark:text-grayLightest"
-      >
+      <div className="text-[6.7vw] font-linksB text-center pt-12 lg:pt-[4.3vw] text-white select-none dark:text-grayLightest">
         Full Stack Developer
-        <span
-          className="hidden absolute big-title font-linksSB text-black text-[2.5vw] left-[25vw] top-[10.2vw] lg:block dark:text-white"
-        >
-          Recent Projects
-        </span>
       </div>
 
-      {/* Hidden for mobile */}
-      <div
-        className="font-linksSB text-black text-[5vw] text-center lg:hidden dark:text-white"
-      >
-        Recent Projects
+      <div className="px-6 pt-3 text-center" data-aos="fade-up">
+        <p className="font-linksSB text-[0.7rem] uppercase tracking-[0.18em] text-white/80 dark:text-grayLightest/80">
+          Projects &amp; Industry Experience
+        </p>
+        <p className="mx-auto mt-2 max-w-5xl font-linksSB text-sm font-bold leading-relaxed text-white sm:text-base dark:text-grayLightest">
+          <strong>National Judicial Institution</strong>
+          <span className="mx-1.5 font-normal" aria-hidden="true">|</span>
+          <strong>National Law Enforcement Agency</strong>
+          <span className="mx-1.5 font-normal" aria-hidden="true">|</span>
+          <strong>Government Agricultural Research Institution</strong>
+          <span className="mx-1.5 font-normal" aria-hidden="true">|</span>
+          <strong>Government-Related Infrastructure Corporation</strong>
+        </p>
       </div>
+
       {/* End Content Heading */}
 
       {/* Start Container */}
