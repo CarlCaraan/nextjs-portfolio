@@ -29,7 +29,7 @@ function RecentProjectsSection() {
       id="content"
     >
       {/* Start Content Heading */}
-      <div className="text-[6.7vw] font-linksB text-center pt-12 lg:pt-[4.3vw] text-white select-none dark:text-grayLightest">
+      <div className="text-[6.7vw] font-linksB big-title text-center pt-12 lg:pt-[4.3vw] text-white select-none dark:text-grayLightest">
         Full Stack Developer
       </div>
 
