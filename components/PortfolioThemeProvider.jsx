@@ -1,26 +1,19 @@
-import { ThemeProvider } from "next-themes";
-import { createContext, useContext, useState } from "react";
-
-const ThemeSelectionContext = createContext(null);
+import { ThemeProvider, useTheme } from "next-themes";
 
 export function useThemeSelection() {
-  return useContext(ThemeSelectionContext);
+  const { theme, setTheme } = useTheme();
+  return { selection: theme || "system", setSelection: setTheme };
 }
 
 export default function PortfolioThemeProvider({ children }) {
-  const [selection, setSelection] = useState("system");
-
   return (
     <ThemeProvider
       attribute="class"
       defaultTheme="system"
       enableSystem
       storageKey="portfolio-system-theme"
-      forcedTheme={selection === "system" ? undefined : selection}
     >
-      <ThemeSelectionContext.Provider value={{ selection, setSelection }}>
-        {children}
-      </ThemeSelectionContext.Provider>
+      {children}
     </ThemeProvider>
   );
 }

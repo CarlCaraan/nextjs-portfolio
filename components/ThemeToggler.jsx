@@ -9,7 +9,9 @@ const themeOptions = [
 ];
 
 export default function ThemeToggler() {
-  const { selection, setSelection } = useThemeSelection();
+  const { selection: savedSelection, setSelection } = useThemeSelection();
+  const [mounted, setMounted] = useState(false);
+  const selection = mounted ? savedSelection : "system";
   const [isOpen, setIsOpen] = useState(false);
   const pickerRef = useRef(null);
   const triggerRef = useRef(null);
@@ -17,6 +19,10 @@ export default function ThemeToggler() {
   const { Icon: SelectedIcon, label: selectedLabel } = themeOptions.find(
     ({ value }) => value === selection
   );
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     if (!isOpen) return;
