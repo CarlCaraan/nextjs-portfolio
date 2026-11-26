@@ -84,13 +84,13 @@
   /* ========= GLOBAL ========= */
   body {
     @apply text-grayDark dark:text-white;
-    --sunset-top: #faf8fd;
-    --sunset-bottom: #fff2ec;
+    --sunset-top: #f8f1e8;
+    --sunset-bottom: #f3e8e3;
     --palm-cool: #eee6f3;
     --palm-warm: #f2e0e6;
     isolation: isolate;
     background-color: var(--sunset-top);
-    background-image: linear-gradient(var(--sunset-top), var(--sunset-bottom));
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.045'/%3E%3C/svg%3E"), linear-gradient(var(--sunset-top), var(--sunset-bottom));
     background-attachment: fixed;
   }
 
@@ -99,6 +99,7 @@
     --sunset-bottom: #281a23;
     --palm-cool: #25213a;
     --palm-warm: #342534;
+    background-image: linear-gradient(var(--sunset-top), var(--sunset-bottom));
   }
 
   body::before,
@@ -140,7 +141,7 @@
   }
 
   .portfolio-navbar[data-scrolled="true"] {
-    background-color: rgb(250 248 253 / 72%);
+    background-color: rgb(248 241 232 / 62%);
     border-bottom-color: rgb(77 49 101 / 14%);
     -webkit-backdrop-filter: blur(14px) saturate(140%);
     backdrop-filter: blur(14px) saturate(140%);
@@ -166,10 +167,17 @@
     @apply bg-white rounded-md py-2 font-linksR text-grayLight
     lg:pl-7;
 
-    background: #f1f1f1;
+    background: #e4d4dc;
     box-shadow:
       4px 4px 8px #cdcdcd,
       -4px -4px 8px #ffffff;
+  }
+  html.dark .custom-btn {
+    background: #f1f1f1;
+  }
+
+  html:not(.dark) .bg-panel {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.045'/%3E%3C/svg%3E");
   }
   .overlap-title {
     @apply opacity-0 translate-y-full group-hover:translate-y-0 group-hover:opacity-90 absolute bottom-0 left-0 right-0 bg-zinc-700 px-6 py-4 text-white duration-200;

@@ -13,7 +13,7 @@ module.exports = {
         grayLighter: "#515151",
         grayLightest: "#cccccc",
         violet: "#805fc2",
-        panel: "#f1f1f1",
+        panel: "#f6eee3",
       },
     },
     // All Fonts
